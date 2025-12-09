@@ -1,0 +1,342 @@
+{
+    "title": "Fixed Working Hours Template Configuration",
+    "templateInformation": {
+      "updateBy": "2019/7/4",
+      "status": "Confirmed"
+    },
+    "weeklySchedule": {
+      "tasks": [
+        {
+          "taskName": "Opening",
+          "fixed": true,
+          "flexible": false,
+          "monday": {
+            "std": 2,
+            "rest": null
+          },
+          "tuesday": {
+            "std": 2,
+            "rest": null
+          },
+          "wednesday": {
+            "std": 2,
+            "rest": null
+          },
+          "thursday": {
+            "std": 2,
+            "rest": null
+          },
+          "friday": {
+            "std": 2,
+            "rest": null
+          },
+          "saturday": {
+            "std": 2,
+            "rest": null
+          },
+          "sunday": {
+            "std": 2,
+            "rest": null
+          },
+          "weeklyTotal": {
+            "std": 14,
+            "rest": 0
+          }
+        },
+        {
+          "taskName": "Shift Handover",
+          "fixed": true,
+          "flexible": false,
+          "monday": {
+            "std": 0.5,
+            "rest": 0.6
+          },
+          "tuesday": {
+            "std": 0.5,
+            "rest": 0.6
+          },
+          "wednesday": {
+            "std": 0.5,
+            "rest": 0.6
+          },
+          "thursday": {
+            "std": 0.5,
+            "rest": 0.6
+          },
+          "friday": {
+            "std": 0.5,
+            "rest": 0.6
+          },
+          "saturday": {
+            "std": 0.5,
+            "rest": 0.6
+          },
+          "sunday": {
+            "std": 0.5,
+            "rest": 0.6
+          },
+          "weeklyTotal": {
+            "std": 3.5,
+            "rest": 3.5
+          }
+        },
+        {
+          "taskName": "Closing",
+          "fixed": true,
+          "flexible": false,
+          "monday": {
+            "std": 4,
+            "rest": 4
+          },
+          "tuesday": {
+            "std": 4,
+            "rest": 4
+          },
+          "wednesday": {
+            "std": 4,
+            "rest": 4
+          },
+          "thursday": {
+            "std": 4,
+            "rest": 4
+          },
+          "friday": {
+            "std": 4,
+            "rest": 4
+          },
+          "saturday": {
+            "std": 4,
+            "rest": 4
+          },
+          "sunday": {
+            "std": 4,
+            "rest": 4
+          },
+          "weeklyTotal": {
+            "std": 28,
+            "rest": 28
+          }
+        },
+        {
+          "taskName": "Daily Cleaning",
+          "fixed": false,
+          "flexible": true,
+          "monday": {
+            "std": 1.5,
+            "rest": 1.5
+          },
+          "tuesday": {
+            "std": 1.5,
+            "rest": 1.5
+          },
+          "wednesday": {
+            "std": 1.5,
+            "rest": 1.5
+          },
+          "thursday": {
+            "std": 1.5,
+            "rest": 1.5
+          },
+          "friday": {
+            "std": 1.5,
+            "rest": 1.5
+          },
+          "saturday": {
+            "std": 1.5,
+            "rest": 1.5
+          },
+          "sunday": {
+            "std": 1.5,
+            "rest": 1.5
+          },
+          "weeklyTotal": {
+            "std": 10.5,
+            "rest": 10.5
+          }
+        },
+        {
+          "taskName": "Weekly Cleaning",
+          "fixed": false,
+          "flexible": true,
+          "monday": {
+            "std": 1,
+            "rest": 1
+          },
+          "tuesday": {
+            "std": 0,
+            "rest": 0
+          },
+          "wednesday": {
+            "std": 0,
+            "rest": 0
+          },
+          "thursday": {
+            "std": 0,
+            "rest": 0
+          },
+          "friday": {
+            "std": 0,
+            "rest": 0
+          },
+          "saturday": {
+            "std": 1,
+            "rest": 1
+          },
+          "sunday": {
+            "std": 1,
+            "rest": 1
+          },
+          "weeklyTotal": {
+            "std": 3,
+            "rest": 3
+          }
+        },
+        {
+          "taskName": "Monthly Cleaning",
+          "fixed": false,
+          "flexible": true,
+          "monday": {
+            "std": 0,
+            "rest": 0
+          },
+          "tuesday": {
+            "std": 0,
+            "rest": 0
+          },
+          "wednesday": {
+            "std": 0,
+            "rest": 0
+          },
+          "thursday": {
+            "std": 0,
+            "rest": 0
+          },
+          "friday": {
+            "std": 0,
+            "rest": 0
+          },
+          "saturday": {
+            "std": 0,
+            "rest": 0
+          },
+          "sunday": {
+            "std": 0,
+            "rest": 0
+          },
+          "weeklyTotal": {
+            "std": 0,
+            "rest": 0
+          }
+        },
+        {
+          "taskName": "Inventory/Supply",
+          "fixed": false,
+          "flexible": true,
+          "monday": {
+            "std": 2,
+            "rest": 2
+          },
+          "tuesday": {
+            "std": 2,
+            "rest": 2
+          },
+          "wednesday": {
+            "std": 2,
+            "rest": 2
+          },
+          "thursday": {
+            "std": 2,
+            "rest": 2
+          },
+          "friday": {
+            "std": 2,
+            "rest": 2
+          },
+          "saturday": {
+            "std": 2,
+            "rest": 2
+          },
+          "sunday": {
+            "std": 2,
+            "rest": 2
+          },
+          "weeklyTotal": {
+            "std": 14,
+            "rest": 14
+          }
+        },
+        {
+          "taskName": "Product Preprocess",
+          "fixed": false,
+          "flexible": true,
+          "monday": {
+            "std": 2,
+            "rest": 2
+          },
+          "tuesday": {
+            "std": 2,
+            "rest": 2
+          },
+          "wednesday": {
+            "std": 2,
+            "rest": 2
+          },
+          "thursday": {
+            "std": 2,
+            "rest": 2
+          },
+          "friday": {
+            "std": 2,
+            "rest": 2
+          },
+          "saturday": {
+            "std": 2,
+            "rest": 2
+          },
+          "sunday": {
+            "std": 2,
+            "rest": 2
+          },
+          "weeklyTotal": {
+            "std": 14,
+            "rest": 14
+          }
+        }
+      ]
+    },
+    "templateBenefits": [
+      "Provides a standard guideline that can be adjusted by store managers to systematize their experience",
+      "Each store can configure its own weekly fixed hours template independently",
+      "Pre-configure fixed hours templates to improve scheduling efficiency",
+      "1 represents one hour",
+      "Std => Standard, Rest => Based on Restaurants config number"
+    ],
+    "example": {
+      "timeScheduleDetails": [
+        {
+          "task": "Cash Management",
+          "timePeriod": "6:00-6:30"
+        },
+        {
+          "task": "Closing",
+          "timePeriod": "21:00 - 23:30"
+        },
+        {
+          "task": "Lobby",
+          "timePeriod": "07:00 - 22:00"
+        },
+        {
+          "task": "Daily Cleaning",
+          "timePeriod": "21:00 - 23:30"
+        },
+        {
+          "task": "Inventory/Supply",
+          "timePeriod": "09:00 - 11:00"
+        },
+        {
+          "task": "Product Preprocessing",
+          "timePeriod": "14:00 - 15:00"
+        }
+      ]
+    }
+  }

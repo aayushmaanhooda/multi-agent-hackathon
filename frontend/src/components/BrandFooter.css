@@ -1,0 +1,117 @@
+.brand-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: absolute;
+    /* Scroll with content (don't stick) */
+    top: 2rem;
+    left: 2rem;
+    z-index: 300;
+    /* Ensure it's above hero content */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.brand-logo-container:hover {
+    opacity: 0.8;
+}
+
+.brand-logo-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    /* border: 2px solid rgba(255, 255, 255, 0.1); Optional ring */
+    background: rgba(255, 255, 255, 0.05);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(64, 121, 255, 0.2);
+}
+
+.agent-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #4ade80;
+    /* Green Agent */
+    border-radius: 50%;
+    box-shadow: 0 0 5px #4ade80;
+}
+
+/* Position dots in a hexagon/circle using transforms */
+.agent-dot:nth-child(1) {
+    transform: rotate(0deg) translate(14px) rotate(0deg);
+}
+
+.agent-dot:nth-child(2) {
+    transform: rotate(60deg) translate(14px) rotate(-60deg);
+    background-color: #3b82f6;
+    box-shadow: 0 0 5px #3b82f6;
+}
+
+/* Blue Agent */
+.agent-dot:nth-child(3) {
+    transform: rotate(120deg) translate(14px) rotate(-120deg);
+}
+
+.agent-dot:nth-child(4) {
+    transform: rotate(180deg) translate(14px) rotate(-180deg);
+    background-color: #bd00ff;
+    box-shadow: 0 0 5px #bd00ff;
+}
+
+/* Purple Agent */
+.agent-dot:nth-child(5) {
+    transform: rotate(240deg) translate(14px) rotate(-240deg);
+}
+
+.agent-dot:nth-child(6) {
+    transform: rotate(300deg) translate(14px) rotate(-300deg);
+    background-color: #00e5ff;
+    box-shadow: 0 0 5px #00e5ff;
+}
+
+/* Cyan Agent */
+
+.brand-logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.brand-text-highlight {
+    background: linear-gradient(to right, #4ade80, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer - Normal Flow */
+.footer-container {
+    position: relative;
+    /* Normal flow, not absolute/fixed */
+    /* Removed bottom, left */
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    z-index: 10;
+    opacity: 0.5;
+    margin-top: auto;
+    /* Push to bottom if flex container */
+    pointer-events: auto;
+    /* Allow interactions if needed */
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+}
+
+.footer-highlight {
+    color: #fff;
+    font-weight: 600;
+}

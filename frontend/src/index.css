@@ -1,0 +1,66 @@
+:root {
+  /* Colors */
+  --color-black: #050505;
+  --color-dark-gray: #0a0a0a;
+  --color-neon-green: #40ffaa;
+  --color-neon-blue: #4079ff;
+  --color-neon-purple: #bd00ff;
+  --color-text-main: rgba(255, 255, 255, 0.9);
+  --color-text-muted: rgba(255, 255, 255, 0.5);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: 16px;
+
+  /* Typography */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-text-main);
+  background-color: var(--color-black);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-black);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilities */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-neon-green), var(--color-neon-blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

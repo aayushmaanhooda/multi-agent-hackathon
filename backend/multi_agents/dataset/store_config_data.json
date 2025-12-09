@@ -1,0 +1,83 @@
+{
+    "title": "McDonald's Store Configuration Examples - Different Locations",
+    "stores": [
+      {
+        "storeId": 1,
+        "storeName": "Store 1: CBD Core Area",
+        "storeStructure": {
+          "storeStructure": true,
+          "kitchen": true,
+          "counter": true,
+          "multipleMcCafe": true,
+          "dessertStation": true,
+          "offlineDessertStation": false
+        },
+        "storeAttributes": {
+          "revenueLevel": "High",
+          "storeType": "Non-24H"
+        },
+        "operatingHours": {
+          "openingTime": "06:30",
+          "closingTime": "23:00",
+          "dailyOperatingHours": 16.5
+        },
+        "storeCharacteristics": {
+          "locationType": "CBD Business District",
+          "primaryCustomers": [
+            "Office workers",
+            "Business professionals"
+          ],
+          "peakHours": [
+            "7-9 AM",
+            "12-2 PM"
+          ],
+          "coffeeDemand": "Very High",
+          "dessertDemand": {
+            "level": "High",
+            "note": "Dedicated station"
+          },
+          "trafficPattern": "Weekday peaks",
+          "averageDailyCustomers": "1200-1800 people"
+        }
+      },
+      {
+        "storeId": 2,
+        "storeName": "Store 2: Suburban Residential",
+        "storeStructure": {
+          "storeStructure": true,
+          "kitchen": true,
+          "counter": true,
+          "multipleMcCafe": true,
+          "dessertStation": false,
+          "offlineDessertStation": false
+        },
+        "storeAttributes": {
+          "revenueLevel": "Medium",
+          "storeType": "Non-24H"
+        },
+        "operatingHours": {
+          "openingTime": "07:00",
+          "closingTime": "22:00",
+          "dailyOperatingHours": 15
+        },
+        "storeCharacteristics": {
+          "locationType": "Residential Suburb",
+          "primaryCustomers": [
+            "Local residents",
+            "Families"
+          ],
+          "peakHours": [
+            "Dinner time",
+            "Weekends"
+          ],
+          "coffeeDemand": "Medium",
+          "dessertDemand": {
+            "level": "Low",
+            "note": "No dedicated station"
+          },
+          "trafficPattern": "Evening & weekend peaks",
+          "averageDailyCustomers": "600-900 people"
+        }
+      }
+    ]
+  }

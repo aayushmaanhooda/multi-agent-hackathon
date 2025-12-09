@@ -1,0 +1,176 @@
+.auth-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Ensure vertical stacking */
+    align-items: center;
+    /* justify-content: center; REMOVED to allow margin:auto to work */
+    justify-content: flex-start;
+    background-color: var(--color-black);
+    padding-top: 2rem;
+    /* Restore top spacing */
+    /* Footer must not break center alignment */
+    /* If footer is in flow, margin-top: auto handles it if height is full */
+    min-height: 100vh;
+}
+
+/* Ensure Footer on Auth Page flows naturally */
+.auth-page .footer-container {
+    position: relative;
+    /* Normal flow */
+    bottom: auto;
+    left: auto;
+    margin-top: 0;
+    /* Let card margin handle spacing, or auto */
+    padding: 2rem 0;
+    /* Spacing from bottom */
+    width: 100%;
+    z-index: 5;
+    pointer-events: auto;
+    flex-shrink: 0;
+    /* Don't squash footer */
+}
+
+.auth-orb-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.auth-card {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 450px;
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    margin: auto;
+    /* Magic centering */
+    margin-bottom: 2rem;
+    /* Ensure space before footer even when collapsed */
+}
+
+.auth-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.auth-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.auth-title.register {
+    background: linear-gradient(to right, #00bfff, #0073ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.auth-title.login {
+    background: linear-gradient(to right, #00bfff, #0073ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    border-color: var(--color-neon-blue);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(64, 121, 255, 0.2);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-register {
+    background: linear-gradient(90deg, #00bfff, #006aff);
+    box-shadow: 0 0 20px rgba(0, 115, 255, 0.3);
+}
+
+.btn-submit-login {
+    background: linear-gradient(90deg, #00bfff, #006aff);
+    box-shadow: 0 0 20px rgba(0, 115, 255, 0.3);
+}
+
+.btn-submit:hover:not(:disabled) {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+.btn-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.auth-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.link-text {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.link-text:hover {
+    color: var(--color-neon-blue);
+}
+
+/* Theme Variances */
+.auth-card.register-theme {
+    border-color: rgba(0, 191, 255, 0.3);
+    box-shadow: 0 0 40px rgba(0, 191, 255, 0.2);
+}
+
+.auth-card.login-theme {
+    border-color: rgba(0, 191, 255, 0.3);
+    box-shadow: 0 0 40px rgba(0, 191, 255, 0.2);
+}

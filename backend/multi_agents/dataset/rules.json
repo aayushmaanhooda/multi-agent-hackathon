@@ -1,0 +1,80 @@
+{
+    "title": "Australian Fair Work Act Compliance Notes",
+    "keyComplianceRequirements": [
+      {
+        "number": 1,
+        "requirement": "Minimum Shift Length",
+        "details": "Fair Work Act requires minimum 3-hour shifts for casual employees in most hospitality awards"
+      },
+      {
+        "number": 2,
+        "requirement": "Rest Period Between Shifts",
+        "details": "Minimum 10 hours rest between shifts as per Fair Work regulations"
+      },
+      {
+        "number": 3,
+        "requirement": "Standard Working Hours",
+        "details": "Full-time: 38 hours per week; Part-time: Less than 38 hours with regular roster; Casual: Variable hours with 25% loading"
+      },
+      {
+        "number": 4,
+        "requirement": "Penalty Rates",
+        "details": "Saturday: 1.25-1.5x; Sunday: 1.5-2.0x; Public Holidays: 2.25-2.5x; Evening work (after 9 PM): Additional penalties may apply"
+      },
+      {
+        "number": 5,
+        "requirement": "Split Shifts",
+        "details": "Must not exceed 12 hours total span; Gap typically 2-3 hours maximum; Additional payment may be required"
+      },
+      {
+        "number": 6,
+        "requirement": "Meal Breaks",
+        "details": "30 minutes unpaid meal break for shifts over 5 hours; 10 minute paid rest break for shifts over 4 hours"
+      },
+      {
+        "number": 7,
+        "requirement": "Roster Changes",
+        "details": "Minimum notice required for roster changes; Employee consent needed for certain changes; Compensation for cancelled shifts may apply"
+      }
+    ],
+    "importantNotes": {
+      "awardReference": {
+        "label": "Award Reference",
+        "value": "These parameters align with the Restaurant Industry Award 2020"
+      },
+      "enterpriseAgreements": {
+        "label": "Enterprise Agreements",
+        "value": "Specific enterprise agreements may have different conditions"
+      },
+      "verification": {
+        "label": "Verification",
+        "value": "Always verify current award rates and conditions"
+      },
+      "classification": {
+        "label": "Classification",
+        "value": "Penalty rates vary by classification and experience level"
+      },
+      "melbourneSpecific": {
+        "label": "Melbourne Specific",
+        "value": "Public holidays in Victoria include Melbourne Cup Day (Melbourne metro only)"
+      }
+    },
+    "locationContext": {
+      "geographicArea": {
+        "label": "Geographic Area",
+        "value": "Configuration suitable for Melbourne, Victoria restaurants"
+      },
+      "tradingHours": {
+        "label": "Trading Hours",
+        "value": "Consider local trading hours regulations"
+      },
+      "lateNight": {
+        "label": "Late Night",
+        "value": "Some areas have late-night trading restrictions"
+      },
+      "sundayTrading": {
+        "label": "Sunday Trading",
+        "value": "Sunday trading may have specific requirements"
+      }
+    }
+  }

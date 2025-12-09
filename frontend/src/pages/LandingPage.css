@@ -1,0 +1,147 @@
+.landing-page-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Strict height */
+    background-color: var(--color-black);
+    color: var(--color-text-main);
+    overflow-y: scroll;
+    /* Primary Scroll Container */
+    scroll-behavior: smooth;
+}
+
+.landing-section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 80px;
+    /* Offset for sticky nav */
+}
+
+.hero-section {
+    padding-top: 80px;
+}
+
+.orb-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.landing-nav-wrapper {
+    position: fixed;
+    /* Sticky Nav */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    /* Higher than content */
+    padding-top: 2rem;
+    /* Force Top Spacing */
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    /* Allow clicks to pass through around the nav pill */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    pointer-events: none;
+    /* Let clicks pass through to background if needed, but inner content restores pointer-events */
+}
+
+.hero-inner {
+    pointer-events: auto;
+    max-width: 800px;
+}
+
+.branch-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    opacity: 1;
+    /* Fully visible */
+    color: #fff;
+    /* White text for contrast */
+    text-shadow: 0 0 10px rgba(64, 121, 255, 0.4);
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.btn-primary {
+    padding: 1rem 2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(64, 121, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 0 30px rgba(64, 121, 255, 0.5);
+    border-color: var(--color-neon-blue);
+}
+
+.btn-secondary {
+    padding: 1rem 2.5rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #fff;
+    transform: translateY(-2px);
+}

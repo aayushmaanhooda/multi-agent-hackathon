@@ -1,0 +1,68 @@
+{
+    "title": "Management Shift Codes Guide",
+    "shifts": [
+      {
+        "code": "S",
+        "name": "Day Shift",
+        "time": "06:30 - 15:00",
+        "hours": 8.5,
+        "description": "Opening and morning supervision"
+      },
+      {
+        "code": "1F",
+        "name": "First Half",
+        "time": "06:30 - 15:30",
+        "hours": 9,
+        "description": "Morning opening through lunch"
+      },
+      {
+        "code": "2F",
+        "name": "Second Half",
+        "time": "14:00 - 23:00",
+        "hours": 9,
+        "description": "Afternoon through closing"
+      },
+      {
+        "code": "3F",
+        "name": "Full Day",
+        "time": "08:00 - 20:00",
+        "hours": 12,
+        "description": "Extended all-day coverage"
+      },
+      {
+        "code": "SC",
+        "name": "Shift Change",
+        "time": "11:00 - 20:00",
+        "hours": 9,
+        "description": "Peak overlap period"
+      },
+      {
+        "code": "M",
+        "name": "Meeting",
+        "time": "Varies",
+        "hours": 8,
+        "description": "Management meetings/training"
+      },
+      {
+        "code": "/",
+        "name": "Day Off",
+        "time": "-",
+        "hours": 0,
+        "description": "Rest day"
+      },
+      {
+        "code": "NA",
+        "name": "Not Available",
+        "time": "-",
+        "hours": 0,
+        "description": "Leave or vacation"
+      }
+    ],
+    "keyPoints": [
+      "At least 1 manager must be on duty at all times",
+      "Opening and closing require manager presence",
+      "Peak hours should have 2 managers when possible",
+      "Minimum 10 hours rest between shifts",
+      "Full-time managers: 38-45 hours per week"
+    ]
+  }

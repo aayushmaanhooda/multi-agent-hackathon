@@ -1,0 +1,6 @@
+.multi-agent-env
+.multi-agent-env/
+.env
+backend/roster.db
+backend/multi-agent/rag/.env
+backend/multi-agent/.env
