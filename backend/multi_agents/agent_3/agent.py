@@ -435,6 +435,11 @@ def _generate_roster_from_state(
                     message = violation.get("message", "")
                     shift_time = shift_code if shift_code else "TBD"
                     rest_period_violations[emp_name_norm].append((date, shift_time))
+                    # Also add to problematic assignments to ensure we skip it in later iterations
+                    if emp_name and date and shift_code:
+                        problematic_assignments.add(
+                            (emp_name_norm, date, shift_code.upper())
+                        )
                     print(
                         f"    Rest period issue: {emp_name} on {date} at {shift_time}"
                     )
@@ -542,27 +547,52 @@ def _generate_roster_from_state(
                 continue  # Skip this assignment to avoid repeating the violation
 
             # Check if this exact assignment caused a violation
+            # PRIORITY: Try to fix it rather than skip (to maximize coverage)
             if (
                 emp_name_normalized,
                 date_str,
                 shift_code_normalized,
             ) in problematic_assignments:
-                # Try to use a different shift code or skip
+                # Try to use a different shift code from availability
                 preferred_shift = violation_shift_preferences.get(
                     (emp_name_normalized, date_str)
                 )
                 if preferred_shift and preferred_shift.upper() != shift_code_normalized:
-                    # Use the preferred shift code instead
-                    final_shift_code = preferred_shift
-                    print(
-                        f"    ✅ Changed {emp_name} on {date_str} from {original_shift_code} to {preferred_shift}"
-                    )
+                    # Check if preferred shift is in employee's availability
+                    if preferred_shift.upper() in [
+                        v.upper() for v in availability.values() if v
+                    ]:
+                        # Use the preferred shift code instead
+                        final_shift_code = preferred_shift
+                        print(
+                            f"    ✅ Changed {emp_name} on {date_str} from {original_shift_code} to {preferred_shift} (fixing violation)"
+                        )
+                    else:
+                        # Preferred shift not available - in later iterations, skip to fix violations
+                        if iteration >= 4:
+                            print(
+                                f"    ⚠️  Skipping {emp_name} on {date_str} (problematic assignment, preferred shift not available)"
+                            )
+                            continue
+                        else:
+                            # In early iterations, try original
+                            final_shift_code = original_shift_code
+                            print(
+                                f"    ⚠️  Keeping {emp_name} on {date_str} with {original_shift_code} (preferred {preferred_shift} not available, will validate)"
+                            )
                 else:
-                    # Skip this problematic assignment entirely
-                    print(
-                        f"    ⚠️  Skipping {emp_name} on {date_str} (problematic: {original_shift_code})"
-                    )
-                    continue
+                    # No preferred shift - in later iterations, skip to fix violations
+                    if iteration >= 4:
+                        print(
+                            f"    ⚠️  Skipping {emp_name} on {date_str} (problematic assignment, no fix available)"
+                        )
+                        continue
+                    else:
+                        # In early iterations, try original
+                        final_shift_code = original_shift_code
+                        print(
+                            f"    ⚠️  Keeping {emp_name} on {date_str} with {original_shift_code} (was problematic, but trying again)"
+                        )
             else:
                 # CRITICAL: Use the exact shift code from availability (what employee requested)
                 # Only change if we have a violation preference that says otherwise
@@ -609,11 +639,11 @@ def _generate_roster_from_state(
             shift_time = shift_info.get("time", "TBD")
             hours = shift_info.get("hours", 0)
 
-            # Check rest period violations - be smart about it
-            # Only skip the exact problematic date, not adjacent dates
-            # For adjacent dates, we'll check dynamically against previous shifts in current roster
-            if emp_name_normalized in rest_period_violations:
-                # Check if this is the exact problematic date - skip it
+            # Check rest period violations from previous iterations
+            # PRIORITY: In later iterations, skip problematic dates to aggressively fix violations
+            # This helps reduce violations significantly
+            if emp_name_normalized in rest_period_violations and iteration >= 3:
+                # Skip dates that had rest period violations to fix them
                 is_problematic_date = False
                 for problem_date, problem_time in rest_period_violations[
                     emp_name_normalized
@@ -623,6 +653,7 @@ def _generate_roster_from_state(
                             problem_date, "%Y-%m-%d"
                         ).date()
                         if current_date == problem_date_obj:
+                            # Skip this date in later iterations to fix violations
                             is_problematic_date = True
                             break
                     except:
@@ -630,12 +661,35 @@ def _generate_roster_from_state(
 
                 if is_problematic_date:
                     print(
-                        f"    ⚠️  Skipping {emp_name} on {date_str} (problematic date from previous violation)"
+                        f"    ⚠️  Skipping {emp_name} on {date_str} (rest period violation from previous iteration - fixing)"
+                    )
+                    continue
+                # In later iterations (3+): Skip dates that had rest period violations to fix them
+                # This helps reduce violations while maintaining coverage from earlier iterations
+                is_problematic_date = False
+                for problem_date, problem_time in rest_period_violations[
+                    emp_name_normalized
+                ]:
+                    try:
+                        problem_date_obj = datetime.strptime(
+                            problem_date, "%Y-%m-%d"
+                        ).date()
+                        if current_date == problem_date_obj:
+                            # Skip this date in later iterations to fix violations
+                            is_problematic_date = True
+                            break
+                    except:
+                        pass
+
+                if is_problematic_date:
+                    print(
+                        f"    ⚠️  Skipping {emp_name} on {date_str} (rest period violation from previous iteration - fixing)"
                     )
                     continue
 
             # Check rest period against previous shifts in current roster (dynamic check)
-            # This ensures we don't violate rest periods even if we're filling availability slots
+            # PRIORITY: Only skip if we can definitively calculate that rest period < 10 hours
+            # If we can't parse times, assign anyway and let Agent 4 validate (maximize coverage)
             if emp_name_normalized in employee_previous_shifts and shift_time != "TBD":
                 min_rest_hours = (
                     float(
@@ -681,35 +735,83 @@ def _generate_roster_from_state(
                                         if ":" in str(time_str):
                                             parts = str(time_str).split(":")
                                             return int(parts[0]) * 60 + int(parts[1])
-                                        return 0
+                                        return None  # Return None if can't parse
                                     except:
-                                        return 0
+                                        return None
 
                                 prev_end_minutes = parse_time(prev_end_time)
                                 current_start_minutes = parse_time(current_start_time)
 
-                                # Calculate hours between shifts
-                                # Previous shift ended at prev_end_time on prev_date
-                                # Current shift starts at current_start_time on current_date (next day)
-                                # Rest period = 24 hours - (prev_end_time) + current_start_time
-                                rest_hours = (
-                                    (24 * 60 - prev_end_minutes) + current_start_minutes
-                                ) / 60.0
+                                # Only skip if we can definitively calculate rest period AND it's critically low
+                                # PRIORITY: Maximize coverage - only skip if rest period is < 8 hours (critical)
+                                # Otherwise assign and let Agent 4 catch it (we'll fix in next iteration)
+                                if (
+                                    prev_end_minutes is not None
+                                    and current_start_minutes is not None
+                                ):
+                                    # Calculate hours between shifts
+                                    # Previous shift ended at prev_end_time on prev_date
+                                    # Current shift starts at current_start_time on current_date (next day)
+                                    # Rest period = 24 hours - (prev_end_time) + current_start_time
+                                    rest_hours = (
+                                        (24 * 60 - prev_end_minutes)
+                                        + current_start_minutes
+                                    ) / 60.0
 
-                                if rest_hours < min_rest_hours:
-                                    # Would violate rest period
-                                    rest_period_violated = True
-                                    break
+                                    # PRIORITY: Reduce violations as much as possible
+                                    # Strategy: Gradually increase strictness across 7 iterations
+                                    # Target: ~90-95% coverage with minimum violations
+                                    if iteration == 0:
+                                        # First iteration: Skip only if rest period is very critical (< 7 hours)
+                                        # This allows high coverage while preventing severe violations
+                                        critical_threshold = (
+                                            7.0  # Skip if < 7 hours (very critical)
+                                        )
+                                        if rest_hours < critical_threshold:
+                                            rest_period_violated = True
+                                            break
+                                    elif iteration == 1:
+                                        # Second iteration: Start fixing (< 8 hours)
+                                        critical_threshold = 8.0  # Skip if < 8 hours
+                                        if rest_hours < critical_threshold:
+                                            rest_period_violated = True
+                                            break
+                                    elif iteration == 2:
+                                        # Third iteration: Continue fixing (< 8.5 hours)
+                                        critical_threshold = 8.5  # Skip if < 8.5 hours
+                                        if rest_hours < critical_threshold:
+                                            rest_period_violated = True
+                                            break
+                                    elif iteration == 3:
+                                        # Fourth iteration: Be stricter (< 9 hours)
+                                        critical_threshold = 9.0  # Skip if < 9 hours
+                                        if rest_hours < critical_threshold:
+                                            rest_period_violated = True
+                                            break
+                                    elif iteration == 4:
+                                        # Fifth iteration: Very strict (< 9.5 hours)
+                                        critical_threshold = 9.5  # Skip if < 9.5 hours
+                                        if rest_hours < critical_threshold:
+                                            rest_period_violated = True
+                                            break
+                                    else:
+                                        # Later iterations (5+): Maximum strictness (< 10 hours = full requirement)
+                                        # This aggressively fixes violations
+                                        critical_threshold = 10.0  # Skip if < 10 hours (full requirement)
+                                        if rest_hours < critical_threshold:
+                                            # Would violate rest period - skip to fix violations
+                                            rest_period_violated = True
+                                            break
+                                # If we can't parse times, don't skip - assign and let Agent 4 validate
                             except Exception as e:
-                                # If we can't parse times, be conservative and skip
-                                rest_period_violated = True
-                                break
+                                # If we can't parse times, don't skip - assign anyway (prioritize coverage)
+                                pass
                     except:
                         pass
 
                 if rest_period_violated:
                     print(
-                        f"    ⚠️  Skipping {emp_name} on {date_str} (would violate rest period with previous shift)"
+                        f"    ⚠️  Skipping {emp_name} on {date_str} (rest period: {rest_hours:.1f}h < {min_rest_hours}h required)"
                     )
                     continue
 

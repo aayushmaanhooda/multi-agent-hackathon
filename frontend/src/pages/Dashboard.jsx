@@ -8,54 +8,55 @@ import BrandLogo from "../components/BrandLogo";
 import "./Dashboard.css";
 
 export default function Dashboard() {
-    const location = useLocation();
-    const navigate = useNavigate();
-    const [user, setUser] = useState(location.state?.user || null);
-    const [loading, setLoading] = useState(!user);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [user, setUser] = useState(location.state?.user || null);
+  const [loading, setLoading] = useState(!user);
 
-    useEffect(() => {
-        if (!user) {
-            checkSession();
-        }
-    }, []);
+  useEffect(() => {
+    if (!user) {
+      checkSession();
+    }
+  }, []);
 
-    const checkSession = async () => {
-        try {
-            const userData = await api.getMe();
-            setUser(userData);
-        } catch (err) {
-            console.error("Session check failed", err);
+  const checkSession = async () => {
+    try {
+      const userData = await api.getMe();
+      setUser(userData);
+    } catch (err) {
+      console.error("Session check failed", err);
       // Redirect to login if not authenticated
       navigate("/login");
-        } finally {
-            setLoading(false);
-        }
-    };
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    const handleLogout = async () => {
-        try {
-            await api.logout();
+  const handleLogout = async () => {
+    try {
+      await api.logout();
       navigate("/login");
-        } catch (err) {
-            console.error("Logout failed", err);
-        }
-    };
+    } catch (err) {
+      console.error("Logout failed", err);
+    }
+  };
 
-    const navItems = [
-        { label: "Dashboard", href: "/dashboard" },
+  const navItems = [
+    { label: "Dashboard", href: "/dashboard" },
+    { label: "ROSTER", href: "/roster" },
     user?.role === "admin"
-            ? { label: "Set Roster", href: "/set-roster" }
-            : { label: "Rosters", href: "#" },
+      ? { label: "Set Roster", href: "/set-roster" }
+      : null,
     { label: "Subscription", href: "/subscription" },
-    ];
+  ].filter(Boolean);
 
   return (
     <div className="dashboard-page">
-       <div className="dashboard-nav-wrapper">
+      <div className="dashboard-nav-wrapper">
         <div className="roster-ai-logo">
           <BrandLogo />
         </div>
-         <GooeyNav items={navItems} />
+        <GooeyNav items={navItems} />
         <button
           onClick={handleLogout}
           className="logout-btn"
@@ -72,17 +73,17 @@ export default function Dashboard() {
             zIndex: 1000,
           }}
         >
-            Logout
-         </button>
-       </div>
+          Logout
+        </button>
+      </div>
 
       <div className="dashboard-content">
         <div className="dashboard-title-container">
-            <h1 className="dashboard-title">
-                <GradientText colors={["#fff", "#aaa", "#fff"]}>
-                    {user ? `Welcome, ${user.name}` : "Command Center"}
-                </GradientText>
-            </h1>
+          <h1 className="dashboard-title">
+            <GradientText colors={["#fff", "#aaa", "#fff"]}>
+              {user ? `Welcome, ${user.name}` : "Command Center"}
+            </GradientText>
+          </h1>
           {user && (
             <p
               style={{
@@ -98,11 +99,11 @@ export default function Dashboard() {
 
         {/* Admin Chatbot Interface - Full Screen */}
         {user && user.role === "admin" && <AdminChat />}
-        
+
         {/* Placeholder Content */}
         {!user && !loading && (
           <div style={{ textAlign: "center", color: "#666" }}>
-                <p>Please login to view dashboard data.</p>
+            <p>Please login to view dashboard data.</p>
             <button
               onClick={() => navigate("/login")}
               style={{
@@ -113,7 +114,7 @@ export default function Dashboard() {
             >
               Go to Login
             </button>
-            </div>
+          </div>
         )}
       </div>
     </div>

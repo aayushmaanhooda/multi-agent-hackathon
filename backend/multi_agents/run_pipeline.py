@@ -97,8 +97,8 @@ def main():
         messages=state2.get("messages", []),
     )
 
-    # Run Agent 3-4 loop (max 5 iterations)
-    max_iterations = 5
+    # Run Agent 3-4 loop (max 7 iterations to reduce violations)
+    max_iterations = 7
     iteration = 0
     accumulated_violations = (
         []
@@ -173,6 +173,22 @@ def main():
         # If no violations, break the loop
         if violation_count == 0:
             print(f"  ✅ No violations found! Roster is compliant.")
+            break
+
+        # BALANCE: Stop early only if we have excellent coverage with very few violations
+        # Continue iterating to reduce violations as much as possible
+        shifts = (
+            roster_to_set.get("shifts", [])
+            if isinstance(roster_to_set, dict)
+            else getattr(roster_to_set, "shifts", [])
+        )
+        current_coverage = (len(shifts) / 345.0 * 100) if len(shifts) > 0 else 0
+        # Only stop early if we have very good coverage AND very few violations
+        if iteration >= 3 and current_coverage >= 90.0 and violation_count <= 10:
+            print(
+                f"  ✅ Excellent balance achieved: {current_coverage:.1f}% coverage with {violation_count} violations"
+            )
+            print(f"  ⚠️  Stopping early - excellent results achieved")
             break
 
         # If violations found and not last iteration, continue loop

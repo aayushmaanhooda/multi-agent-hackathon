@@ -1,8 +1,10 @@
 # Multi-Agent Roster Generation System
 
+> **📖 For comprehensive architecture documentation, see [ARCHITECTURE.md](./ARCHITECTURE.md)**
+
 ## Overview
 
-This system uses a multi-agent architecture to generate and validate work rosters. The system consists of **4 specialized agents** coordinated by an **Orchestrator** that manages the workflow and decision-making process.
+This system uses a multi-agent architecture to generate and validate work rosters. The system consists of **5 specialized agents** coordinated by an **Orchestrator** (optional) that manages the workflow and decision-making process. The main execution flow is handled by `run_pipeline.py` which runs agents sequentially.
 
 ## Architecture
 
@@ -11,7 +13,7 @@ This system uses a multi-agent architecture to generate and validate work roster
 │                    ORCHESTRATOR                              │
 │  (Decides which agent to call and when)                     │
 │  - Uses LangChain create_agent                              │
-│  - Has access to all 4 agents as tools                      │
+│  - Has access to all 5 agents as tools                      │
 │  - Manages the workflow sequence                            │
 └─────────────────────────────────────────────────────────────┘
                           │
@@ -31,6 +33,12 @@ This system uses a multi-agent architecture to generate and validate work roster
                                               │      │
                                               └──────┘
                                          (Loop until valid)
+                                              │
+                                              ▼
+                                         ┌─────────┐
+                                         │ Agent 5 │
+                                         │Final Chk│
+                                         └─────────┘
 ```
 
 ## Shared State
@@ -46,6 +54,8 @@ All agents share a single `MultiAgentState` object that contains:
 - **Roster**: Generated schedule (from Agent 3)
 - **Violations**: Validation results (from Agent 4)
 - **Iteration Count**: Number of generation-validation cycles
+- **Final Check Report**: Comprehensive report (from Agent 5)
+- **Final Check Complete**: Flag indicating final check status
 - **Messages**: Conversation history for agent coordination
 
 ## Agent Details
@@ -200,12 +210,55 @@ All agents share a single `MultiAgentState` object that contains:
 
 ---
 
+### Agent 5: Final Comprehensive Check and Report Generator
+
+**Purpose**: Performs final validation checks and generates comprehensive reports on roster quality.
+
+**Input**:
+- **State from Agents 1-4**:
+  - Final roster
+  - Employee data
+  - Store requirements
+  - Violations
+
+**Output**:
+- **State Updates**:
+  - `final_check_report`: Comprehensive report dictionary with:
+    - `roster_status`: approved, needs_review
+    - `total_availability_slots`: Total employee availability slots
+    - `filled_slots`: Number of filled slots
+    - `unfilled_slots`: Number of unfilled slots
+    - `availability_coverage_percent`: Coverage percentage
+    - `staffing_checks`: List of staffing requirement checks
+    - `availability_checks`: List of availability slot checks
+    - `summary`: Overall summary
+    - `recommendations`: List of recommendations
+  - `final_check_complete`: Boolean flag
+
+**Checks Performed**:
+1. **Availability Coverage**: 
+   - Checks if all employee availability slots are filled
+   - Calculates coverage percentage
+   - Lists unfilled slots
+2. **Staffing Requirements**:
+   - Verifies staffing levels per store, per station, per day
+   - Checks if required staff counts are met (e.g., 6 needed in kitchen)
+   - Identifies understaffed stations
+
+**Output Files**:
+- `rag/final_roster_check_report.json`: Machine-readable report
+- `rag/final_roster_check_report.txt`: Human-readable report
+
+**Tool**: `final_roster_check`
+
+---
+
 ## Orchestrator
 
 **Purpose**: Coordinates all agents and decides which agent to call and when.
 
 **How It Works**:
-- Uses LangChain's `create_agent` with all 4 agents as tools
+- Uses LangChain's `create_agent` with all 5 agents as tools
 - Has a system prompt that defines the workflow sequence
 - Intelligently decides when to loop between Agent 3 and Agent 4
 - Uses `ToolRuntime` and `InjectedToolCallId` for proper state management
@@ -215,14 +268,16 @@ All agents share a single `MultiAgentState` object that contains:
 2. **Then**: Calls `analyze_constraints` (Agent 2)
 3. **Next**: Calls `generate_roster` (Agent 3)
 4. **Then**: Calls `validate_roster` (Agent 4)
-5. **If violations**: Loops back to `generate_roster` (up to 5 iterations)
-6. **When done**: Returns final validated roster
+5. **If violations**: Loops back to `generate_roster` (up to 7 iterations)
+6. **When done**: Calls `final_roster_check` (Agent 5)
+7. **Returns**: Final validated roster and comprehensive report
 
 **Key Features**:
 - Automatic looping between Agent 3 and Agent 4
-- Maximum 5 iterations to allow more attempts to fix violations
+- Maximum 7 iterations to allow more attempts to fix violations
 - State persistence across all agent calls
 - Tool-based coordination using LangChain v1 patterns
+- Final comprehensive check by Agent 5 after loop completes
 
 ---
 
@@ -276,7 +331,7 @@ All agents share a single `MultiAgentState` object that contains:
    │  └─ Store requirements
    ├─ Updates state: violations, iteration_count
    └─ Decision:
-      ├─ IF violations AND iteration_count < 5:
+      ├─ IF violations AND iteration_count < 7:
       │  └─ Returns Command(goto="agent_3") to regenerate
       └─ ELSE:
          └─ Returns Command(update=...) to complete
@@ -284,7 +339,15 @@ All agents share a single `MultiAgentState` object that contains:
 6. LOOP (if violations found)
    ├─ Agent 3 regenerates roster (with violation context)
    ├─ Agent 4 validates again
-   └─ Repeats until no violations OR max 5 iterations
+   └─ Repeats until no violations OR max 7 iterations
+
+7. AGENT 5: Final Comprehensive Check
+   ├─ Agent 5 receives final roster from state
+   ├─ Checks availability coverage (filled vs unfilled slots)
+   ├─ Verifies staffing requirements (per store, per station, per day)
+   ├─ Generates comprehensive report (JSON + text)
+   ├─ Updates state: final_check_report, final_check_complete
+   └─ Returns final report and status
 
 7. COMPLETION
    ├─ Final roster in state.roster
@@ -309,6 +372,10 @@ Agent 3 ──► [roster, roster_metadata]
     │
     ▼
 Agent 4 ──► [violations, iteration_count, validation_complete]
+   │
+   └─► (After loop completes)
+       │
+       └─► Agent 5 ──► [final_check_report, final_check_complete]
     │
     ├─► IF violations: ──► Agent 3 (loop)
     │
@@ -416,7 +483,7 @@ multi_agents/
 
 The loop between Agent 3 and Agent 4 is controlled by:
 - **Agent 4's validation results**: If violations are found
-- **Iteration count**: Maximum 5 iterations to allow more attempts to fix violations
+- **Iteration count**: Maximum 7 iterations to allow more attempts to fix violations
 - **Command routing**: Agent 4 returns `Command(goto="agent_3")` to trigger regeneration
 
 ### State Management

@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import SetRoster from "./pages/SetRoster";
 import SubscriptionPage from "./pages/SubscriptionPage";
+import RosterPage from "./pages/RosterPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/set-roster" element={<SetRoster />} />
+        <Route path="/roster" element={<RosterPage />} />
         <Route path="/subscription" element={<SubscriptionPage />} />
       </Routes>
     </Router>

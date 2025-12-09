@@ -2,7 +2,7 @@
 FINAL ROSTER CHECK REPORT
 ================================================================================
 
-Generated: 2025-12-09 11:16:17
+Generated: 2025-12-09 15:20:52
 
 ROSTER STATUS: NEEDS_REVIEW
 ❌ Roster has significant gaps that need attention.
@@ -80,70 +80,72 @@ UNFILLED AVAILABILITY SLOTS:
 STAFFING REQUIREMENTS CHECK
 --------------------------------------------------------------------------------
 Total Staffing Checks: 112
-Requirements Met: 61
-Understaffed: 51
+Requirements Met: 62
+Understaffed: 50
 
 
 Store 1: CBD Core Area - 2025-12-09:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
-  ✅ Counter: 7/4 (met)
+  ❌ Kitchen: 5/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 5 (Shortage: 1)
+  ✅ Counter: 6/4 (met)
   ✅ Multi-Station McCafe: 5/3 (met)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-10:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
   ❌ Counter: 3/4 (understaffed)
      ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ✅ Multi-Station McCafe: 6/3 (met)
   ✅ Dessert Station: 3/2 (met)
 
 Store 1: CBD Core Area - 2025-12-11:
-  ❌ Kitchen: 1/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 1 (Shortage: 5)
-  ✅ Counter: 7/4 (met)
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
+  ❌ Counter: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
   ❌ Multi-Station McCafe: 1/3 (understaffed)
      ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-12:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
-  ✅ Counter: 8/4 (met)
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
+  ✅ Counter: 7/4 (met)
   ✅ Multi-Station McCafe: 3/3 (met)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-13:
-  ❌ Kitchen: 3/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
-  ✅ Counter: 4/4 (met)
+  ✅ Kitchen: 6/6 (met)
+  ✅ Counter: 5/4 (met)
   ✅ Multi-Station McCafe: 5/3 (met)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-14:
-  ❌ Kitchen: 5/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 5 (Shortage: 1)
-  ✅ Counter: 5/4 (met)
+  ❌ Kitchen: 4/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
+  ❌ Counter: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
   ❌ Multi-Station McCafe: 2/3 (understaffed)
      ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-15:
   ✅ Kitchen: 6/6 (met)
-  ✅ Counter: 8/4 (met)
+  ✅ Counter: 4/4 (met)
   ✅ Multi-Station McCafe: 4/3 (met)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-16:
-  ✅ Kitchen: 6/6 (met)
-  ✅ Counter: 5/4 (met)
+  ❌ Kitchen: 4/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
+  ✅ Counter: 4/4 (met)
   ✅ Multi-Station McCafe: 4/3 (met)
   ✅ Dessert Station: 3/2 (met)
 
 Store 1: CBD Core Area - 2025-12-17:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
   ❌ Counter: 1/4 (understaffed)
      ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
   ✅ Multi-Station McCafe: 4/3 (met)
@@ -151,53 +153,55 @@ Store 1: CBD Core Area - 2025-12-17:
      ⚠️  Required: 2, Assigned: 1 (Shortage: 1)
 
 Store 1: CBD Core Area - 2025-12-18:
-  ❌ Kitchen: 2/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 2 (Shortage: 4)
-  ✅ Counter: 9/4 (met)
+  ❌ Kitchen: 1/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 1 (Shortage: 5)
+  ❌ Counter: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ✅ Multi-Station McCafe: 4/3 (met)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-19:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
-  ✅ Counter: 4/4 (met)
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
+  ❌ Counter: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
   ✅ Multi-Station McCafe: 3/3 (met)
   ❌ Dessert Station: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
 
 Store 1: CBD Core Area - 2025-12-20:
-  ❌ Kitchen: 3/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
-  ✅ Counter: 4/4 (met)
+  ❌ Kitchen: 5/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 5 (Shortage: 1)
+  ✅ Counter: 6/4 (met)
   ✅ Multi-Station McCafe: 4/3 (met)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-21:
-  ✅ Kitchen: 6/6 (met)
-  ❌ Counter: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
+  ❌ Kitchen: 4/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
+  ❌ Counter: 1/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
   ❌ Multi-Station McCafe: 1/3 (understaffed)
      ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
   ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-22:
-  ❌ Kitchen: 5/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 5 (Shortage: 1)
-  ✅ Counter: 6/4 (met)
+  ❌ Kitchen: 4/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
+  ✅ Counter: 4/4 (met)
   ✅ Multi-Station McCafe: 3/3 (met)
   ✅ Dessert Station: 3/2 (met)
 
 Store 2: Suburban Residential - 2025-12-09:
-  ✅ Kitchen: 5/4 (met)
-  ❌ Counter: 2/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
+  ✅ Kitchen: 4/4 (met)
+  ✅ Counter: 3/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-10:
-  ❌ Kitchen: 2/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ❌ Kitchen: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ❌ Counter: 2/3 (understaffed)
      ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
@@ -205,34 +209,34 @@ Store 2: Suburban Residential - 2025-12-10:
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-11:
-  ❌ Kitchen: 2/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
-  ❌ Counter: 2/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
+  ❌ Kitchen: 0/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 0 (Shortage: 4)
+  ✅ Counter: 7/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-12:
-  ❌ Kitchen: 1/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
+  ❌ Kitchen: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ✅ Counter: 3/3 (met)
+  ❌ Multi-Station McCafe: 0/2 (understaffed)
+     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
+  ✅ Dessert Station: 0/0 (met)
+
+Store 2: Suburban Residential - 2025-12-13:
+  ❌ Kitchen: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ❌ Counter: 2/3 (understaffed)
      ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
-Store 2: Suburban Residential - 2025-12-13:
-  ✅ Kitchen: 6/4 (met)
-  ✅ Counter: 3/3 (met)
-  ❌ Multi-Station McCafe: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-  ✅ Dessert Station: 0/0 (met)
-
 Store 2: Suburban Residential - 2025-12-14:
-  ❌ Kitchen: 1/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
-  ✅ Counter: 3/3 (met)
+  ❌ Kitchen: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ✅ Counter: 6/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
@@ -240,23 +244,21 @@ Store 2: Suburban Residential - 2025-12-14:
 Store 2: Suburban Residential - 2025-12-15:
   ❌ Kitchen: 3/4 (understaffed)
      ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ❌ Counter: 2/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
+  ✅ Counter: 6/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-16:
-  ❌ Kitchen: 1/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
-  ✅ Counter: 3/3 (met)
+  ❌ Kitchen: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
+  ✅ Counter: 4/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-17:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
+  ✅ Kitchen: 4/4 (met)
   ❌ Counter: 2/3 (understaffed)
      ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
@@ -264,41 +266,38 @@ Store 2: Suburban Residential - 2025-12-17:
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-18:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ❌ Counter: 2/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
+  ✅ Kitchen: 4/4 (met)
+  ✅ Counter: 8/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-19:
-  ✅ Kitchen: 4/4 (met)
-  ✅ Counter: 4/3 (met)
+  ✅ Kitchen: 5/4 (met)
+  ✅ Counter: 6/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-20:
-  ✅ Kitchen: 5/4 (met)
-  ✅ Counter: 7/3 (met)
+  ❌ Kitchen: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
+  ✅ Counter: 5/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-21:
-  ❌ Kitchen: 0/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 0 (Shortage: 4)
-  ❌ Counter: 1/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
+  ❌ Kitchen: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ✅ Counter: 3/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-22:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ✅ Counter: 4/3 (met)
+  ✅ Kitchen: 4/4 (met)
+  ✅ Counter: 6/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
@@ -307,7 +306,7 @@ Store 2: Suburban Residential - 2025-12-22:
 RECOMMENDATIONS
 --------------------------------------------------------------------------------
 1. Fill 59 unfilled availability slots to maximize employee utilization.
-2. Address 51 understaffed stations to meet operational requirements.
+2. Address 50 understaffed stations to meet operational requirements.
 
 ================================================================================
 END OF REPORT

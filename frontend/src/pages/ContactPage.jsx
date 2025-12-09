@@ -1,6 +1,7 @@
 import React from "react";
 import BrandLogo from "../components/BrandLogo";
 import Footer from "../components/Footer";
+import GooeyNav from "../components/GooeyNav";
 import { Mail, Phone, MapPin, Bot } from "lucide-react";
 import "./InfoPage.css";
 

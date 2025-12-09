@@ -7,79 +7,7 @@
   "staffing_checks": [
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 1 (Shortage: 5)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 7,
-      "status": "met",
-      "details": "Required: 4, Assigned: 7"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 1 (Shortage: 2)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 2,
-      "status": "met",
-      "details": "Required: 2, Assigned: 2"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-09",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 4,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-09",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 7,
-      "status": "met",
-      "details": "Required: 4, Assigned: 7"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-09",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 3, Assigned: 5"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-09",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 2,
-      "status": "met",
-      "details": "Required: 2, Assigned: 2"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
+      "date": "2025-12-20",
       "station": "Kitchen",
       "required": 6,
       "assigned": 5,
@@ -88,25 +16,25 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
+      "date": "2025-12-20",
       "station": "Counter",
       "required": 4,
-      "assigned": 5,
+      "assigned": 6,
       "status": "met",
-      "details": "Required: 4, Assigned: 5"
+      "details": "Required: 4, Assigned: 6"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
+      "date": "2025-12-20",
       "station": "Multi-Station McCafe",
       "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 3, Assigned: 4"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
+      "date": "2025-12-20",
       "station": "Dessert Station",
       "required": 2,
       "assigned": 2,
@@ -115,7 +43,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
+      "date": "2025-12-12",
       "station": "Kitchen",
       "required": 6,
       "assigned": 3,
@@ -124,156 +52,12 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 3, Assigned: 5"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 2,
-      "status": "met",
-      "details": "Required: 2, Assigned: 2"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 2,
-      "status": "met",
-      "details": "Required: 2, Assigned: 2"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 6,
-      "status": "met",
-      "details": "Required: 6, Assigned: 6"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 8,
-      "status": "met",
-      "details": "Required: 4, Assigned: 8"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 2,
-      "status": "met",
-      "details": "Required: 2, Assigned: 2"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 6,
-      "status": "met",
-      "details": "Required: 6, Assigned: 6"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 4, Assigned: 5"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 2, Assigned: 3"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-12",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 4,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
       "date": "2025-12-12",
       "station": "Counter",
       "required": 4,
-      "assigned": 8,
+      "assigned": 7,
       "status": "met",
-      "details": "Required: 4, Assigned: 8"
+      "details": "Required: 4, Assigned: 7"
     },
     {
       "store": "Store 1: CBD Core Area",
@@ -298,9 +82,9 @@
       "date": "2025-12-10",
       "station": "Kitchen",
       "required": 6,
-      "assigned": 4,
+      "assigned": 3,
       "status": "understaffed",
-      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
     },
     {
       "store": "Store 1: CBD Core Area",
@@ -331,25 +115,61 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-18",
+      "date": "2025-12-09",
       "station": "Kitchen",
       "required": 6,
-      "assigned": 2,
+      "assigned": 5,
       "status": "understaffed",
-      "details": "Required: 6, Assigned: 2 (Shortage: 4)"
+      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-18",
+      "date": "2025-12-09",
       "station": "Counter",
       "required": 4,
-      "assigned": 9,
+      "assigned": 6,
       "status": "met",
-      "details": "Required: 4, Assigned: 9"
+      "details": "Required: 4, Assigned: 6"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-18",
+      "date": "2025-12-09",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 3, Assigned: 5"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-09",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-15",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 6, Assigned: 6"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-15",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-15",
       "station": "Multi-Station McCafe",
       "required": 3,
       "assigned": 4,
@@ -358,7 +178,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-18",
+      "date": "2025-12-15",
       "station": "Dessert Station",
       "required": 2,
       "assigned": 2,
@@ -370,18 +190,18 @@
       "date": "2025-12-22",
       "station": "Kitchen",
       "required": 6,
-      "assigned": 5,
+      "assigned": 4,
       "status": "understaffed",
-      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
+      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
     },
     {
       "store": "Store 1: CBD Core Area",
       "date": "2025-12-22",
       "station": "Counter",
       "required": 4,
-      "assigned": 6,
+      "assigned": 4,
       "status": "met",
-      "details": "Required: 4, Assigned: 6"
+      "details": "Required: 4, Assigned: 4"
     },
     {
       "store": "Store 1: CBD Core Area",
@@ -403,7 +223,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-19",
+      "date": "2025-12-14",
       "station": "Kitchen",
       "required": 6,
       "assigned": 4,
@@ -412,12 +232,84 @@
     },
     {
       "store": "Store 1: CBD Core Area",
+      "date": "2025-12-14",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-14",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-14",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-13",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 6, Assigned: 6"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-13",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 4, Assigned: 5"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-13",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 3, Assigned: 5"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-13",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-19",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
       "date": "2025-12-19",
       "station": "Counter",
       "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
     },
     {
       "store": "Store 1: CBD Core Area",
@@ -439,25 +331,25 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-21",
+      "date": "2025-12-11",
       "station": "Kitchen",
       "required": 6,
-      "assigned": 6,
-      "status": "met",
-      "details": "Required: 6, Assigned: 6"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-21",
-      "station": "Counter",
-      "required": 4,
       "assigned": 3,
       "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-21",
+      "date": "2025-12-11",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-11",
       "station": "Multi-Station McCafe",
       "required": 3,
       "assigned": 1,
@@ -466,7 +358,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-21",
+      "date": "2025-12-11",
       "station": "Dessert Station",
       "required": 2,
       "assigned": 2,
@@ -478,9 +370,9 @@
       "date": "2025-12-17",
       "station": "Kitchen",
       "required": 6,
-      "assigned": 4,
+      "assigned": 3,
       "status": "understaffed",
-      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
     },
     {
       "store": "Store 1: CBD Core Area",
@@ -510,386 +402,134 @@
       "details": "Required: 2, Assigned: 1 (Shortage: 1)"
     },
     {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-09",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 4, Assigned: 5"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-09",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-09",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-09",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 3, Assigned: 3"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-13",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 6,
-      "status": "met",
-      "details": "Required: 4, Assigned: 6"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-13",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 3, Assigned: 3"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-13",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-13",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 4, Assigned: 5"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 7,
-      "status": "met",
-      "details": "Required: 3, Assigned: 7"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
+      "store": "Store 1: CBD Core Area",
       "date": "2025-12-16",
       "station": "Kitchen",
-      "required": 4,
-      "assigned": 1,
+      "required": 6,
+      "assigned": 4,
       "status": "understaffed",
-      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
+      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
     },
     {
-      "store": "Store 2: Suburban Residential",
+      "store": "Store 1: CBD Core Area",
       "date": "2025-12-16",
       "station": "Counter",
-      "required": 3,
-      "assigned": 3,
+      "required": 4,
+      "assigned": 4,
       "status": "met",
-      "details": "Required: 3, Assigned: 3"
+      "details": "Required: 4, Assigned: 4"
     },
     {
-      "store": "Store 2: Suburban Residential",
+      "store": "Store 1: CBD Core Area",
       "date": "2025-12-16",
       "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-16",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-12",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-12",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-12",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-12",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-18",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-18",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-18",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-18",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
-      "station": "Counter",
       "required": 3,
       "assigned": 4,
       "status": "met",
       "details": "Required: 3, Assigned: 4"
     },
     {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-16",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 2, Assigned: 3"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-21",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 4,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-21",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-21",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 1 (Shortage: 2)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-21",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-18",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 1 (Shortage: 5)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-18",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-18",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 3, Assigned: 4"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-18",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
+      "date": "2025-12-20",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-20",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 3, Assigned: 5"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-20",
       "station": "Multi-Station McCafe",
       "required": 2,
       "assigned": 0,
@@ -898,7 +538,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
+      "date": "2025-12-20",
       "station": "Dessert Station",
       "required": 0,
       "assigned": 0,
@@ -907,7 +547,79 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-19",
+      "date": "2025-12-12",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-12",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 3, Assigned: 3"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-12",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-12",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-10",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-10",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-10",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-10",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-09",
       "station": "Kitchen",
       "required": 4,
       "assigned": 4,
@@ -916,12 +628,192 @@
     },
     {
       "store": "Store 2: Suburban Residential",
+      "date": "2025-12-09",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 3, Assigned: 3"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-09",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-09",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-15",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-15",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 3, Assigned: 6"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-15",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-15",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 3, Assigned: 6"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-14",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-14",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 3, Assigned: 6"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-14",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-14",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-13",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-13",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-13",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-13",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-19",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 4, Assigned: 5"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
       "date": "2025-12-19",
       "station": "Counter",
       "required": 3,
-      "assigned": 4,
+      "assigned": 6,
       "status": "met",
-      "details": "Required: 3, Assigned: 4"
+      "details": "Required: 3, Assigned: 6"
     },
     {
       "store": "Store 2: Suburban Residential",
@@ -943,7 +835,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-21",
+      "date": "2025-12-11",
       "station": "Kitchen",
       "required": 4,
       "assigned": 0,
@@ -952,16 +844,16 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-21",
+      "date": "2025-12-11",
       "station": "Counter",
       "required": 3,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 1 (Shortage: 2)"
+      "assigned": 7,
+      "status": "met",
+      "details": "Required: 3, Assigned: 7"
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-21",
+      "date": "2025-12-11",
       "station": "Multi-Station McCafe",
       "required": 2,
       "assigned": 0,
@@ -970,7 +862,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-21",
+      "date": "2025-12-11",
       "station": "Dessert Station",
       "required": 0,
       "assigned": 0,
@@ -982,9 +874,9 @@
       "date": "2025-12-17",
       "station": "Kitchen",
       "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
     },
     {
       "store": "Store 2: Suburban Residential",
@@ -1007,6 +899,114 @@
     {
       "store": "Store 2: Suburban Residential",
       "date": "2025-12-17",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 3, Assigned: 4"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-21",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-21",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 3, Assigned: 3"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-21",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-21",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-18",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-18",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 8,
+      "status": "met",
+      "details": "Required: 3, Assigned: 8"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-18",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-18",
       "station": "Dessert Station",
       "required": 0,
       "assigned": 0,
@@ -4469,6 +4469,6 @@
   "summary": "\u274c Roster has significant gaps that need attention.",
   "recommendations": [
     "Fill 59 unfilled availability slots to maximize employee utilization.",
-    "Address 51 understaffed stations to meet operational requirements."
+    "Address 50 understaffed stations to meet operational requirements."
   ]
 }

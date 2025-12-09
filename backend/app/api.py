@@ -286,27 +286,340 @@ def upload_roster(
 
 @app.post("/generate-roster")
 def generate_roster(current_user: User = Depends(get_current_user)):
+    """
+    Generate roster using the complete multi-agent pipeline.
+    Returns roster file path, violations, and report information.
+    """
     if current_user.role != "admin":
         raise HTTPException(status_code=403, detail="Admin privileges required")
 
     try:
-        # Invoke Agent 1
-        result = run_agent1()
+        # Import the full pipeline components
+        import sys
 
-        # Check result status
-        if isinstance(result, dict) and result.get("status") == "error":
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        backend_root = os.path.dirname(current_dir)
+        multi_agents_path = os.path.join(backend_root, "multi_agents")
+        sys.path.insert(0, multi_agents_path)
+
+        from multi_agents.agent_1.agent import run_agent1
+        from multi_agents.agent_2.agent import run_agent2
+        from multi_agents.agent_3.agent import run_agent3
+        from multi_agents.agent_4.agent import run_agent4
+        from multi_agents.agent_5.agent import run_agent5
+        from multi_agents.shared_state import MultiAgentState
+
+        # Helper functions
+        def _update_state(state, key, value):
+            if isinstance(state, dict):
+                state[key] = value
+            else:
+                setattr(state, key, value)
+
+        def _get_state_value(state, key, default=None):
+            if isinstance(state, dict):
+                return state.get(key, default)
+            else:
+                return getattr(state, key, default)
+
+        # Run the complete pipeline
+        print("Starting roster generation pipeline...")
+
+        # Step 1: Agent 1
+        result1 = run_agent1()
+        state1 = result1.get("state_update", {})
+        employee_count = result1.get("employee_count", 0)
+
+        if employee_count == 0:
             raise HTTPException(
-                status_code=500,
-                detail=result.get("error_message", "Agent execution failed"),
+                status_code=400,
+                detail="No employees found. Please upload employee data first.",
             )
 
-        return result
+        # Step 2: Agent 2
+        result2 = run_agent2(state=state1)
+        state2 = result2.get("state_update", {})
+        constraints = result2.get("constraints", {})
+
+        # Step 3-4: Agent 3-4 Loop
+        multi_state = MultiAgentState(
+            employee_data=state2.get("employee_data", []),
+            store_requirements=state2.get("store_requirements", {}),
+            management_store=state2.get("management_store", {}),
+            structured_data=state2.get("structured_data", {}),
+            constraints=state2.get("constraints", {}),
+            rules_data=state2.get("rules_data", {}),
+            store_rules_data=state2.get("store_rules_data", {}),
+            roster={},
+            roster_metadata={},
+            violations=[],
+            iteration_count=0,
+            validation_complete=False,
+            final_check_report={},
+            final_check_complete=False,
+            messages=state2.get("messages", []),
+        )
+
+        max_iterations = 7
+        iteration = 0
+        accumulated_violations = []
+
+        while iteration < max_iterations:
+            iteration += 1
+            print(f"--- Iteration {iteration}/{max_iterations} ---")
+
+            # Generate roster
+            _update_state(multi_state, "violations", accumulated_violations)
+            result3 = run_agent3(state=multi_state, use_llm=False)
+            updated_state = result3.get("state", {})
+            roster_data = result3.get("roster", {})
+
+            roster_to_set = (
+                roster_data
+                if roster_data
+                else (
+                    updated_state.get("roster", {})
+                    if isinstance(updated_state, dict)
+                    else getattr(updated_state, "roster", {})
+                )
+            )
+            _update_state(multi_state, "roster", roster_to_set)
+
+            # Validate roster
+            result4 = run_agent4(state=multi_state)
+            new_violations = result4.get("violations", [])
+            violation_count = result4.get("violation_count", 0)
+            critical_count = result4.get("critical_count", 0)
+
+            # Accumulate violations
+            violation_keys = set()
+            for v in accumulated_violations:
+                key = (
+                    str(v.get("employee", "")).lower().strip(),
+                    str(v.get("date", "")).strip(),
+                    str(v.get("type", "")).strip(),
+                    str(v.get("shift_code", "")).upper().strip(),
+                )
+                violation_keys.add(key)
+
+            for v in new_violations:
+                key = (
+                    str(v.get("employee", "")).lower().strip(),
+                    str(v.get("date", "")).strip(),
+                    str(v.get("type", "")).strip(),
+                    str(v.get("shift_code", "")).upper().strip(),
+                )
+                if key not in violation_keys:
+                    accumulated_violations.append(v)
+                    violation_keys.add(key)
+
+            _update_state(multi_state, "violations", new_violations)
+            _update_state(multi_state, "iteration_count", iteration)
+            _update_state(
+                multi_state, "validation_complete", result4.get("is_compliant", False)
+            )
+
+            # Early stopping check
+            if violation_count == 0:
+                break
+
+            shifts = (
+                roster_to_set.get("shifts", [])
+                if isinstance(roster_to_set, dict)
+                else getattr(roster_to_set, "shifts", [])
+            )
+            current_coverage = (len(shifts) / 345.0 * 100) if len(shifts) > 0 else 0
+            if iteration >= 3 and current_coverage >= 90.0 and violation_count <= 10:
+                break
+
+        # Step 5: Agent 5 - Final Check
+        result5 = run_agent5(state=multi_state)
+
+        # Get final results
+        roster = _get_state_value(multi_state, "roster", {})
+        final_violations = _get_state_value(multi_state, "violations", [])
+
+        excel_path = (
+            roster.get("excel_path")
+            if isinstance(roster, dict)
+            else getattr(roster, "excel_path", None)
+        )
+
+        report_path = result5.get("report_path", "")
+        report_json_path = report_path.replace(".txt", ".json") if report_path else ""
+
+        # Extract just the filename for download endpoints
+        excel_filename = os.path.basename(excel_path) if excel_path else None
+        report_filename = os.path.basename(report_path) if report_path else None
+        report_json_filename = (
+            os.path.basename(report_json_path) if report_json_path else None
+        )
+
+        # Return response with file paths and data
+        # Use result5 directly since run_agent5 returns the report data, not state
+        return {
+            "status": "success",
+            "message": f"Roster generated successfully after {iteration} iteration(s)",
+            "roster_file": excel_filename,
+            "report_file": report_filename,
+            "report_json_file": report_json_filename,
+            "violations": final_violations,
+            "violation_count": len(final_violations),
+            "critical_violations": sum(
+                1 for v in final_violations if v.get("severity") == "critical"
+            ),
+            "iterations": iteration,
+            "coverage_percent": result5.get("availability_coverage_percent", 0),
+            "filled_slots": result5.get("filled_slots", 0),
+            "total_slots": result5.get("total_slots", 0),
+            "roster_status": result5.get("roster_status", "unknown"),
+            "summary": result5.get("summary", ""),
+            "recommendations": result5.get("recommendations", []),
+        }
 
     except Exception as e:
-        print(f"Agent execution error: {e}")
+        print(f"Roster generation error: {e}")
+        import traceback
+
+        traceback.print_exc()
         raise HTTPException(
             status_code=500, detail=f"Failed to generate roster: {str(e)}"
         )
+
+
+@app.get("/download-roster/{filename}")
+def download_roster(filename: str, current_user: User = Depends(get_current_user)):
+    """
+    Download the generated roster Excel file.
+    """
+    if current_user.role != "admin":
+        raise HTTPException(status_code=403, detail="Admin privileges required")
+
+    try:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        backend_root = os.path.dirname(current_dir)
+        roster_path = os.path.join(backend_root, "multi_agents", "rag", filename)
+
+        if not os.path.exists(roster_path):
+            raise HTTPException(status_code=404, detail="Roster file not found")
+
+        from fastapi.responses import FileResponse
+
+        return FileResponse(
+            roster_path,
+            media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            filename=filename,
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500, detail=f"Failed to download file: {str(e)}"
+        )
+
+
+@app.get("/download-report/{filename}")
+def download_report(filename: str, current_user: User = Depends(get_current_user)):
+    """
+    Download the final check report file (text or JSON).
+    """
+    if current_user.role != "admin":
+        raise HTTPException(status_code=403, detail="Admin privileges required")
+
+    try:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        backend_root = os.path.dirname(current_dir)
+        report_path = os.path.join(backend_root, "multi_agents", "rag", filename)
+
+        if not os.path.exists(report_path):
+            raise HTTPException(status_code=404, detail="Report file not found")
+
+        from fastapi.responses import FileResponse
+
+        # Determine media type
+        if filename.endswith(".json"):
+            media_type = "application/json"
+        else:
+            media_type = "text/plain"
+
+        return FileResponse(
+            report_path,
+            media_type=media_type,
+            filename=filename,
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500, detail=f"Failed to download file: {str(e)}"
+        )
+
+
+@app.get("/get-roster")
+def get_roster(current_user: User = Depends(get_current_user)):
+    """
+    Get current roster information if it exists.
+    Returns roster data from the final check report if available.
+    """
+    try:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        backend_root = os.path.dirname(current_dir)
+        rag_dir = os.path.join(backend_root, "multi_agents", "rag")
+
+        roster_path = os.path.join(rag_dir, "roster.xlsx")
+        report_json_path = os.path.join(rag_dir, "final_roster_check_report.json")
+
+        # Check if roster exists
+        roster_exists = os.path.exists(roster_path)
+
+        if not roster_exists:
+            return {"exists": False, "message": "Roster not yet set"}
+
+        # Try to load report data if available
+        report_data = {}
+        if os.path.exists(report_json_path):
+            try:
+                with open(report_json_path, "r") as f:
+                    import json
+
+                    report_data = json.load(f)
+            except Exception as e:
+                print(f"Error reading report JSON: {e}")
+
+        # Get roster filename
+        roster_filename = os.path.basename(roster_path)
+        report_filename = (
+            os.path.basename(report_json_path)
+            if os.path.exists(report_json_path)
+            else None
+        )
+        report_txt_filename = (
+            "final_roster_check_report.txt"
+            if os.path.exists(os.path.join(rag_dir, "final_roster_check_report.txt"))
+            else None
+        )
+
+        return {
+            "exists": True,
+            "roster_file": roster_filename,
+            "report_file": report_txt_filename,
+            "report_json_file": report_filename,
+            "coverage_percent": report_data.get("availability_coverage_percent", 0),
+            "filled_slots": report_data.get("filled_slots", 0),
+            "total_slots": report_data.get("total_availability_slots", 0),
+            "roster_status": report_data.get("roster_status", "unknown"),
+            "summary": report_data.get("summary", ""),
+            "recommendations": report_data.get("recommendations", []),
+            "violation_count": len(report_data.get("availability_checks", []))
+            - report_data.get("filled_slots", 0),
+            "critical_violations": 0,  # Would need to calculate from violations
+        }
+    except Exception as e:
+        print(f"Error getting roster: {e}")
+        import traceback
+
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to get roster: {str(e)}")
 
 
 @app.post("/chat", response_model=ChatResponse)
