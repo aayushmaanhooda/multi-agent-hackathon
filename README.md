@@ -1,11 +1,10 @@
 # Multi-Agent Roster Generation System
 
+![Landing Page](img/landingpage.png)
+
 ## Project Overview
 
 A full-stack application that uses a sophisticated multi-agent AI system to generate optimized employee rosters for McDonald's stores. The system combines a modern React frontend, FastAPI backend, and LangChain/LangGraph-powered multi-agent orchestration to intelligently schedule employees while maximizing coverage (80-90%) and minimizing shortages.
-
-![Landing Page](img/landingpage.png)
-
 
 
 
