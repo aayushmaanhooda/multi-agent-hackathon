@@ -258,7 +258,7 @@ def upload_roster(
         "stores.csv",
         "stores.xlsx",
     ]
-    
+
     for filename in files_to_delete:
         file_path = os.path.join(dataset_path, filename)
         if os.path.exists(file_path):
@@ -280,7 +280,7 @@ def upload_roster(
         # Reset file pointer to beginning (in case it was read before)
         employee_file.file.seek(0)
         store_file.file.seek(0)
-        
+
         with open(emp_save_path, "wb") as buffer:
             shutil.copyfileobj(employee_file.file, buffer)
         print(f"✅ Successfully saved employee file to: {emp_save_path}")
@@ -288,7 +288,7 @@ def upload_roster(
         with open(store_save_path, "wb") as buffer:
             shutil.copyfileobj(store_file.file, buffer)
         print(f"✅ Successfully saved store file to: {store_save_path}")
-        
+
         # Verify files were saved
         if os.path.exists(emp_save_path):
             file_size = os.path.getsize(emp_save_path)
@@ -355,12 +355,14 @@ def generate_roster(current_user: User = Depends(get_current_user)):
             if os.path.exists(emp_path):
                 mtime = os.path.getmtime(emp_path)
                 employee_files.append((mtime, emp_path))
-        
+
         if employee_files:
             # Use most recent employee file
             employee_files.sort(reverse=True)
             employee_file = employee_files[0][1]
-            print(f"✅ Found employee file: {employee_file} (modified: {os.path.getmtime(employee_file)})")
+            print(
+                f"✅ Found employee file: {employee_file} (modified: {os.path.getmtime(employee_file)})"
+            )
         else:
             print(f"⚠️  No employee file found in {dataset_path}")
             # List all files for debugging
@@ -374,12 +376,14 @@ def generate_roster(current_user: User = Depends(get_current_user)):
             if os.path.exists(store_path):
                 mtime = os.path.getmtime(store_path)
                 store_files.append((mtime, store_path))
-        
+
         if store_files:
             # Use most recent store file
             store_files.sort(reverse=True)
             store_file = store_files[0][1]
-            print(f"✅ Found store file: {store_file} (modified: {os.path.getmtime(store_file)})")
+            print(
+                f"✅ Found store file: {store_file} (modified: {os.path.getmtime(store_file)})"
+            )
         else:
             print(f"⚠️  No store file found in {dataset_path}")
             # List all files for debugging
