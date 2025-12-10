@@ -33,7 +33,6 @@ export default function BrandLogo({ navigateTo = null }) {
         <div className="agent-dot"></div>
         <div className="agent-dot"></div>
         <div className="agent-dot"></div>
-        <div className="agent-dot"></div>
       </div>
       <span className="brand-logo-text">
         ROSTER <span className="brand-text-highlight">AI</span>

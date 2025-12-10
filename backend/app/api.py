@@ -250,31 +250,37 @@ def upload_roster(
     print(f"Saving files to: {dataset_path}")  # Debug log
     os.makedirs(dataset_path, exist_ok=True)  # Ensure dir exists
 
-    # Delete ALL existing employee and store files (any extension) to replace them
+    # Delete ALL existing .xlsx and .csv files to replace them
     # This ensures we always use the latest uploaded files
-    files_to_delete = [
-        "employee.xlsx",
-        "employee.csv",
-        "stores.csv",
-        "stores.xlsx",
-    ]
+    if os.path.exists(dataset_path):
+        for filename in os.listdir(dataset_path):
+            file_path = os.path.join(dataset_path, filename)
+            if os.path.isfile(file_path):
+                file_ext = os.path.splitext(filename)[1].lower()
+                # Delete all .xlsx and .csv files (except JSON config files)
+                if file_ext in [".xlsx", ".csv"]:
+                    try:
+                        os.remove(file_path)
+                        print(f"Deleted old file: {filename}")
+                    except Exception as e:
+                        print(f"Warning: Could not delete {filename}: {e}")
 
-    for filename in files_to_delete:
-        file_path = os.path.join(dataset_path, filename)
-        if os.path.exists(file_path):
-            try:
-                os.remove(file_path)
-                print(f"Deleted old file: {filename}")
-            except Exception as e:
-                print(f"Warning: Could not delete {filename}: {e}")
+    # Save files with their ORIGINAL names (not renamed)
+    # This preserves the user's file names
+    def sanitize_filename(filename: str) -> str:
+        """Remove path components and keep only safe characters"""
+        safe_name = os.path.basename(filename)
+        safe_name = "".join(c for c in safe_name if c.isalnum() or c in "._-")
+        return safe_name
 
-    # Save files with standard names: employee.xlsx/csv and stores.csv/xlsx
-    # This makes it easier to find and use them
-    emp_save_path = os.path.join(dataset_path, f"employee{emp_ext}")
-    store_save_path = os.path.join(dataset_path, f"stores{store_ext}")
+    emp_filename = sanitize_filename(employee_file.filename)
+    store_filename = sanitize_filename(store_file.filename)
 
-    print(f"Saving employee file as: employee{emp_ext} -> {emp_save_path}")
-    print(f"Saving store file as: stores{store_ext} -> {store_save_path}")
+    emp_save_path = os.path.join(dataset_path, emp_filename)
+    store_save_path = os.path.join(dataset_path, store_filename)
+
+    print(f"Saving employee file as: {emp_filename} -> {emp_save_path}")
+    print(f"Saving store file as: {store_filename} -> {store_save_path}")
 
     try:
         # Reset file pointer to beginning (in case it was read before)
@@ -337,8 +343,8 @@ def generate_roster(current_user: User = Depends(get_current_user)):
         # Construct paths to uploaded files (saved in main dataset folder)
         dataset_path = os.path.join(backend_root, "multi_agents", "dataset")
 
-        # Find files with standard names: employee.xlsx/csv and stores.csv/xlsx
-        # These are the files we just saved from the upload
+        # Find ANY .xlsx file as employee file and ANY .csv file as store file
+        # Use the most recently modified files
         employee_file = None
         store_file = None
 
@@ -348,44 +354,45 @@ def generate_roster(current_user: User = Depends(get_current_user)):
                 detail=f"Dataset folder not found: {dataset_path}. Please upload files first.",
             )
 
-        # Look for employee file (employee.xlsx or employee.csv) - use most recent
-        employee_files = []
-        for ext in [".xlsx", ".csv"]:
-            emp_path = os.path.join(dataset_path, f"employee{ext}")
-            if os.path.exists(emp_path):
-                mtime = os.path.getmtime(emp_path)
-                employee_files.append((mtime, emp_path))
+        # Find ALL .xlsx files - use most recent as employee file
+        xlsx_files = []
+        csv_files = []
 
-        if employee_files:
-            # Use most recent employee file
-            employee_files.sort(reverse=True)
-            employee_file = employee_files[0][1]
+        for filename in os.listdir(dataset_path):
+            file_path = os.path.join(dataset_path, filename)
+            if os.path.isfile(file_path):
+                file_ext = os.path.splitext(filename)[1].lower()
+                if file_ext == ".xlsx":
+                    mtime = os.path.getmtime(file_path)
+                    xlsx_files.append((mtime, file_path, filename))
+                elif file_ext == ".csv":
+                    mtime = os.path.getmtime(file_path)
+                    csv_files.append((mtime, file_path, filename))
+
+        # Use most recent .xlsx file as employee file
+        if xlsx_files:
+            xlsx_files.sort(
+                reverse=True
+            )  # Sort by modification time (most recent first)
+            employee_file = xlsx_files[0][1]
             print(
-                f"✅ Found employee file: {employee_file} (modified: {os.path.getmtime(employee_file)})"
+                f"✅ Found employee file (.xlsx): {xlsx_files[0][2]} -> {employee_file}"
             )
         else:
-            print(f"⚠️  No employee file found in {dataset_path}")
+            print(f"⚠️  No .xlsx file found in {dataset_path}")
             # List all files for debugging
             all_files = os.listdir(dataset_path)
             print(f"   Available files: {all_files}")
 
-        # Look for store file (stores.csv or stores.xlsx) - use most recent
-        store_files = []
-        for ext in [".csv", ".xlsx"]:
-            store_path = os.path.join(dataset_path, f"stores{ext}")
-            if os.path.exists(store_path):
-                mtime = os.path.getmtime(store_path)
-                store_files.append((mtime, store_path))
-
-        if store_files:
-            # Use most recent store file
-            store_files.sort(reverse=True)
-            store_file = store_files[0][1]
-            print(
-                f"✅ Found store file: {store_file} (modified: {os.path.getmtime(store_file)})"
-            )
+        # Use most recent .csv file as store requirements file
+        if csv_files:
+            csv_files.sort(
+                reverse=True
+            )  # Sort by modification time (most recent first)
+            store_file = csv_files[0][1]
+            print(f"✅ Found store file (.csv): {csv_files[0][2]} -> {store_file}")
         else:
-            print(f"⚠️  No store file found in {dataset_path}")
+            print(f"⚠️  No .csv file found in {dataset_path}")
             # List all files for debugging
             all_files = os.listdir(dataset_path)
             print(f"   Available files: {all_files}")
@@ -394,12 +401,12 @@ def generate_roster(current_user: User = Depends(get_current_user)):
         if not employee_file:
             raise HTTPException(
                 status_code=404,
-                detail="Employee file not found. Please upload employee file first.",
+                detail="No .xlsx file found. Please upload an employee file (.xlsx) first.",
             )
         if not store_file:
             raise HTTPException(
                 status_code=404,
-                detail="Store file not found. Please upload store file first.",
+                detail="No .csv file found. Please upload a store requirements file (.csv) first.",
             )
 
         # Management store file path (always JSON) - try both locations

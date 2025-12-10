@@ -39,40 +39,38 @@
     box-shadow: 0 0 5px #4ade80;
 }
 
-/* Position dots in a hexagon/circle using transforms */
+/* Position 5 dots in a perfect circle using transforms */
+/* Each dot is rotated 72 degrees apart (360/5 = 72) */
 .agent-dot:nth-child(1) {
     transform: rotate(0deg) translate(14px) rotate(0deg);
+    /* Green Agent 1 - Data Parser */
 }
 
 .agent-dot:nth-child(2) {
-    transform: rotate(60deg) translate(14px) rotate(-60deg);
+    transform: rotate(72deg) translate(14px) rotate(-72deg);
     background-color: #3b82f6;
     box-shadow: 0 0 5px #3b82f6;
+    /* Blue Agent 2 - Constraints Analyzer */
 }
 
-/* Blue Agent */
 .agent-dot:nth-child(3) {
-    transform: rotate(120deg) translate(14px) rotate(-120deg);
+    transform: rotate(144deg) translate(14px) rotate(-144deg);
+    /* Green Agent 3 - Roster Generator */
 }
 
 .agent-dot:nth-child(4) {
-    transform: rotate(180deg) translate(14px) rotate(-180deg);
+    transform: rotate(216deg) translate(14px) rotate(-216deg);
     background-color: #bd00ff;
     box-shadow: 0 0 5px #bd00ff;
+    /* Purple Agent 4 - Validator */
 }
 
-/* Purple Agent */
 .agent-dot:nth-child(5) {
-    transform: rotate(240deg) translate(14px) rotate(-240deg);
-}
-
-.agent-dot:nth-child(6) {
-    transform: rotate(300deg) translate(14px) rotate(-300deg);
+    transform: rotate(288deg) translate(14px) rotate(-288deg);
     background-color: #00e5ff;
     box-shadow: 0 0 5px #00e5ff;
+    /* Cyan Agent 5 - Final Check */
 }
-
-/* Cyan Agent */
 
 .brand-logo-text {
     font-size: 1.25rem;

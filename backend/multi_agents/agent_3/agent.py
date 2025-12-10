@@ -1458,23 +1458,37 @@ def run_agent3(state: Optional[MultiAgentState] = None, use_llm: bool = True) ->
         agent = create_agent(
             model="openai:gpt-4o-mini",
             tools=[generate_roster_tool],
-            system_prompt="""You are an expert roster scheduler. Your PRIMARY GOAL is to MAXIMIZE COVERAGE and fill ALL available employee slots.
+            system_prompt="""You are an expert roster scheduler. Your PRIMARY GOAL is to ACHIEVE 80-90% COVERAGE and MINIMIZE SHORTAGES by filling ALL available employee slots.
 
 CRITICAL PRIORITIES (in order):
-1. FILL ALL AVAILABILITY SLOTS - Assign shifts to EVERY employee who is available. Target 90%+ coverage.
-2. MEET MINIMUM STAFFING REQUIREMENTS - Ensure all stations have at least the required staff.
-3. Respect maximum hours per day/week (but prioritize filling slots over strict limits when possible)
-4. Apply correct penalty rates and ensure proper breaks
-5. Assign managers to all shifts (up to 10 per store per day)
+1. ACHIEVE 80-90% COVERAGE - Assign shifts to EVERY employee who is available. Target 80-90% coverage minimum.
+2. MINIMIZE SHORTAGES - Fill ALL understaffed stations completely. No station should be understaffed if employees are available.
+3. FILL ALL AVAILABILITY SLOTS - If an employee is available, ASSIGN THEM. Don't skip unless absolutely necessary.
+4. MEET MINIMUM STAFFING REQUIREMENTS - Ensure all stations have at least the required staff.
+5. Respect maximum hours per day/week (but prioritize filling slots over strict limits when stations are understaffed)
+6. Apply correct penalty rates and ensure proper breaks
+7. Assign managers to all shifts (up to 10 per store per day)
+
+COVERAGE TARGETS:
+- MINIMUM: 80% coverage (80% of available employee slots filled)
+- TARGET: 90% coverage (90% of available employee slots filled)
+- IDEAL: 90%+ coverage with ZERO shortages
 
 RULES:
 - If an employee is available for a shift, ASSIGN THEM. Don't skip unless absolutely necessary.
-- Prioritize filling understaffed stations first, then fill remaining availability.
-- Be flexible with station assignments - allow up to 3x required staff to fill all slots.
+- Prioritize filling understaffed stations FIRST - these are critical and must be filled completely.
+- Be flexible with station assignments - allow up to 5x required staff to fill all slots if needed.
+- If stations are understaffed, be lenient with hours constraints (allow slight overage up to 10%).
 - Use shift hours from management_store.json - vary hours based on shift codes.
 - Maximum hours: Full-time 38h/week, Part-time <38h/week, Casual variable.
 
-Use the generate_roster tool to create the schedule. MAXIMIZE COVERAGE - fill every available slot.""",
+ITERATION STRATEGY:
+- Each iteration should improve coverage and reduce shortages.
+- If coverage is below 80%, prioritize assigning more employees.
+- If shortages exist, prioritize filling those stations first.
+- Track your progress: aim for 80%+ coverage with minimal shortages.
+
+Use the generate_roster tool to create the schedule. MAXIMIZE COVERAGE - fill every available slot to achieve 80-90% coverage.""",
         )
 
         # Prepare comprehensive prompt with all context
@@ -1499,24 +1513,36 @@ CONSTRAINTS AND RULES:
 STORE REQUIREMENTS:
 {json.dumps(store_req, default=str, indent=2)[:1000]}
 
-CRITICAL: Your PRIMARY MISSION is to ACHIEVE 90%+ COVERAGE by filling ALL available employee slots.
+CRITICAL: Your PRIMARY MISSION is to ACHIEVE 80-90% COVERAGE and MINIMIZE SHORTAGES by filling ALL available employee slots.
+
+COVERAGE TARGETS:
+- MINIMUM: 80% coverage (80% of available employee slots filled)
+- TARGET: 90% coverage (90% of available employee slots filled)
+- IDEAL: 90%+ coverage with ZERO shortages
 
 Please use the generate_roster tool to create a complete roster that:
 
-PRIORITY 1 - MAXIMIZE COVERAGE:
+PRIORITY 1 - ACHIEVE 80-90% COVERAGE:
 - FILL EVERY AVAILABLE EMPLOYEE SLOT - if an employee is available, ASSIGN THEM
-- Target 90%+ coverage - do NOT leave availability slots unfilled
+- Target 80-90% coverage minimum - do NOT leave availability slots unfilled
 - Assign shifts to employees based on their availability - use ALL available employees
 - If an employee says they're available for 3F on 2025-12-12, ASSIGN THEM that shift
+- Track coverage: aim for 80%+ in first iteration, 90%+ in subsequent iterations
 
-PRIORITY 2 - MEET STAFFING REQUIREMENTS:
+PRIORITY 2 - MINIMIZE SHORTAGES:
+- Fill ALL understaffed stations COMPLETELY - no station should be understaffed if employees are available
 - Ensure all stations meet minimum requirements (Kitchen: 6/4, Counter: 4/3, McCafe: 3/2)
 - Fill understaffed stations FIRST, then fill remaining availability
-- Allow flexible station assignments to fill all slots
+- If shortages exist, prioritize assigning employees to those stations
 
-PRIORITY 3 - COMPLIANCE (be flexible, but don't skip assignments unnecessarily):
+PRIORITY 3 - FILL ALL AVAILABILITY:
+- Allow flexible station assignments to fill all slots (up to 5x required if needed)
+- Be lenient with hours constraints when stations are understaffed (allow 10% overage)
+- Don't skip assignments unless absolutely necessary
+
+PRIORITY 4 - COMPLIANCE (be flexible, but don't skip assignments unnecessarily):
 - Respect maximum hours per week: Full-time max 38h/week, Part-time <38h/week
-- Provides 10+ hours rest between shifts (but if needed to fill slots, be flexible)
+- Provides 10+ hours rest between shifts (but if needed to fill slots, be flexible - allow 6h+ minimum)
 - Ensures minimum 3-hour shifts and maximum 12-hour shifts PER SHIFT
 - Do NOT assign everyone the same hours - vary hours based on shift codes (S=8.5h, 1F=9h, 2F=9h, 3F=12h)
 
@@ -1525,7 +1551,13 @@ OTHER REQUIREMENTS:
 - Applies correct penalty rates (Saturday 1.25x, Sunday 1.5x, Public Holidays 2.25x)
 - Includes proper meal breaks (30 min for 5+ hour shifts)
 
-REMEMBER: Your goal is 90%+ coverage. Fill every available slot. Don't skip assignments unless absolutely necessary.
+ITERATION STRATEGY:
+- Each iteration should improve coverage and reduce shortages
+- If coverage is below 80%, prioritize assigning more employees
+- If shortages exist, prioritize filling those stations first
+- Track progress: aim for 80%+ coverage with minimal shortages
+
+REMEMBER: Your goal is 80-90% coverage with ZERO shortages. Fill every available slot. Don't skip assignments unless absolutely necessary.
 
 IMPORTANT: Check the shift codes in management_store.json - each shift code has specific hours (S=8.5h, 1F=9h, 2F=9h, 3F=12h, SC=9h, M=8h). Use these hours, don't assign the same hours to everyone.
 
