@@ -2,7 +2,7 @@
 FINAL ROSTER CHECK REPORT
 ================================================================================
 
-Generated: 2025-12-10 12:08:22
+Generated: 2025-12-10 14:45:47
 
 ROSTER STATUS: NEEDS_REVIEW
 ❌ Roster has significant gaps that need attention.
@@ -10,226 +10,279 @@ ROSTER STATUS: NEEDS_REVIEW
 --------------------------------------------------------------------------------
 AVAILABILITY COVERAGE
 --------------------------------------------------------------------------------
-Total Availability Slots: 345
-Filled Slots: 256
-Unfilled Slots: 89
-Coverage: 74.2%
+Total Availability Slots: 394
+Filled Slots: 271
+Unfilled Slots: 123
+Coverage: 68.78%
 
 UNFILLED AVAILABILITY SLOTS:
-  - James Smith () on 2025-12-12: Available for 3F, but not assigned
-  - James Smith () on 2025-12-19: Available for 3F, but not assigned
-  - James Smith () on 2025-12-20: Available for 1F, but not assigned
-  - Emma Johnson () on 2025-12-14: Available for 2F, but not assigned
-  - Emma Johnson () on 2025-12-18: Available for 2F, but not assigned
-  - Emma Johnson () on 2025-12-20: Available for 1F, but not assigned
-  - Emma Johnson () on 2025-12-21: Available for 2F, but not assigned
-  - Oliver Williams () on 2025-12-12: Available for 3F, but not assigned
-  - Oliver Williams () on 2025-12-15: Available for 1F, but not assigned
-  - Oliver Williams () on 2025-12-22: Available for 1F, but not assigned
-  - Sophia Brown () on 2025-12-12: Available for 3F, but not assigned
-  - Sophia Brown () on 2025-12-15: Available for 1F, but not assigned
-  - Sophia Brown () on 2025-12-20: Available for 1F, but not assigned
-  - Sophia Brown () on 2025-12-21: Available for 2F, but not assigned
-  - William Jones () on 2025-12-12: Available for 3F, but not assigned
-  - William Jones () on 2025-12-18: Available for 2F, but not assigned
-  - William Jones () on 2025-12-20: Available for 1F, but not assigned
-  - William Jones () on 2025-12-21: Available for 2F, but not assigned
-  - Ava Garcia () on 2025-12-12: Available for 3F, but not assigned
-  - Ava Garcia () on 2025-12-13: Available for 1F, but not assigned
-  - Ava Garcia () on 2025-12-15: Available for 1F, but not assigned
-  - Ava Garcia () on 2025-12-20: Available for 1F, but not assigned
-  - Ava Garcia () on 2025-12-21: Available for 2F, but not assigned
-  - Jack Miller () on 2025-12-15: Available for 1F, but not assigned
-  - Jack Miller () on 2025-12-22: Available for 1F, but not assigned
-  - Mia Davis () on 2025-12-12: Available for 3F, but not assigned
-  - Mia Davis () on 2025-12-15: Available for 1F, but not assigned
-  - Mia Davis () on 2025-12-20: Available for 1F, but not assigned
-  - Mia Davis () on 2025-12-21: Available for 2F, but not assigned
-  - Lucas Wilson () on 2025-12-12: Available for 3F, but not assigned
-  - Lucas Wilson () on 2025-12-15: Available for 1F, but not assigned
-  - Lucas Wilson () on 2025-12-20: Available for 1F, but not assigned
-  - Lucas Wilson () on 2025-12-21: Available for 2F, but not assigned
-  - Isabella Anderson () on 2025-12-12: Available for 3F, but not assigned
-  - Isabella Anderson () on 2025-12-18: Available for 2F, but not assigned
-  - Isabella Anderson () on 2025-12-20: Available for 1F, but not assigned
-  - Isabella Anderson () on 2025-12-21: Available for 2F, but not assigned
-  - Henry Thomas () on 2025-12-12: Available for 3F, but not assigned
-  - Henry Thomas () on 2025-12-15: Available for 1F, but not assigned
-  - Henry Thomas () on 2025-12-19: Available for 3F, but not assigned
-  - Henry Thomas () on 2025-12-20: Available for 1F, but not assigned
-  - Henry Thomas () on 2025-12-21: Available for 2F, but not assigned
-  - Charlotte Taylor () on 2025-12-18: Available for 2F, but not assigned
-  - Charlotte Taylor () on 2025-12-19: Available for 3F, but not assigned
-  - Charlotte Taylor () on 2025-12-21: Available for 2F, but not assigned
-  - Ethan Moore () on 2025-12-18: Available for 2F, but not assigned
-  - Ethan Moore () on 2025-12-19: Available for 2F, but not assigned
-  - Amelia Jackson () on 2025-12-19: Available for 1F, but not assigned
-  - Amelia Jackson () on 2025-12-20: Available for 1F, but not assigned
-  - Mason Martin () on 2025-12-12: Available for 1F, but not assigned
-  - Mason Martin () on 2025-12-20: Available for 1F, but not assigned
-  - Mason Martin () on 2025-12-21: Available for 2F, but not assigned
-  - Harper Lee () on 2025-12-17: Available for 1F, but not assigned
-  - Harper Lee () on 2025-12-21: Available for 1F, but not assigned
-  - Logan Thompson () on 2025-12-11: Available for 1F, but not assigned
-  - Logan Thompson () on 2025-12-15: Available for 1F, but not assigned
-  - Logan Thompson () on 2025-12-18: Available for 1F, but not assigned
-  - Logan Thompson () on 2025-12-20: Available for 2F, but not assigned
-  - Logan Thompson () on 2025-12-21: Available for 1F, but not assigned
-  - Evelyn White () on 2025-12-14: Available for 1F, but not assigned
-  - Evelyn White () on 2025-12-19: Available for 2F, but not assigned
-  - Evelyn White () on 2025-12-21: Available for 1F, but not assigned
-  - Alex Harris () on 2025-12-11: Available for 1F, but not assigned
-  - Alex Harris () on 2025-12-20: Available for 1F, but not assigned
-  - Alex Harris () on 2025-12-21: Available for 1F, but not assigned
-  - Abigail Clark () on 2025-12-15: Available for 1F, but not assigned
-  - Abigail Clark () on 2025-12-19: Available for 2F, but not assigned
-  - Abigail Clark () on 2025-12-20: Available for 1F, but not assigned
-  - Abigail Clark () on 2025-12-21: Available for 2F, but not assigned
-  - Michael Lewis () on 2025-12-13: Available for 1F, but not assigned
-  - Michael Lewis () on 2025-12-14: Available for 1F, but not assigned
-  - Emily Walker () on 2025-12-13: Available for 2F, but not assigned
-  - Emily Walker () on 2025-12-14: Available for 2F, but not assigned
-  - Emily Walker () on 2025-12-19: Available for 2F, but not assigned
-  - Emily Walker () on 2025-12-20: Available for 1F, but not assigned
-  - Elizabeth Allen () on 2025-12-16: Available for 3F, but not assigned
-  - Matthew Young () on 2025-12-15: Available for 3F, but not assigned
-  - Sofia King () on 2025-12-23: Available for 3F, but not assigned
-  - Samuel Wright () on 2025-12-15: Available for 3F, but not assigned
-  - David Green () on 2025-12-19: Available for 2F, but not assigned
-  - David Green () on 2025-12-21: Available for 2F, but not assigned
-  - Ella Baker () on 2025-12-17: Available for 1F, but not assigned
-  - Joseph Adams () on 2025-12-21: Available for 2F, but not assigned
-  - Ben Hill () on 2025-12-17: Available for 1F, but not assigned
-  - Chloe Roberts () on 2025-12-21: Available for 2F, but not assigned
-  - Andrew Carter () on 2025-12-12: Available for 1F, but not assigned
-  - Nathan Evans () on 2025-12-13: Available for 1F, but not assigned
-  - Nathan Evans () on 2025-12-22: Available for 3F, but not assigned
-  - Madison Turner () on 2025-12-15: Available for 3F, but not assigned
+  - Michael Brown (1001) on 2025-12-16: Available for 2F, but not assigned
+  - Michael Brown (1001) on 2025-12-11: Available for 1F, but not assigned
+  - Michael Brown (1001) on 2025-12-16: Available for 1F, but not assigned
+  - Michael Brown (1001) on 2025-12-11: Available for 1F, but not assigned
+  - Elizabeth Wilson (1002) on 2025-12-15: Available for 1F, but not assigned
+  - Elizabeth Wilson (1002) on 2025-12-12: Available for 1F, but not assigned
+  - Elizabeth Wilson (1002) on 2025-12-15: Available for 2F, but not assigned
+  - Mia Jones (1003) on 2025-12-15: Available for 1F, but not assigned
+  - Mia Jones (1003) on 2025-12-12: Available for 2F, but not assigned
+  - Mia Jones (1003) on 2025-12-15: Available for 2F, but not assigned
+  - Mia Jones (1003) on 2025-12-12: Available for 2F, but not assigned
+  - Emily Allen (1004) on 2025-12-12: Available for 3F, but not assigned
+  - Emily Allen (1004) on 2025-12-12: Available for 2F, but not assigned
+  - Alex Jackson (1005) on 2025-12-12: Available for 1F, but not assigned
+  - James Williams (1006) on 2025-12-13: Available for 3F, but not assigned
+  - James Williams (1006) on 2025-12-14: Available for 2F, but not assigned
+  - James Williams (1006) on 2025-12-16: Available for 3F, but not assigned
+  - James Williams (1006) on 2025-12-14: Available for 1F, but not assigned
+  - James Williams (1006) on 2025-12-16: Available for 1F, but not assigned
+  - Mia Thompson (1007) on 2025-12-13: Available for 1F, but not assigned
+  - Mia Thompson (1007) on 2025-12-14: Available for 2F, but not assigned
+  - Mia Thompson (1007) on 2025-12-13: Available for 2F, but not assigned
+  - Mia Thompson (1007) on 2025-12-14: Available for 1F, but not assigned
+  - Evelyn Miller (1008) on 2025-12-14: Available for 2F, but not assigned
+  - Evelyn Miller (1008) on 2025-12-16: Available for 1F, but not assigned
+  - Evelyn Miller (1008) on 2025-12-16: Available for 1F, but not assigned
+  - Mia Martin (1009) on 2025-12-13: Available for 2F, but not assigned
+  - Sofia Scott (1010) on 2025-12-14: Available for 3F, but not assigned
+  - Sofia Scott (1010) on 2025-12-11: Available for 3F, but not assigned
+  - Sofia Scott (1010) on 2025-12-11: Available for 3F, but not assigned
+  - Matthew King (1011) on 2025-12-13: Available for 1F, but not assigned
+  - Matthew King (1011) on 2025-12-13: Available for 1F, but not assigned
+  - Daniel Jackson (1012) on 2025-12-14: Available for 1F, but not assigned
+  - Daniel Jackson (1012) on 2025-12-14: Available for 3F, but not assigned
+  - Daniel Jackson (1012) on 2025-12-11: Available for 3F, but not assigned
+  - Lucas Jones (1013) on 2025-12-16: Available for 2F, but not assigned
+  - Lucas Jones (1013) on 2025-12-11: Available for 1F, but not assigned
+  - Lucas Jones (1013) on 2025-12-11: Available for 2F, but not assigned
+  - Matthew Thomas (1014) on 2025-12-12: Available for 1F, but not assigned
+  - Matthew Thomas (1014) on 2025-12-12: Available for 2F, but not assigned
+  - Oliver Moore (1015) on 2025-12-13: Available for 2F, but not assigned
+  - Oliver Moore (1015) on 2025-12-15: Available for 3F, but not assigned
+  - Oliver Moore (1015) on 2025-12-11: Available for 2F, but not assigned
+  - Oliver Moore (1015) on 2025-12-15: Available for 1F, but not assigned
+  - Oliver Moore (1015) on 2025-12-11: Available for 1F, but not assigned
+  - Charlotte Scott (1016) on 2025-12-14: Available for 2F, but not assigned
+  - Charlotte Scott (1016) on 2025-12-16: Available for 1F, but not assigned
+  - Charlotte Scott (1016) on 2025-12-12: Available for 1F, but not assigned
+  - Charlotte Scott (1016) on 2025-12-12: Available for 2F, but not assigned
+  - Abigail Wilson (1017) on 2025-12-13: Available for 1F, but not assigned
+  - Abigail Wilson (1017) on 2025-12-14: Available for 1F, but not assigned
+  - Abigail Wilson (1017) on 2025-12-13: Available for 2F, but not assigned
+  - Elizabeth Martin (1018) on 2025-12-14: Available for 2F, but not assigned
+  - Ella Moore (1019) on 2025-12-12: Available for 1F, but not assigned
+  - Ella Moore (1019) on 2025-12-16: Available for 2F, but not assigned
+  - Evelyn Anderson (1020) on 2025-12-13: Available for 2F, but not assigned
+  - Evelyn Anderson (1020) on 2025-12-14: Available for 1F, but not assigned
+  - Alex Miller (1021) on 2025-12-14: Available for 2F, but not assigned
+  - Alex Miller (1021) on 2025-12-16: Available for 2F, but not assigned
+  - Alex Miller (1021) on 2025-12-14: Available for 1F, but not assigned
+  - Alex Miller (1021) on 2025-12-11: Available for 1F, but not assigned
+  - Emma Walker (1022) on 2025-12-13: Available for 2F, but not assigned
+  - Emma Walker (1022) on 2025-12-15: Available for 2F, but not assigned
+  - Emma Walker (1022) on 2025-12-15: Available for 3F, but not assigned
+  - Matthew Anderson (1023) on 2025-12-14: Available for 1F, but not assigned
+  - Matthew Anderson (1023) on 2025-12-10: Available for 1F, but not assigned
+  - Matthew Anderson (1023) on 2025-12-14: Available for 1F, but not assigned
+  - Matthew Anderson (1023) on 2025-12-10: Available for 2F, but not assigned
+  - Avery Davis (1024) on 2025-12-11: Available for 2F, but not assigned
+  - Avery Davis (1024) on 2025-12-14: Available for 2F, but not assigned
+  - Avery Davis (1024) on 2025-12-11: Available for 1F, but not assigned
+  - Ethan Wilson (1025) on 2025-12-13: Available for 2F, but not assigned
+  - Ethan Wilson (1025) on 2025-12-13: Available for 2F, but not assigned
+  - Ethan Wilson (1025) on 2025-12-14: Available for 1F, but not assigned
+  - Michael Wright (1026) on 2025-12-14: Available for 2F, but not assigned
+  - Michael Wright (1026) on 2025-12-16: Available for 1F, but not assigned
+  - Michael Wright (1026) on 2025-12-12: Available for 2F, but not assigned
+  - Michael Wright (1026) on 2025-12-16: Available for 2F, but not assigned
+  - Ava Taylor (1027) on 2025-12-14: Available for 1F, but not assigned
+  - Ava Taylor (1027) on 2025-12-12: Available for 3F, but not assigned
+  - Ava Taylor (1027) on 2025-12-12: Available for 2F, but not assigned
+  - Jack Walker (1028) on 2025-12-14: Available for 2F, but not assigned
+  - Jack Walker (1028) on 2025-12-12: Available for 1F, but not assigned
+  - Jack Walker (1028) on 2025-12-14: Available for 1F, but not assigned
+  - Jack Walker (1028) on 2025-12-12: Available for 1F, but not assigned
+  - Daniel Baker (1029) on 2025-12-16: Available for 3F, but not assigned
+  - Daniel Baker (1029) on 2025-12-11: Available for 2F, but not assigned
+  - Abigail Lewis (1030) on 2025-12-14: Available for 2F, but not assigned
+  - Abigail Lewis (1030) on 2025-12-16: Available for 2F, but not assigned
+  - Evelyn Allen (1031) on 2025-12-13: Available for 2F, but not assigned
+  - Evelyn Allen (1031) on 2025-12-13: Available for 2F, but not assigned
+  - Ava Martin (1032) on 2025-12-13: Available for 1F, but not assigned
+  - Ava Martin (1032) on 2025-12-15: Available for 1F, but not assigned
+  - Ava Martin (1032) on 2025-12-13: Available for 1F, but not assigned
+  - Lucas Baker (1033) on 2025-12-14: Available for 2F, but not assigned
+  - Lucas Baker (1033) on 2025-12-12: Available for 2F, but not assigned
+  - Lucas Baker (1033) on 2025-12-14: Available for 1F, but not assigned
+  - Lucas Baker (1033) on 2025-12-16: Available for 2F, but not assigned
+  - Lucas Baker (1033) on 2025-12-12: Available for 2F, but not assigned
+  - Emily Thomas (1034) on 2025-12-12: Available for 1F, but not assigned
+  - Emily Thomas (1034) on 2025-12-10: Available for 1F, but not assigned
+  - Emily Thomas (1034) on 2025-12-12: Available for 2F, but not assigned
+  - Mia Wright (1035) on 2025-12-13: Available for 1F, but not assigned
+  - Mia Wright (1035) on 2025-12-11: Available for 2F, but not assigned
+  - Mia Wright (1035) on 2025-12-11: Available for 2F, but not assigned
+  - Sofia Thomas (1036) on 2025-12-13: Available for 2F, but not assigned
+  - Sofia Thomas (1036) on 2025-12-11: Available for 2F, but not assigned
+  - Sofia Thomas (1036) on 2025-12-13: Available for 1F, but not assigned
+  - Sofia Thomas (1036) on 2025-12-16: Available for 2F, but not assigned
+  - Sofia Thomas (1036) on 2025-12-11: Available for 1F, but not assigned
+  - Lucas Williams (1037) on 2025-12-16: Available for 1F, but not assigned
+  - Lucas Williams (1037) on 2025-12-16: Available for 2F, but not assigned
+  - Lucas Williams (1037) on 2025-12-12: Available for 2F, but not assigned
+  - Ella Harris (1038) on 2025-12-15: Available for 2F, but not assigned
+  - Ella Harris (1038) on 2025-12-15: Available for 2F, but not assigned
+  - Jack Lewis (1039) on 2025-12-12: Available for 1F, but not assigned
+  - Ethan Green (1040) on 2025-12-13: Available for 2F, but not assigned
+  - Ethan Green (1040) on 2025-12-13: Available for 1F, but not assigned
+  -  (Shift Codes:) on 2025-12-16: Available for Shift Colors:, but not assigned
+  -  (1F = First Half (06:30-15:30)) on 2025-12-16: Available for Light Green = 1F, but not assigned
+  -  (2F = Second Half (14:00-23:00)) on 2025-12-16: Available for Yellow = 2F, but not assigned
+  -  (3F = Full Day (08:00-20:00)) on 2025-12-16: Available for Light Orange = 3F, but not assigned
+  -  (/ = Not Available) on 2025-12-16: Available for Gray = Day Off, but not assigned
 
 --------------------------------------------------------------------------------
 STAFFING REQUIREMENTS CHECK
 --------------------------------------------------------------------------------
 Total Staffing Checks: 112
-Requirements Met: 51
-Understaffed: 61
+Requirements Met: 63
+Understaffed: 49
 
 
 Store 1: CBD Core Area - 2025-12-10:
-  ❌ Kitchen: 5/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 5 (Shortage: 1)
-  ✅ Counter: 8/4 (met)
-  ✅ Multi-Station McCafe: 5/3 (met)
-  ✅ Dessert Station: 2/2 (met)
+  ✅ Kitchen: 8/6 (met)
+  ✅ Counter: 7/4 (met)
+  ✅ Multi-Station McCafe: 8/3 (met)
+  ✅ Dessert Station: 6/2 (met)
 
 Store 1: CBD Core Area - 2025-12-11:
-  ❌ Kitchen: 2/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 2 (Shortage: 4)
+  ❌ Kitchen: 4/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
   ❌ Counter: 1/4 (understaffed)
      ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
-  ✅ Multi-Station McCafe: 6/3 (met)
-  ✅ Dessert Station: 3/2 (met)
+  ✅ Multi-Station McCafe: 7/3 (met)
+  ✅ Dessert Station: 4/2 (met)
 
 Store 1: CBD Core Area - 2025-12-12:
-  ❌ Kitchen: 1/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 1 (Shortage: 5)
-  ❌ Counter: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ❌ Multi-Station McCafe: 1/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
-  ✅ Dessert Station: 2/2 (met)
+  ✅ Kitchen: 6/6 (met)
+  ❌ Counter: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ✅ Multi-Station McCafe: 4/3 (met)
+  ✅ Dessert Station: 4/2 (met)
 
 Store 1: CBD Core Area - 2025-12-13:
-  ❌ Kitchen: 2/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 2 (Shortage: 4)
+  ✅ Kitchen: 8/6 (met)
+  ❌ Counter: 0/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 0 (Shortage: 4)
+  ✅ Multi-Station McCafe: 6/3 (met)
+  ✅ Dessert Station: 2/2 (met)
+
+Store 1: CBD Core Area - 2025-12-14:
+  ✅ Kitchen: 6/6 (met)
+  ✅ Counter: 4/4 (met)
+  ❌ Multi-Station McCafe: 1/3 (understaffed)
+     ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
+  ✅ Dessert Station: 4/2 (met)
+
+Store 1: CBD Core Area - 2025-12-15:
+  ✅ Kitchen: 8/6 (met)
+  ❌ Counter: 1/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
+  ✅ Multi-Station McCafe: 7/3 (met)
+  ✅ Dessert Station: 4/2 (met)
+
+Store 1: CBD Core Area - 2025-12-16:
+  ✅ Kitchen: 9/6 (met)
+  ❌ Counter: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ✅ Multi-Station McCafe: 6/3 (met)
+  ✅ Dessert Station: 4/2 (met)
+
+Store 1: CBD Core Area - 2025-12-17:
+  ✅ Kitchen: 11/6 (met)
+  ✅ Counter: 6/4 (met)
+  ✅ Multi-Station McCafe: 7/3 (met)
+  ✅ Dessert Station: 5/2 (met)
+
+Store 1: CBD Core Area - 2025-12-18:
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
+  ❌ Counter: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
+  ✅ Multi-Station McCafe: 4/3 (met)
+  ✅ Dessert Station: 3/2 (met)
+
+Store 1: CBD Core Area - 2025-12-19:
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
   ❌ Counter: 3/4 (understaffed)
      ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ❌ Multi-Station McCafe: 2/3 (understaffed)
      ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
-  ❌ Dessert Station: 1/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 1 (Shortage: 1)
-
-Store 1: CBD Core Area - 2025-12-14:
-  ❌ Kitchen: 5/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 5 (Shortage: 1)
-  ✅ Counter: 4/4 (met)
-  ✅ Multi-Station McCafe: 4/3 (met)
-  ❌ Dessert Station: 1/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 1 (Shortage: 1)
-
-Store 1: CBD Core Area - 2025-12-15:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
-  ✅ Counter: 6/4 (met)
-  ❌ Multi-Station McCafe: 2/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ✅ Dessert Station: 3/2 (met)
-
-Store 1: CBD Core Area - 2025-12-16:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
-  ✅ Counter: 8/4 (met)
-  ✅ Multi-Station McCafe: 4/3 (met)
-  ✅ Dessert Station: 2/2 (met)
-
-Store 1: CBD Core Area - 2025-12-17:
-  ❌ Kitchen: 3/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
-  ✅ Counter: 4/4 (met)
-  ✅ Multi-Station McCafe: 4/3 (met)
-  ✅ Dessert Station: 3/2 (met)
-
-Store 1: CBD Core Area - 2025-12-18:
-  ❌ Kitchen: 4/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
-  ❌ Counter: 1/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
-  ✅ Multi-Station McCafe: 3/3 (met)
-  ❌ Dessert Station: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-
-Store 1: CBD Core Area - 2025-12-19:
-  ❌ Kitchen: 1/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 1 (Shortage: 5)
-  ✅ Counter: 8/4 (met)
-  ✅ Multi-Station McCafe: 3/3 (met)
-  ❌ Dessert Station: 1/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 1 (Shortage: 1)
 
 Store 1: CBD Core Area - 2025-12-20:
-  ❌ Kitchen: 2/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 2 (Shortage: 4)
-  ❌ Counter: 2/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
-  ❌ Multi-Station McCafe: 1/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
-  ❌ Dessert Station: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-
-Store 1: CBD Core Area - 2025-12-21:
-  ❌ Kitchen: 1/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 1 (Shortage: 5)
-  ❌ Counter: 2/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ❌ Kitchen: 4/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 4 (Shortage: 2)
+  ❌ Counter: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ❌ Multi-Station McCafe: 1/3 (understaffed)
      ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
   ❌ Dessert Station: 1/2 (understaffed)
      ⚠️  Required: 2, Assigned: 1 (Shortage: 1)
+
+Store 1: CBD Core Area - 2025-12-21:
+  ❌ Kitchen: 2/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 2 (Shortage: 4)
+  ❌ Counter: 0/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 0 (Shortage: 4)
+  ❌ Multi-Station McCafe: 0/3 (understaffed)
+     ⚠️  Required: 3, Assigned: 0 (Shortage: 3)
+  ✅ Dessert Station: 2/2 (met)
 
 Store 1: CBD Core Area - 2025-12-22:
   ✅ Kitchen: 7/6 (met)
-  ❌ Counter: 2/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
-  ✅ Multi-Station McCafe: 4/3 (met)
-  ✅ Dessert Station: 3/2 (met)
+  ✅ Counter: 5/4 (met)
+  ✅ Multi-Station McCafe: 7/3 (met)
+  ✅ Dessert Station: 4/2 (met)
 
 Store 1: CBD Core Area - 2025-12-23:
-  ❌ Kitchen: 5/6 (understaffed)
-     ⚠️  Required: 6, Assigned: 5 (Shortage: 1)
-  ✅ Counter: 6/4 (met)
-  ✅ Multi-Station McCafe: 3/3 (met)
-  ✅ Dessert Station: 3/2 (met)
+  ❌ Kitchen: 3/6 (understaffed)
+     ⚠️  Required: 6, Assigned: 3 (Shortage: 3)
+  ❌ Counter: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ✅ Multi-Station McCafe: 6/3 (met)
+  ✅ Dessert Station: 4/2 (met)
 
 Store 2: Suburban Residential - 2025-12-10:
+  ✅ Kitchen: 7/4 (met)
+  ❌ Counter: 2/3 (understaffed)
+     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
+  ❌ Multi-Station McCafe: 0/2 (understaffed)
+     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
+  ✅ Dessert Station: 0/0 (met)
+
+Store 2: Suburban Residential - 2025-12-11:
+  ✅ Kitchen: 4/4 (met)
+  ✅ Counter: 6/3 (met)
+  ❌ Multi-Station McCafe: 0/2 (understaffed)
+     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
+  ✅ Dessert Station: 0/0 (met)
+
+Store 2: Suburban Residential - 2025-12-12:
+  ✅ Kitchen: 5/4 (met)
+  ✅ Counter: 4/3 (met)
+  ❌ Multi-Station McCafe: 0/2 (understaffed)
+     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
+  ✅ Dessert Station: 0/0 (met)
+
+Store 2: Suburban Residential - 2025-12-13:
+  ✅ Kitchen: 4/4 (met)
+  ✅ Counter: 4/3 (met)
+  ❌ Multi-Station McCafe: 0/2 (understaffed)
+     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
+  ✅ Dessert Station: 0/0 (met)
+
+Store 2: Suburban Residential - 2025-12-14:
   ✅ Kitchen: 4/4 (met)
   ❌ Counter: 1/3 (understaffed)
      ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
@@ -237,48 +290,15 @@ Store 2: Suburban Residential - 2025-12-10:
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
-Store 2: Suburban Residential - 2025-12-11:
-  ✅ Kitchen: 4/4 (met)
-  ✅ Counter: 4/3 (met)
-  ❌ Multi-Station McCafe: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-  ✅ Dessert Station: 0/0 (met)
-
-Store 2: Suburban Residential - 2025-12-12:
-  ❌ Kitchen: 2/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
-  ✅ Counter: 6/3 (met)
-  ❌ Multi-Station McCafe: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-  ✅ Dessert Station: 0/0 (met)
-
-Store 2: Suburban Residential - 2025-12-13:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ✅ Counter: 6/3 (met)
-  ❌ Multi-Station McCafe: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-  ✅ Dessert Station: 0/0 (met)
-
-Store 2: Suburban Residential - 2025-12-14:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ✅ Counter: 3/3 (met)
-  ❌ Multi-Station McCafe: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-  ✅ Dessert Station: 0/0 (met)
-
 Store 2: Suburban Residential - 2025-12-15:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ❌ Counter: 2/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
+  ✅ Kitchen: 6/4 (met)
+  ✅ Counter: 5/3 (met)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-16:
-  ✅ Kitchen: 5/4 (met)
+  ✅ Kitchen: 4/4 (met)
   ❌ Counter: 2/3 (understaffed)
      ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
@@ -286,22 +306,15 @@ Store 2: Suburban Residential - 2025-12-16:
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-17:
-  ✅ Kitchen: 4/4 (met)
-  ✅ Counter: 4/3 (met)
+  ❌ Kitchen: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
+  ❌ Counter: 1/3 (understaffed)
+     ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-18:
-  ❌ Kitchen: 0/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 0 (Shortage: 4)
-  ❌ Counter: 2/3 (understaffed)
-     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
-  ❌ Multi-Station McCafe: 0/2 (understaffed)
-     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
-  ✅ Dessert Station: 0/0 (met)
-
-Store 2: Suburban Residential - 2025-12-19:
   ❌ Kitchen: 3/4 (understaffed)
      ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ✅ Counter: 4/3 (met)
@@ -309,9 +322,18 @@ Store 2: Suburban Residential - 2025-12-19:
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
+Store 2: Suburban Residential - 2025-12-19:
+  ❌ Kitchen: 2/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
+  ❌ Counter: 2/3 (understaffed)
+     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
+  ❌ Multi-Station McCafe: 0/2 (understaffed)
+     ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
+  ✅ Dessert Station: 0/0 (met)
+
 Store 2: Suburban Residential - 2025-12-20:
-  ❌ Kitchen: 1/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 1 (Shortage: 3)
+  ❌ Kitchen: 3/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
   ❌ Counter: 1/3 (understaffed)
      ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
@@ -319,8 +341,8 @@ Store 2: Suburban Residential - 2025-12-20:
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-21:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
+  ❌ Kitchen: 0/4 (understaffed)
+     ⚠️  Required: 4, Assigned: 0 (Shortage: 4)
   ❌ Counter: 1/3 (understaffed)
      ⚠️  Required: 3, Assigned: 1 (Shortage: 2)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
@@ -328,17 +350,17 @@ Store 2: Suburban Residential - 2025-12-21:
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-22:
-  ❌ Kitchen: 2/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 2 (Shortage: 2)
-  ✅ Counter: 4/3 (met)
+  ✅ Kitchen: 9/4 (met)
+  ❌ Counter: 2/3 (understaffed)
+     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
 
 Store 2: Suburban Residential - 2025-12-23:
-  ❌ Kitchen: 3/4 (understaffed)
-     ⚠️  Required: 4, Assigned: 3 (Shortage: 1)
-  ✅ Counter: 4/3 (met)
+  ✅ Kitchen: 10/4 (met)
+  ❌ Counter: 2/3 (understaffed)
+     ⚠️  Required: 3, Assigned: 2 (Shortage: 1)
   ❌ Multi-Station McCafe: 0/2 (understaffed)
      ⚠️  Required: 2, Assigned: 0 (Shortage: 2)
   ✅ Dessert Station: 0/0 (met)
@@ -346,8 +368,8 @@ Store 2: Suburban Residential - 2025-12-23:
 --------------------------------------------------------------------------------
 RECOMMENDATIONS
 --------------------------------------------------------------------------------
-1. Fill 89 unfilled availability slots to maximize employee utilization.
-2. Address 61 understaffed stations to meet operational requirements.
+1. Fill 123 unfilled availability slots to maximize employee utilization.
+2. Address 49 understaffed stations to meet operational requirements.
 
 ================================================================================
 END OF REPORT

@@ -11,10 +11,19 @@ export default function RosterPage() {
   const [loading, setLoading] = useState(true);
   const [rosterData, setRosterData] = useState(null);
   const [user, setUser] = useState(null);
+  const [timeTaken, setTimeTaken] = useState(null);
 
   useEffect(() => {
     checkSession();
     fetchRoster();
+
+    // Get time taken from localStorage
+    const storedTime = localStorage.getItem("roster_generation_time");
+    if (storedTime) {
+      setTimeTaken(parseInt(storedTime, 10));
+      // Clear it after reading so it doesn't persist
+      localStorage.removeItem("roster_generation_time");
+    }
   }, []);
 
   const checkSession = async () => {
@@ -196,6 +205,34 @@ export default function RosterPage() {
                       {rosterData.coverage_percent?.toFixed(1) || 0}%
                     </p>
                   </div>
+                  {timeTaken !== null && (
+                    <div
+                      style={{
+                        background: "rgba(16, 185, 129, 0.2)",
+                        padding: "0.75rem",
+                        borderRadius: "6px",
+                      }}
+                    >
+                      <p
+                        style={{
+                          margin: 0,
+                          fontSize: "0.8rem",
+                          color: "#34d399",
+                        }}
+                      >
+                        Time Taken
+                      </p>
+                      <p
+                        style={{
+                          margin: "0.4rem 0 0 0",
+                          fontSize: "1.25rem",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {timeTaken}s
+                      </p>
+                    </div>
+                  )}
                   <div
                     style={{
                       background: "rgba(59, 130, 246, 0.2)",

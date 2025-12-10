@@ -97,6 +97,9 @@ export default function SetRoster() {
     setProgressMessages([]);
     setCurrentStep("Running multi-agent workflow...");
 
+    // Track start time for generation duration
+    const startTime = Date.now();
+
     try {
       const response = await fetch("http://localhost:8000/generate-roster", {
         method: "POST",
@@ -113,6 +116,13 @@ export default function SetRoster() {
 
       const data = await response.json();
       console.log("Roster generated:", data);
+
+      // Calculate time taken in seconds
+      const endTime = Date.now();
+      const timeTaken = Math.round((endTime - startTime) / 1000); // Convert to seconds
+
+      // Store time taken in localStorage so RosterPage can access it
+      localStorage.setItem("roster_generation_time", timeTaken.toString());
 
       // Update progress messages if available
       if (data.progress && Array.isArray(data.progress)) {
@@ -535,7 +545,7 @@ export default function SetRoster() {
                         </div>
 
                         <div style={{ marginBottom: "1rem" }}>
-                          <p style={{ margin: "0.5rem 0", fontSize: "0.9rem" }}>
+                          <p style={{ margin: "0.5rem 0.5rem", fontSize: "0.5rem" }}>
                             <strong>Status:</strong>{" "}
                             <span
                               style={{

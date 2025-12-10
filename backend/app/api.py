@@ -239,40 +239,63 @@ def upload_roster(
     emp_ext = validate_file(employee_file.filename)
     store_ext = validate_file(store_file.filename)
 
-    # Define target paths
+    # Define target paths - save to main dataset folder
     # api.py is in backend/app/api.py
-    # we want to go to backend/multi_agents/agent_1/dataset
+    # we want to go to backend/multi_agents/dataset
 
     current_dir = os.path.dirname(os.path.abspath(__file__))  # .../backend/app
     backend_root = os.path.dirname(current_dir)  # .../backend
-    dataset_path = os.path.join(backend_root, "multi_agents", "agent_1", "dataset")
+    dataset_path = os.path.join(backend_root, "multi_agents", "dataset")
 
     print(f"Saving files to: {dataset_path}")  # Debug log
     os.makedirs(dataset_path, exist_ok=True)  # Ensure dir exists
 
-    # Save Employee File
-    # Overwrite 'employee.xlsx' (or csv) logic:
-    # Actually, the agent logic looks for specific filenames or assumes structure?
-    # agent.ipynb just loaded "employee.xlsx".
-    # We should strictly enforce saving as "employee.xlsx" if possible, or handle variable names.
-    # The user said "dataset folder in backend".
-    # To keep it simple and consistent with Agent 1, we should save as standard names.
+    # Delete ALL existing employee and store files (any extension) to replace them
+    # This ensures we always use the latest uploaded files
+    files_to_delete = [
+        "employee.xlsx",
+        "employee.csv",
+        "stores.csv",
+        "stores.xlsx",
+    ]
+    
+    for filename in files_to_delete:
+        file_path = os.path.join(dataset_path, filename)
+        if os.path.exists(file_path):
+            try:
+                os.remove(file_path)
+                print(f"Deleted old file: {filename}")
+            except Exception as e:
+                print(f"Warning: Could not delete {filename}: {e}")
 
-    emp_save_path = os.path.join(
-        dataset_path, "employee" + emp_ext
-    )  # e.g. employee.xlsx
+    # Save files with standard names: employee.xlsx/csv and stores.csv/xlsx
+    # This makes it easier to find and use them
+    emp_save_path = os.path.join(dataset_path, f"employee{emp_ext}")
+    store_save_path = os.path.join(dataset_path, f"stores{store_ext}")
 
-    # Store File
-    store_save_path = os.path.join(
-        dataset_path, "stores" + store_ext
-    )  # e.g. stores.csv
+    print(f"Saving employee file as: employee{emp_ext} -> {emp_save_path}")
+    print(f"Saving store file as: stores{store_ext} -> {store_save_path}")
 
     try:
+        # Reset file pointer to beginning (in case it was read before)
+        employee_file.file.seek(0)
+        store_file.file.seek(0)
+        
         with open(emp_save_path, "wb") as buffer:
             shutil.copyfileobj(employee_file.file, buffer)
+        print(f"✅ Successfully saved employee file to: {emp_save_path}")
 
         with open(store_save_path, "wb") as buffer:
             shutil.copyfileobj(store_file.file, buffer)
+        print(f"✅ Successfully saved store file to: {store_save_path}")
+        
+        # Verify files were saved
+        if os.path.exists(emp_save_path):
+            file_size = os.path.getsize(emp_save_path)
+            print(f"✅ Verified employee file exists: {file_size} bytes")
+        if os.path.exists(store_save_path):
+            file_size = os.path.getsize(store_save_path)
+            print(f"✅ Verified store file exists: {file_size} bytes")
 
     except Exception as e:
         print(f"Error saving files: {e}")
@@ -311,9 +334,103 @@ def generate_roster(current_user: User = Depends(get_current_user)):
 
         from multi_agents.orchestrator import run_full_pipeline
 
-        # Run the complete pipeline using orchestrator with Command goto
+        # Construct paths to uploaded files (saved in main dataset folder)
+        dataset_path = os.path.join(backend_root, "multi_agents", "dataset")
+
+        # Find files with standard names: employee.xlsx/csv and stores.csv/xlsx
+        # These are the files we just saved from the upload
+        employee_file = None
+        store_file = None
+
+        if not os.path.exists(dataset_path):
+            raise HTTPException(
+                status_code=404,
+                detail=f"Dataset folder not found: {dataset_path}. Please upload files first.",
+            )
+
+        # Look for employee file (employee.xlsx or employee.csv) - use most recent
+        employee_files = []
+        for ext in [".xlsx", ".csv"]:
+            emp_path = os.path.join(dataset_path, f"employee{ext}")
+            if os.path.exists(emp_path):
+                mtime = os.path.getmtime(emp_path)
+                employee_files.append((mtime, emp_path))
+        
+        if employee_files:
+            # Use most recent employee file
+            employee_files.sort(reverse=True)
+            employee_file = employee_files[0][1]
+            print(f"✅ Found employee file: {employee_file} (modified: {os.path.getmtime(employee_file)})")
+        else:
+            print(f"⚠️  No employee file found in {dataset_path}")
+            # List all files for debugging
+            all_files = os.listdir(dataset_path)
+            print(f"   Available files: {all_files}")
+
+        # Look for store file (stores.csv or stores.xlsx) - use most recent
+        store_files = []
+        for ext in [".csv", ".xlsx"]:
+            store_path = os.path.join(dataset_path, f"stores{ext}")
+            if os.path.exists(store_path):
+                mtime = os.path.getmtime(store_path)
+                store_files.append((mtime, store_path))
+        
+        if store_files:
+            # Use most recent store file
+            store_files.sort(reverse=True)
+            store_file = store_files[0][1]
+            print(f"✅ Found store file: {store_file} (modified: {os.path.getmtime(store_file)})")
+        else:
+            print(f"⚠️  No store file found in {dataset_path}")
+            # List all files for debugging
+            all_files = os.listdir(dataset_path)
+            print(f"   Available files: {all_files}")
+
+        # Verify files exist before proceeding
+        if not employee_file:
+            raise HTTPException(
+                status_code=404,
+                detail="Employee file not found. Please upload employee file first.",
+            )
+        if not store_file:
+            raise HTTPException(
+                status_code=404,
+                detail="Store file not found. Please upload store file first.",
+            )
+
+        # Management store file path (always JSON) - try both locations
+        management_store_file = os.path.join(dataset_path, "managment_store.json")
+        if not os.path.exists(management_store_file):
+            management_store_file = os.path.join(
+                backend_root, "multi_agents", "dataset", "managment_store.json"
+            )
+
+        # Rules files - try both locations
+        rules_file = os.path.join(dataset_path, "rules.json")
+        if not os.path.exists(rules_file):
+            rules_file = os.path.join(
+                backend_root, "multi_agents", "dataset", "rules.json"
+            )
+
+        store_rules_file = os.path.join(dataset_path, "store_rule.json")
+        if not os.path.exists(store_rules_file):
+            store_rules_file = os.path.join(
+                backend_root, "multi_agents", "dataset", "store_rule.json"
+            )
+
+        print(f"Using employee file: {employee_file}")
+        print(f"Using store file: {store_file}")
+        print(f"Using management store file: {management_store_file}")
+
+        # Run the complete pipeline using orchestrator with uploaded file paths
         print("Starting roster generation pipeline with LangGraph orchestrator...")
-        result = run_full_pipeline()
+        result = run_full_pipeline(
+            employee_file=employee_file,
+            store_requirement_file=store_file,
+            management_store_file=management_store_file,
+            rules_file=rules_file,
+            store_rules_file=store_rules_file,
+        )
 
         # Extract results from orchestrator
         roster = result.get("roster", {})

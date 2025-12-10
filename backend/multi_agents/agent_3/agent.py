@@ -993,27 +993,41 @@ def _generate_roster_from_state(
             if max_shift_hours is not None and hours > max_shift_hours:
                 hours = max_shift_hours
 
-            # Check maximum hours per day (max 12 hours per day)
+            # Check maximum hours per day (max 12 hours per day) - but be flexible to fill slots
             emp_daily_key = (emp_name_normalized, date_str)
             current_daily_hours = employee_daily_hours.get(emp_daily_key, 0.0)
             max_hours_per_day = 12.0  # Maximum hours per day
 
-            if current_daily_hours + hours > max_hours_per_day:
-                # Skip this assignment - would exceed daily maximum
-                print(
-                    f"    ⚠️  Skipping {emp_name} on {date_str} - would exceed daily max hours ({current_daily_hours + hours:.1f}h > {max_hours_per_day}h)"
-                )
-                continue
+            # is_understaffed is already calculated above
 
-            # Check maximum hours per week based on employment type
+            # Only skip daily hours if would exceed by a lot AND station is not understaffed
+            if current_daily_hours + hours > max_hours_per_day:
+                if not is_understaffed:
+                    # Station is not understaffed, skip if would exceed daily max
+                    print(
+                        f"    ⚠️  Skipping {emp_name} on {date_str} - would exceed daily max hours ({current_daily_hours + hours:.1f}h > {max_hours_per_day}h)"
+                    )
+                    continue
+                else:
+                    # Station is understaffed - reduce hours to fit within daily limit
+                    hours = max_hours_per_day - current_daily_hours
+                    if hours < min_shift_hours:
+                        # Can't fit even minimum shift, skip
+                        print(
+                            f"    ⚠️  Skipping {emp_name} on {date_str} - can't fit minimum shift ({min_shift_hours}h) within daily limit"
+                        )
+                        continue
+                    print(
+                        f"    ⚠️  Reducing hours for {emp_name} on {date_str} to fit daily limit: {hours:.1f}h"
+                    )
+
+            # Check maximum hours per week - but be flexible to fill understaffed stations
             emp_type_lower = emp_type.lower() if emp_type else ""
             max_weekly_hours = 38.0  # Default for full-time
             if "part-time" in emp_type_lower or "parttime" in emp_type_lower:
                 max_weekly_hours = 30.0  # Part-time typically less than 38
             elif "casual" in emp_type_lower:
-                max_weekly_hours = (
-                    40.0  # Casual can work more but should respect availability
-                )
+                max_weekly_hours = 40.0  # Casual can work more
 
             # Calculate week start (Monday of current week)
             week_start = current_date - timedelta(days=current_date.weekday())
@@ -1025,12 +1039,27 @@ def _generate_roster_from_state(
                 week_key, 0.0
             )
 
+            # Only skip weekly hours if would exceed by a lot AND station is not understaffed
             if current_weekly_hours + hours > max_weekly_hours:
-                # Skip this assignment - would exceed weekly maximum
-                print(
-                    f"    ⚠️  Skipping {emp_name} on {date_str} - would exceed weekly max hours ({current_weekly_hours + hours:.1f}h > {max_weekly_hours}h for {emp_type})"
-                )
-                continue
+                if not is_understaffed:
+                    # Station is not understaffed, skip if would exceed weekly max
+                    print(
+                        f"    ⚠️  Skipping {emp_name} on {date_str} - would exceed weekly max hours ({current_weekly_hours + hours:.1f}h > {max_weekly_hours}h for {emp_type})"
+                    )
+                    continue
+                else:
+                    # Station is understaffed - allow slight overage (up to 5% over) to fill critical slots
+                    allowed_overage = max_weekly_hours * 1.05
+                    if current_weekly_hours + hours > allowed_overage:
+                        # Would exceed even with overage, skip
+                        print(
+                            f"    ⚠️  Skipping {emp_name} on {date_str} - would exceed weekly max hours even with overage ({current_weekly_hours + hours:.1f}h > {allowed_overage:.1f}h)"
+                        )
+                        continue
+                    else:
+                        print(
+                            f"    ⚠️  Allowing slight overage for {emp_name} on {date_str} to fill understaffed station ({current_weekly_hours + hours:.1f}h > {max_weekly_hours}h, but within 5% overage)"
+                        )
 
             # Determine status based on day type
             status = "Scheduled"
@@ -1052,33 +1081,50 @@ def _generate_roster_from_state(
             store_reqs = station_requirements.get(assigned_store, {})
             required_count = store_reqs.get(emp_station, 0)
 
+            # Check if station is understaffed - this will be used later for flexible hours
+            is_understaffed = current_station_count < required_count
+
             # PRIORITIZE FILLING ALL AVAILABILITY SLOTS - be very flexible
-            # Only skip if station is extremely over-staffed (3x required) AND other stations are critically understaffed
-            if required_count > 0:
-                max_allowed = required_count * 3  # Allow up to 3x required to fill all slots
+            # Check if this station is understaffed - if so, ALWAYS assign (no limits)
+            is_understaffed = current_station_count < required_count
+
+            if is_understaffed:
+                # Station is understaffed - ALWAYS assign, no limits
+                # This ensures we fill all understaffed stations first
+                pass  # Continue to assignment
             else:
-                max_allowed = 10  # For optional stations, allow up to 10
+                # Station is at or above required - still allow assignments to fill availability
+                # Only skip if extremely over-staffed (5x required) AND other stations are critically understaffed
+                if required_count > 0:
+                    max_allowed = (
+                        required_count * 5
+                    )  # Allow up to 5x required to fill all slots
+                else:
+                    max_allowed = 20  # For optional stations, allow up to 20
 
-            # Only skip if extremely over-staffed (3x required) AND other stations are critically understaffed (< 50% of required)
-            if current_station_count >= max_allowed:
-                # Check if other stations are critically understaffed (< 50% of required)
-                other_stations_critically_understaffed = False
-                for other_station, other_required in store_reqs.items():
-                    if other_station != emp_station and other_required > 0:
-                        other_station_key = (assigned_store, date_str, other_station)
-                        other_count = station_assignments.get(other_station_key, 0)
-                        # Only consider critically understaffed if less than 50% of required
-                        if other_count < (other_required * 0.5):
-                            other_stations_critically_understaffed = True
-                            break
+                if current_station_count >= max_allowed:
+                    # Check if other stations are critically understaffed (< 50% of required)
+                    other_stations_critically_understaffed = False
+                    for other_station, other_required in store_reqs.items():
+                        if other_station != emp_station and other_required > 0:
+                            other_station_key = (
+                                assigned_store,
+                                date_str,
+                                other_station,
+                            )
+                            other_count = station_assignments.get(other_station_key, 0)
+                            # Only consider critically understaffed if less than 50% of required
+                            if other_count < (other_required * 0.5):
+                                other_stations_critically_understaffed = True
+                                break
 
-                # Only skip if this station is extremely over-staffed AND other stations are critically understaffed
-                if other_stations_critically_understaffed:
-                    print(
-                        f"    ⚠️  Skipping {emp_name} on {date_str} - {emp_station} at {assigned_store} has {current_station_count} staff (max {max_allowed}), prioritizing critically understaffed stations"
-                    )
-                    continue
-                # Otherwise, allow assignment to fill availability slots
+                    # Only skip if this station is extremely over-staffed AND other stations are critically understaffed
+                    if other_stations_critically_understaffed:
+                        print(
+                            f"    ⚠️  Skipping {emp_name} on {date_str} - {emp_station} at {assigned_store} has {current_station_count} staff (max {max_allowed}), prioritizing critically understaffed stations"
+                        )
+                        continue
+                    # Otherwise, allow assignment to fill availability slots
 
             # Assign manager - MAXIMUM 10 managers per store per day (display as 1/10, 2/10, etc.)
             import random

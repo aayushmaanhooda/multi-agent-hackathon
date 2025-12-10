@@ -35,10 +35,23 @@ _progress_tracker = []
 # Note: Supervisor agent is not used - we use direct graph nodes with Command goto instead
 
 
-def create_orchestrator_graph():
+def create_orchestrator_graph(
+    employee_file: str = None,
+    store_requirement_file: str = None,
+    management_store_file: str = None,
+    rules_file: str = None,
+    store_rules_file: str = None,
+):
     """
     Create a LangGraph state machine that coordinates all agents using Command and goto.
     Each agent node directly calls its tool and returns a Command with goto for routing.
+
+    Args:
+        employee_file: Path to employee file (optional)
+        store_requirement_file: Path to store requirements file (optional)
+        management_store_file: Path to management store file (optional)
+        rules_file: Path to rules file (optional)
+        store_rules_file: Path to store rules file (optional)
     """
     import uuid
 
@@ -54,8 +67,12 @@ def create_orchestrator_graph():
         _progress_tracker.append(start_msg)
         print(start_msg)
 
-        # Call the underlying function directly
-        result = run_agent1()
+        # Call the underlying function with file paths from closure
+        result = run_agent1(
+            employee_file=employee_file,
+            store_requirement_file=store_requirement_file,
+            management_store_file=management_store_file,
+        )
         state_update = result.get("state_update", {})
         employee_count = result.get("employee_count", 0)
 
@@ -78,8 +95,12 @@ def create_orchestrator_graph():
         """Agent 2: Analyze constraints - goes to agent_3"""
         print("🔄 Running Agent 2: Analyzing constraints and rules...")
 
-        # Call the underlying function directly with state
-        result = run_agent2(state=state)
+        # Call the underlying function with state and file paths from closure
+        result = run_agent2(
+            state=state,
+            rules_file=rules_file,
+            store_rules_file=store_rules_file,
+        )
         state_update = result.get("state_update", {})
 
         update = {
@@ -388,8 +409,14 @@ def run_full_pipeline(
         messages=[],
     )
 
-    # Create graph
-    app = create_orchestrator_graph()
+    # Create graph with file paths
+    app = create_orchestrator_graph(
+        employee_file=employee_file,
+        store_requirement_file=store_requirement_file,
+        management_store_file=management_store_file,
+        rules_file=rules_file,
+        store_rules_file=store_rules_file,
+    )
 
     # Prepare initial prompt for supervisor
     prompt = """Generate a complete, validated roster by following these steps:

@@ -26,10 +26,23 @@ load_dotenv()
 
 
 def load_employee_data(file_path: str) -> list:
-    """Load employee data from Excel file"""
+    """Load employee data from Excel or CSV file"""
     try:
-        # Skip first 3 rows (metadata) and use row 3 (0-indexed) as header
-        df = pd.read_excel(file_path, skiprows=3, header=0)
+        # Detect file type and use appropriate reader
+        file_ext = os.path.splitext(file_path)[1].lower()
+
+        if file_ext == ".csv":
+            # For CSV files, use read_csv
+            df = pd.read_csv(file_path, skiprows=3, header=0)
+        elif file_ext in [".xlsx", ".xls"]:
+            # For Excel files, use read_excel
+            df = pd.read_excel(file_path, skiprows=3, header=0)
+        else:
+            # Try Excel first, fallback to CSV
+            try:
+                df = pd.read_excel(file_path, skiprows=3, header=0)
+            except:
+                df = pd.read_csv(file_path, skiprows=3, header=0)
 
         # Clean up column names - remove newlines and extra spaces
         df.columns = df.columns.str.strip().str.replace("\n", " ", regex=False)
