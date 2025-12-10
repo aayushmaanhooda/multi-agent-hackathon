@@ -474,5 +474,5 @@ npm test  # If tests exist
 
 ## Contributing
 
-**Made with ❤️ by aayushmaan**
-**Thank you StarPlan**
+- **Made with ❤️ by aayushmaan**
+- **Thank you StarPlan**
