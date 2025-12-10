@@ -6,28 +6,36 @@ A sophisticated multi-agent system built with LangChain and LangGraph that gener
 
 ## Architecture Philosophy
 
-This system uses a **supervisor-led multi-agent architecture** where:
+This system uses a **state machine-orchestrated multi-agent architecture** where:
 
-- **LangGraph State Machine** acts as the orchestrator/supervisor
+- **LangGraph State Machine** orchestrates agent execution flow
 - **Shared State (`MultiAgentState`)** enables inter-agent communication
-- **Conditional Routing** allows dynamic workflow control
+- **Deterministic Routing** uses conditional logic based on state values (not LLM reasoning)
 - **Iterative Refinement** through Agent 3-4 loop until compliance achieved
 
-### Supervisor-Led vs Hands-Off Multi-Agent
+### State Machine Orchestration vs True Supervisor Agent
 
-**Supervisor-Led (This System)**:
-- LangGraph orchestrator controls agent execution flow
-- Explicit routing logic determines next agent
+**State Machine Orchestration (This System)**:
+- LangGraph state machine controls agent execution flow
+- Routing logic is **deterministic and hardcoded** (not decided by an intelligent supervisor)
+- Conditional routing based on state values (e.g., violation count, iteration count)
 - State machine enforces workflow structure
 - Predictable execution order with conditional branching
+- **No supervisor agent** - routing is rule-based, not LLM-decided
+
+**True Supervisor Agent Architecture**:
+- A supervisor agent (LLM-powered) intelligently decides which agent to call next
+- Supervisor reasons about the current state and chooses the best next action
+- More flexible but less predictable
+- Supervisor makes decisions dynamically based on context
 
 **Hands-Off Multi-Agent**:
 - Agents communicate directly with each other
 - No central orchestrator
 - Agents decide when to call other agents
-- More flexible but less predictable
+- Most flexible but least predictable
 
-Our system uses supervisor-led approach for reliability and traceability in roster generation.
+Our system uses state machine orchestration for reliability, traceability, and deterministic behavior in roster generation. The routing is **not** decided by an intelligent supervisor - it's based on explicit conditional logic in the state machine.
 
 ## Tech Stack
 
