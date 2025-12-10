@@ -1,6 +1,6 @@
 # Multi-Agent Roster Generation System
 
-![Landing Page](img/landingpage.png)
+![Landing Page](img/home.png)
 
 ## Project Overview
 
