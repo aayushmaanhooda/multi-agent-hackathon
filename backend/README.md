@@ -27,7 +27,7 @@ backend/
 
 - **FastAPI** - Modern async web framework
 - **SQLAlchemy** - ORM for database operations
-- **PostgreSQL** - Database (via psycopg2-binary)
+- **SQLite** - Database (included, no setup needed)
 - **JWT** - Authentication (python-jose, bcrypt)
 - **LangChain/LangGraph** - Multi-agent orchestration
 - **Pandas** - Data processing
@@ -38,7 +38,7 @@ backend/
 ### Prerequisites
 
 - Python 3.10+
-- PostgreSQL database
+- SQLite (included, no setup needed)
 - OpenAI API key (for LLM agents)
 
 ### Install Dependencies
@@ -54,7 +54,8 @@ Create a `.env` file in the backend root:
 
 ```env
 # Database
-DATABASE_URL=postgresql://user:password@localhost:5432/roster_db
+# SQLite (included, no setup needed) is automatically created at backend/roster.db
+# No DATABASE_URL needed - SQLite is used by default
 
 # JWT Authentication
 SECRET_KEY=your-secret-key-here
@@ -95,7 +96,7 @@ uvicorn app.api:app --host 0.0.0.0 --port 8000 --workers 4
 
 ## Database Setup
 
-The backend uses PostgreSQL with SQLAlchemy ORM:
+The backend uses SQLite with SQLAlchemy ORM. The database file is automatically created at `backend/roster.db` when the server starts:
 
 ### Models
 
@@ -371,9 +372,9 @@ Test full workflow:
 ## Troubleshooting
 
 ### Database Connection Issues
-- Verify PostgreSQL is running
-- Check `DATABASE_URL` format
-- Ensure database exists
+- SQLite runs automatically - no server needed
+- Check that backend/roster.db file exists
+- Database file is created automatically
 
 ### Agent Import Errors
 - Verify `multi_agents` directory structure

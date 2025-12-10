@@ -23,7 +23,7 @@ A full-stack application that uses a sophisticated multi-agent AI system to gene
                      │
 ┌────────────────────▼──────────────────────────────────────┐
 │                      Backend                                │
-│  FastAPI + PostgreSQL + SQLAlchemy                         │
+│  FastAPI + SQLite + SQLAlchemy                         │
 │  - Authentication (JWT)                                     │
 │  - File Upload Handling                                     │
 │  - API Endpoints                                            │
@@ -66,7 +66,7 @@ A full-stack application that uses a sophisticated multi-agent AI system to gene
 
 ### Backend
 - **FastAPI** - Web framework
-- **PostgreSQL** - Database
+- **SQLite** - Database
 - **SQLAlchemy** - ORM
 - **JWT** - Authentication
 
@@ -120,7 +120,7 @@ hackathon/
 
 - **Node.js 18+** and npm
 - **Python 3.10+**
-- **PostgreSQL** database
+- **SQLite** - Database (included, no setup needed)
 - **OpenAI API key**
 
 ### 1. Clone Repository
@@ -140,7 +140,8 @@ pip install -r requirements.txt
 
 # Create .env file
 cat > .env << EOF
-DATABASE_URL=postgresql://user:password@localhost:5432/roster_db
+# SQLite (included, no setup needed) is automatically created at backend/roster.db
+# No DATABASE_URL needed - SQLite is used by default
 SECRET_KEY=your-secret-key-here
 OPENAI_API_KEY=your-openai-api-key
 PINECONE_API_KEY=your-pinecone-key  # Optional
@@ -207,7 +208,7 @@ result = run_full_pipeline(
 
 ### Running Full Integrated Stack
 
-1. Start PostgreSQL database
+1. Start SQLite (included, no setup needed)
 2. Start backend: `cd backend && python main.py`
 3. Start frontend: `cd frontend && npm run dev`
 4. Access frontend at `http://localhost:5173`
@@ -218,7 +219,8 @@ result = run_full_pipeline(
 
 ```env
 # Database
-DATABASE_URL=postgresql://user:password@localhost:5432/roster_db
+# SQLite (included, no setup needed) is automatically created at backend/roster.db
+# No DATABASE_URL needed - SQLite is used by default
 
 # Authentication
 SECRET_KEY=your-secret-key-here
@@ -426,7 +428,7 @@ npm test  # If tests exist
 ## Troubleshooting
 
 ### Backend Won't Start
-- Check PostgreSQL is running
+- SQLite runs automatically - no server needed
 - Verify `.env` file exists and has correct values
 - Check port 8000 is available
 
@@ -452,6 +454,8 @@ npm test  # If tests exist
 - **Frontend**: See `frontend/README.md`
 - **Backend**: See `backend/README.md`
 - **Multi-Agent System**: See `backend/multi_agents/README.md`
+
+![ROSTER AI Logo](img/logo.png)
 
 ![ROSTER AI Logo](img/logo.png)
 
