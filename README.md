@@ -456,7 +456,7 @@ npm test  # If tests exist
 - **Multi-Agent System**: See `backend/multi_agents/README.md`
 
 
-
+![Landing Page](img/logo.png)
 > **Fun Fact**: The ROSTER AI logo features 5 glowing dots arranged in a circle, with each dot representing one of the 5 specialized agents in our multi-agent orchestration system (Data Parser, Constraints Analyzer, Roster Generator, Validator, and Final Check). This visual representation symbolizes the collaborative workflow where each agent plays a crucial role in generating optimal employee schedules.
 
 
