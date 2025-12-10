@@ -193,6 +193,7 @@ def run_agent2_tool(
             store_rules_file = os.path.join(dataset_path, "store_rule.json")
 
     # Run Agent 2 logic
+    # Note: run_agent2 is defined later in this file, Python will resolve it at runtime
     result = run_agent2(
         state=state, rules_file=rules_file, store_rules_file=store_rules_file
     )

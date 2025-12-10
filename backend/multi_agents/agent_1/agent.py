@@ -335,48 +335,37 @@ Shift Codes Available: {len(structured_stores.get('requirements', {}).get('shift
 Management Rules: {len(structured_stores.get('management_rules', {}).get('keyPoints', []))} key points
 """
 
-    # Create agent without tools since data is already structured
-    # Agent will just analyze the provided data
-    # Skip LLM call for faster execution - data is already structured
-    # The LLM analysis is not critical for roster generation and can cause hangs
-    print("  Structuring data (skipping LLM analysis for speed)...")
+    # Create agent with LLM intelligence for data analysis
+    print("  Using LLM to analyze and structure data intelligently...")
 
-    # Create a mock result without LLM call to avoid hanging
-    result = {
-        "messages": [
-            {"content": "Data structured successfully. Ready for roster generation."}
-        ]
-    }
+    agent = create_agent(
+        model="openai:gpt-4o-mini",
+        tools=[],  # No tools needed - data is already structured
+        system_prompt="You are a data analysis assistant for roster management. Analyze the provided structured data and provide insights and recommendations for roster building.",
+    )
 
-    # Uncomment below if you want LLM analysis (slower, may hang):
-    # agent = create_agent(
-    #     model="openai:gpt-4o-mini",
-    #     tools=[],  # No tools needed - data is already structured
-    #     system_prompt="You are a data analysis assistant for roster management. Analyze the provided structured data and provide insights and recommendations for roster building.",
-    # )
-    #
-    # # Prepare prompt with actual structured data
-    # prompt = f"""I have loaded and structured the following data:
-    #
-    # EMPLOYEE DATA (Total: {len(employee_data)} employees):
-    # {employee_summary}
-    #
-    # STORE REQUIREMENTS:
-    # {store_summary}
-    #
-    # Please analyze this structured data and provide:
-    # 1. Summary of employee distribution by type and station
-    # 2. Key insights about availability patterns
-    # 3. Store requirements analysis
-    # 4. Recommendations for roster building based on the data
-    # 5. Any potential issues or constraints to consider
-    #
-    # The data has already been structured, so focus on analysis and insights rather than restructuring.
-    # """
-    #
-    # # Invoke the agent with messages in the correct format
-    # inputs = {"messages": [{"role": "user", "content": prompt}]}
-    # result = agent.invoke(inputs)
+    # Prepare prompt with actual structured data
+    prompt = f"""I have loaded and structured the following data:
+
+EMPLOYEE DATA (Total: {len(employee_data)} employees):
+{employee_summary}
+
+STORE REQUIREMENTS:
+{store_summary}
+
+Please analyze this structured data and provide:
+1. Summary of employee distribution by type and station
+2. Key insights about availability patterns
+3. Store requirements analysis
+4. Recommendations for roster building based on the data
+5. Any potential issues or constraints to consider
+
+The data has already been structured, so focus on analysis and insights rather than restructuring.
+"""
+
+    # Invoke the agent with messages in the correct format
+    inputs = {"messages": [{"role": "user", "content": prompt}]}
+    result = agent.invoke(inputs)
 
     # Extract structured data from agent response
     # In LangChain v1, result contains messages list

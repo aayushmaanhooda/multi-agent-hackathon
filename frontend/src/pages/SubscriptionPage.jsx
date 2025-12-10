@@ -36,7 +36,7 @@ export default function SubscriptionPage() {
     ? [
         { label: "Dashboard", href: "/dashboard" },
         user.role === "admin"
-          ? { label: "Set Roster", href: "/set-roster" }
+          ? { label: "Generate Roster", href: "/set-roster" }
           : { label: "Rosters", href: "#" },
         { label: "Subscription", href: "/subscription" },
       ]
@@ -91,7 +91,7 @@ export default function SubscriptionPage() {
         "API access",
         "Custom integrations",
       ],
-      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      gradient: "linear-gradient(135deg, #3b82f6 0%, #10b981 100%)",
       popular: false,
     },
   ];

@@ -2,34 +2,40 @@
 
 ## Overview
 
-This system implements a **multi-agent orchestration pattern** for automated roster generation using LangChain v1 and LangGraph. The architecture follows a **sequential pipeline with iterative refinement**, where specialized agents work together to generate, validate, and optimize work schedules.
+This system implements a **sequential multi-agent pipeline** for automated roster generation. The architecture uses a **hardcoded sequential execution flow** with iterative refinement, where specialized agents work together to generate, validate, and optimize work schedules.
 
 ## Architecture Pattern
 
-### Pattern Type: **Sequential Multi-Agent Pipeline with Iterative Refinement Loop**
+### Pattern Type: **Sequential Pipeline with Hardcoded Execution Flow**
+
+**IMPORTANT**: This is NOT a supervisor-based multi-agent system. The execution is hardcoded in `run_pipeline.py` and `api.py`.
 
 The system uses:
-- **Sequential Execution**: Agents run in a specific order (Agent 1 → Agent 2 → Agent 3-4 Loop → Agent 5)
+- **Hardcoded Sequential Execution**: Agents run in a fixed order (Agent 1 → Agent 2 → Agent 3-4 Loop → Agent 5) with hardcoded function calls
 - **Shared State Management**: All agents read from and write to a centralized `MultiAgentState`
-- **Iterative Refinement**: Agents 3 and 4 form a feedback loop that improves the roster over multiple iterations
-- **Tool-Based Agent Exposure**: Each agent is exposed as a tool to the orchestrator using `ToolRuntime` and `InjectedToolCallId`
+- **Hardcoded Iterative Refinement**: Agents 3 and 4 form a feedback loop controlled by a hardcoded while loop (max 7 iterations)
+- **Tool-Based Agent Exposure**: Each agent CAN be exposed as a tool (via `ToolRuntime` and `InjectedToolCallId`), but this is NOT used in production
+
+**Note**: The `orchestrator.py` file exists but is NOT used. It would theoretically provide LLM-driven orchestration, but the actual system uses the hardcoded sequential flow in `run_pipeline.py`.
 
 ## System Architecture Diagram
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    ORCHESTRATOR (Optional)                       │
-│  - Coordinates agent execution                                   │
-│  - Uses LangChain create_agent with tools                       │
-│  - Can be used for LLM-driven orchestration                     │
+│                    RUN_PIPELINE (Main Entry - ACTUAL)            │
+│  - Hardcoded sequential agent execution                         │
+│  - Hardcoded while loop for Agent 3-4 iteration                  │
+│  - Direct function calls (not supervisor-based)                  │
+│  - This is what actually runs in production                     │
 └─────────────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    RUN_PIPELINE (Main Entry)                    │
-│  - Sequential agent execution                                   │
-│  - Manages iteration loop                                       │
-│  - Handles state updates                                        │
+│                    ORCHESTRATOR (NOT USED)                      │
+│  - Optional LLM-driven orchestration                             │
+│  - Exists but not integrated                                    │
+│  - Would use LangChain create_agent with tools                  │
+│  - Currently unused in production                                │
 └─────────────────────────────────────────────────────────────────┘
                             │
         ┌───────────────────┼───────────────────┐

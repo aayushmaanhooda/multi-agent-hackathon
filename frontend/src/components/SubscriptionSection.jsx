@@ -30,7 +30,7 @@ export default function SubscriptionSection() {
       period: "per month",
       icon: <Crown size={28} />,
       features: ["Unlimited access", "Full historical data"],
-      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      gradient: "linear-gradient(135deg, #3b82f6 0%, #10b981 100%)",
     },
   ];
 

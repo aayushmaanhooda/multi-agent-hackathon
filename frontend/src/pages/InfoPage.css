@@ -1,3 +1,13 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .info-page {
     position: relative;
     width: 100%;
@@ -19,16 +29,17 @@
 }
 
 .section-wrapper {
-    padding-top: 100px;
-    /* Space for Navbar & Logo */
+    padding-top: 120px;
+    /* Space for Navbar & Logo - increased to prevent overlap */
     justify-content: start;
     /* Align top to avoid footer overlap */
     padding-bottom: 2rem;
-    height: 100vh;
-    /* Force snap height */
+    min-height: 100vh;
+    /* Use min-height instead of height for better flexibility */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /* Start from top instead of center */
 }
 
 @media (min-height: 800px) {

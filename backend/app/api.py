@@ -287,14 +287,21 @@ def upload_roster(
 @app.post("/generate-roster")
 def generate_roster(current_user: User = Depends(get_current_user)):
     """
-    Generate roster using the complete multi-agent pipeline.
+    Generate roster using the complete multi-agent pipeline with LangGraph orchestrator.
+
+    Uses Command and goto for dynamic routing between agents:
+    - Agent 1 → Agent 2 → Agent 3 → Agent 4
+    - Agent 4 loops back to Agent 3 if violations found (via Command goto)
+    - Agent 4 → Agent 5 when validation complete
+    - Agent 5 finishes the pipeline
+
     Returns roster file path, violations, and report information.
     """
     if current_user.role != "admin":
         raise HTTPException(status_code=403, detail="Admin privileges required")
 
     try:
-        # Import the full pipeline components
+        # Import the orchestrator
         import sys
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -302,150 +309,24 @@ def generate_roster(current_user: User = Depends(get_current_user)):
         multi_agents_path = os.path.join(backend_root, "multi_agents")
         sys.path.insert(0, multi_agents_path)
 
-        from multi_agents.agent_1.agent import run_agent1
-        from multi_agents.agent_2.agent import run_agent2
-        from multi_agents.agent_3.agent import run_agent3
-        from multi_agents.agent_4.agent import run_agent4
-        from multi_agents.agent_5.agent import run_agent5
-        from multi_agents.shared_state import MultiAgentState
+        from multi_agents.orchestrator import run_full_pipeline
 
-        # Helper functions
-        def _update_state(state, key, value):
-            if isinstance(state, dict):
-                state[key] = value
-            else:
-                setattr(state, key, value)
+        # Run the complete pipeline using orchestrator with Command goto
+        print("Starting roster generation pipeline with LangGraph orchestrator...")
+        result = run_full_pipeline()
 
-        def _get_state_value(state, key, default=None):
-            if isinstance(state, dict):
-                return state.get(key, default)
-            else:
-                return getattr(state, key, default)
+        # Extract results from orchestrator
+        roster = result.get("roster", {})
+        final_violations = result.get("violations", [])
+        iteration_count = result.get("iterations", 0)
 
-        # Run the complete pipeline
-        print("Starting roster generation pipeline...")
+        excel_path = roster.get("excel_path") if isinstance(roster, dict) else None
 
-        # Step 1: Agent 1
-        result1 = run_agent1()
-        state1 = result1.get("state_update", {})
-        employee_count = result1.get("employee_count", 0)
+        # Get report paths from final_check_report in state
+        state = result.get("state", {})
+        final_check_report = state.get("final_check_report", {})
 
-        if employee_count == 0:
-            raise HTTPException(
-                status_code=400,
-                detail="No employees found. Please upload employee data first.",
-            )
-
-        # Step 2: Agent 2
-        result2 = run_agent2(state=state1)
-        state2 = result2.get("state_update", {})
-        constraints = result2.get("constraints", {})
-
-        # Step 3-4: Agent 3-4 Loop
-        multi_state = MultiAgentState(
-            employee_data=state2.get("employee_data", []),
-            store_requirements=state2.get("store_requirements", {}),
-            management_store=state2.get("management_store", {}),
-            structured_data=state2.get("structured_data", {}),
-            constraints=state2.get("constraints", {}),
-            rules_data=state2.get("rules_data", {}),
-            store_rules_data=state2.get("store_rules_data", {}),
-            roster={},
-            roster_metadata={},
-            violations=[],
-            iteration_count=0,
-            validation_complete=False,
-            final_check_report={},
-            final_check_complete=False,
-            messages=state2.get("messages", []),
-        )
-
-        max_iterations = 7
-        iteration = 0
-        accumulated_violations = []
-
-        while iteration < max_iterations:
-            iteration += 1
-            print(f"--- Iteration {iteration}/{max_iterations} ---")
-
-            # Generate roster
-            _update_state(multi_state, "violations", accumulated_violations)
-            result3 = run_agent3(state=multi_state, use_llm=False)
-            updated_state = result3.get("state", {})
-            roster_data = result3.get("roster", {})
-
-            roster_to_set = (
-                roster_data
-                if roster_data
-                else (
-                    updated_state.get("roster", {})
-                    if isinstance(updated_state, dict)
-                    else getattr(updated_state, "roster", {})
-                )
-            )
-            _update_state(multi_state, "roster", roster_to_set)
-
-            # Validate roster
-            result4 = run_agent4(state=multi_state)
-            new_violations = result4.get("violations", [])
-            violation_count = result4.get("violation_count", 0)
-            critical_count = result4.get("critical_count", 0)
-
-            # Accumulate violations
-            violation_keys = set()
-            for v in accumulated_violations:
-                key = (
-                    str(v.get("employee", "")).lower().strip(),
-                    str(v.get("date", "")).strip(),
-                    str(v.get("type", "")).strip(),
-                    str(v.get("shift_code", "")).upper().strip(),
-                )
-                violation_keys.add(key)
-
-            for v in new_violations:
-                key = (
-                    str(v.get("employee", "")).lower().strip(),
-                    str(v.get("date", "")).strip(),
-                    str(v.get("type", "")).strip(),
-                    str(v.get("shift_code", "")).upper().strip(),
-                )
-                if key not in violation_keys:
-                    accumulated_violations.append(v)
-                    violation_keys.add(key)
-
-            _update_state(multi_state, "violations", new_violations)
-            _update_state(multi_state, "iteration_count", iteration)
-            _update_state(
-                multi_state, "validation_complete", result4.get("is_compliant", False)
-            )
-
-            # Early stopping check
-            if violation_count == 0:
-                break
-
-            shifts = (
-                roster_to_set.get("shifts", [])
-                if isinstance(roster_to_set, dict)
-                else getattr(roster_to_set, "shifts", [])
-            )
-            current_coverage = (len(shifts) / 345.0 * 100) if len(shifts) > 0 else 0
-            if iteration >= 3 and current_coverage >= 90.0 and violation_count <= 10:
-                break
-
-        # Step 5: Agent 5 - Final Check
-        result5 = run_agent5(state=multi_state)
-
-        # Get final results
-        roster = _get_state_value(multi_state, "roster", {})
-        final_violations = _get_state_value(multi_state, "violations", [])
-
-        excel_path = (
-            roster.get("excel_path")
-            if isinstance(roster, dict)
-            else getattr(roster, "excel_path", None)
-        )
-
-        report_path = result5.get("report_path", "")
+        report_path = final_check_report.get("report_path", "")
         report_json_path = report_path.replace(".txt", ".json") if report_path else ""
 
         # Extract just the filename for download endpoints
@@ -455,11 +336,13 @@ def generate_roster(current_user: User = Depends(get_current_user)):
             os.path.basename(report_json_path) if report_json_path else None
         )
 
+        # Get progress messages from result
+        progress_messages = result.get("progress", [])
+
         # Return response with file paths and data
-        # Use result5 directly since run_agent5 returns the report data, not state
         return {
             "status": "success",
-            "message": f"Roster generated successfully after {iteration} iteration(s)",
+            "message": f"Roster generated successfully after {iteration_count} iteration(s)",
             "roster_file": excel_filename,
             "report_file": report_filename,
             "report_json_file": report_json_filename,
@@ -468,13 +351,16 @@ def generate_roster(current_user: User = Depends(get_current_user)):
             "critical_violations": sum(
                 1 for v in final_violations if v.get("severity") == "critical"
             ),
-            "iterations": iteration,
-            "coverage_percent": result5.get("availability_coverage_percent", 0),
-            "filled_slots": result5.get("filled_slots", 0),
-            "total_slots": result5.get("total_slots", 0),
-            "roster_status": result5.get("roster_status", "unknown"),
-            "summary": result5.get("summary", ""),
-            "recommendations": result5.get("recommendations", []),
+            "iterations": iteration_count,
+            "coverage_percent": final_check_report.get(
+                "availability_coverage_percent", 0
+            ),
+            "filled_slots": final_check_report.get("filled_slots", 0),
+            "total_slots": final_check_report.get("total_slots", 0),
+            "roster_status": final_check_report.get("roster_status", "unknown"),
+            "summary": final_check_report.get("summary", ""),
+            "recommendations": final_check_report.get("recommendations", []),
+            "progress": progress_messages,  # Include progress messages for UI
         }
 
     except Exception as e:

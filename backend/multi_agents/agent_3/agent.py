@@ -85,16 +85,84 @@ def _get_store_config(store_requirements: dict) -> dict:
     return {}
 
 
-def _identify_managers(employees: List[Dict[str, Any]]) -> List[str]:
-    """Identify potential managers from employees (Full-Time employees)"""
+def _generate_manager_names(count: int = 10) -> List[str]:
+    """Generate random manager names (not using employee names)"""
+    import random
+
+    first_names = [
+        "Alex",
+        "Jordan",
+        "Taylor",
+        "Morgan",
+        "Casey",
+        "Riley",
+        "Avery",
+        "Quinn",
+        "Blake",
+        "Cameron",
+        "Dakota",
+        "Emery",
+        "Finley",
+        "Harper",
+        "Hayden",
+        "Jamie",
+        "Kai",
+        "Logan",
+        "Parker",
+        "Reese",
+        "River",
+        "Sage",
+        "Skylar",
+    ]
+
+    last_names = [
+        "Anderson",
+        "Brown",
+        "Davis",
+        "Garcia",
+        "Harris",
+        "Jackson",
+        "Johnson",
+        "Jones",
+        "Lee",
+        "Martinez",
+        "Miller",
+        "Moore",
+        "Robinson",
+        "Smith",
+        "Taylor",
+        "Thomas",
+        "Thompson",
+        "Walker",
+        "White",
+        "Williams",
+        "Wilson",
+        "Wright",
+        "Young",
+    ]
+
     managers = []
-    for emp in employees:
-        emp_type = emp.get("type", "").lower()
-        emp_name = emp.get("name", "")
-        # Full-Time employees are typically managers
-        if "full-time" in emp_type or "fulltime" in emp_type:
-            managers.append(emp_name)
+    for i in range(count):
+        first = random.choice(first_names)
+        last = random.choice(last_names)
+        manager_name = f"{first} {last}"
+        # Ensure unique names
+        while manager_name in managers:
+            first = random.choice(first_names)
+            last = random.choice(last_names)
+            manager_name = f"{first} {last}"
+        managers.append(manager_name)
+
     return managers
+
+
+def _identify_managers(employees: List[Dict[str, Any]]) -> List[str]:
+    """Generate manager names - all managers are full-time employees (random names, not employee names)"""
+    # Generate random manager names instead of using employee names
+    # All managers are full-time employees, but we use generated names
+    # Generate at least 20 managers to ensure we have enough for multiple assignments per store/day
+    num_managers = max(20, len(employees) // 2)  # Generate at least 20 managers
+    return _generate_manager_names(num_managers)
 
 
 def _assign_manager_to_shift(
@@ -103,36 +171,17 @@ def _assign_manager_to_shift(
     managers: List[str],
     manager_assignments: Dict[str, List[str]],
     needs_manager: bool = False,
+    store: str = "",
+    date: str = "",
+    managers_per_store_per_day: Dict = None,
 ) -> str:
-    """Assign a manager to a shift, ensuring coverage"""
-    # Key for tracking manager assignments per shift
-    shift_key = f"{day_name}_{shift_time}"
+    """Assign a manager to a shift - NO LIMITS, always assign a random manager"""
+    import random
 
-    # Get already assigned managers for this shift
-    assigned = manager_assignments.get(shift_key, [])
-
-    # Find available managers (not already assigned to this shift)
-    available = [m for m in managers if m not in assigned]
-
-    if not available:
-        # If all managers are assigned, reuse one (they can manage multiple areas)
-        available = managers
-
-    # If this shift needs a manager (from violations), prioritize assigning one
-    if needs_manager and not assigned:
-        # Ensure we assign a manager
-        import random
-
-        selected_manager = (
-            random.choice(available) if available else (managers[0] if managers else "")
-        )
-    else:
-        # Randomly select a manager
-        import random
-
-        selected_manager = (
-            random.choice(available) if available else (managers[0] if managers else "")
-        )
+    # Simply return a random manager - no checks, no limits, no conditions
+    if managers:
+        return random.choice(managers)
+    return ""
 
     # Track assignment
     if shift_key not in manager_assignments:
@@ -495,19 +544,91 @@ def _generate_roster_from_state(
     # Track employee shifts in current roster to check rest periods dynamically
     employee_previous_shifts = {}  # {emp_name: [(date, shift_time, shift_code)]}
 
+    # Track hours per employee per day and per week to enforce maximum hours rules
+    employee_daily_hours = {}  # {(emp_name, date): total_hours}
+    employee_weekly_hours = {}  # {emp_name: {week_start: total_hours}}
+
+    # Track managers per store per day - MAXIMUM 10 managers per store per day
+    managers_per_store_per_day = {}  # {(store, date): [manager_names]}
+    MAX_MANAGERS_PER_STORE_PER_DAY = 10  # Maximum 10 managers per store per day
+
+    # Track station assignments per store per day to prevent over-assignment
+    # Format: {(store, date, station): count}
+    station_assignments = {}  # {(store, date, station): count}
+
+    # Define minimum staffing requirements per store per station
+    # MUST match Agent 5's DEFAULT_STAFFING_REQUIREMENTS
+    station_requirements = {
+        "Store 1: CBD Core Area": {
+            "Kitchen": 6,
+            "Counter": 4,
+            "Multi-Station McCafe": 3,
+            "Dessert Station": 2,
+        },
+        "Store 2: Suburban Residential": {
+            "Kitchen": 4,
+            "Counter": 3,
+            "Multi-Station McCafe": 2,
+            "Dessert Station": 0,  # No dessert station in Store 2
+        },
+    }
+
     for day_offset in range(14):
         current_date = start_date + timedelta(days=day_offset)
         day_name = day_names[current_date.weekday()]
         day_key = f"Day_{day_offset + 1}"
         date_str = current_date.strftime("%Y-%m-%d")
 
+        # First pass: Assign to understaffed stations (prioritize filling gaps)
+        # Second pass: Fill remaining availability slots evenly
+
+        # Track which stations need more staff for this day
+        stations_needing_staff = {}  # {(store, station): needed_count}
+        for store_name, store_reqs in station_requirements.items():
+            for station, required in store_reqs.items():
+                station_key = (store_name, date_str, station)
+                current_count = station_assignments.get(station_key, 0)
+                if current_count < required:
+                    key = (store_name, station)
+                    stations_needing_staff[key] = stations_needing_staff.get(key, 0) + (
+                        required - current_count
+                    )
+
         # Assign shifts to employees based on availability
+        # Prioritize employees whose stations need staff
+        employees_to_assign = []
+        employees_other = []
+
         for emp in employees_shuffled:
+            emp_station = emp.get("station", "")
+            # Check if this employee's station needs staff in any store
+            station_needs_staff = False
+            for (store_name, station), needed in stations_needing_staff.items():
+                if station == emp_station and needed > 0:
+                    station_needs_staff = True
+                    break
+
+            if station_needs_staff:
+                employees_to_assign.append(emp)
+            else:
+                employees_other.append(emp)
+
+        # Combine: prioritize understaffed stations first, then others
+        employees_prioritized = employees_to_assign + employees_other
+
+        for emp in employees_prioritized:
             emp_id = emp.get("id", "")
             emp_name = emp.get("name", "")
             emp_type = emp.get("type", "")
             emp_station = emp.get("station", "")
             availability = emp.get("availability", {})
+
+            # Check if this employee's station needs staff (for prioritization)
+            emp_station_needs_staff = False
+            for (store_name, station), needed in stations_needing_staff.items():
+                if station == emp_station and needed > 0:
+                    emp_station_needs_staff = True
+                    break
 
             # Check employee availability for this day - MUST match exactly what employee requested
             shift_code = availability.get(day_key, "")
@@ -638,6 +759,35 @@ def _generate_roster_from_state(
             shift_info = _get_shift_info(final_shift_code, management_store)
             shift_time = shift_info.get("time", "TBD")
             hours = shift_info.get("hours", 0)
+
+            # CRITICAL: If hours is 0 or not found, use default based on shift code
+            # This ensures we don't assign 0 hours or default to 9 for everyone
+            if hours == 0 or hours is None:
+                # Try to infer from shift code name or use a reasonable default
+                shift_name = shift_info.get("name", "").lower()
+                if "full" in shift_name or "3f" in final_shift_code.lower():
+                    hours = 12.0  # Full day
+                elif (
+                    "half" in shift_name
+                    or "1f" in final_shift_code.lower()
+                    or "2f" in final_shift_code.lower()
+                ):
+                    hours = 9.0  # Half day
+                elif "shift change" in shift_name or "sc" in final_shift_code.lower():
+                    hours = 9.0
+                elif "day" in shift_name or "s" == final_shift_code.upper():
+                    hours = 8.5  # Day shift
+                elif "meeting" in shift_name or "m" == final_shift_code.upper():
+                    hours = 8.0
+                else:
+                    # Default to minimum shift hours if we can't determine
+                    hours = min_shift_hours
+                    print(
+                        f"    ⚠️  Could not determine hours for shift code {final_shift_code}, using minimum {min_shift_hours}h"
+                    )
+
+            # Ensure hours is numeric
+            hours = float(hours) if hours is not None else min_shift_hours
 
             # Check rest period violations from previous iterations
             # PRIORITY: In later iterations, skip problematic dates to aggressively fix violations
@@ -843,6 +993,45 @@ def _generate_roster_from_state(
             if max_shift_hours is not None and hours > max_shift_hours:
                 hours = max_shift_hours
 
+            # Check maximum hours per day (max 12 hours per day)
+            emp_daily_key = (emp_name_normalized, date_str)
+            current_daily_hours = employee_daily_hours.get(emp_daily_key, 0.0)
+            max_hours_per_day = 12.0  # Maximum hours per day
+
+            if current_daily_hours + hours > max_hours_per_day:
+                # Skip this assignment - would exceed daily maximum
+                print(
+                    f"    ⚠️  Skipping {emp_name} on {date_str} - would exceed daily max hours ({current_daily_hours + hours:.1f}h > {max_hours_per_day}h)"
+                )
+                continue
+
+            # Check maximum hours per week based on employment type
+            emp_type_lower = emp_type.lower() if emp_type else ""
+            max_weekly_hours = 38.0  # Default for full-time
+            if "part-time" in emp_type_lower or "parttime" in emp_type_lower:
+                max_weekly_hours = 30.0  # Part-time typically less than 38
+            elif "casual" in emp_type_lower:
+                max_weekly_hours = (
+                    40.0  # Casual can work more but should respect availability
+                )
+
+            # Calculate week start (Monday of current week)
+            week_start = current_date - timedelta(days=current_date.weekday())
+            week_key = week_start.strftime("%Y-%m-%d")
+
+            if emp_name_normalized not in employee_weekly_hours:
+                employee_weekly_hours[emp_name_normalized] = {}
+            current_weekly_hours = employee_weekly_hours[emp_name_normalized].get(
+                week_key, 0.0
+            )
+
+            if current_weekly_hours + hours > max_weekly_hours:
+                # Skip this assignment - would exceed weekly maximum
+                print(
+                    f"    ⚠️  Skipping {emp_name} on {date_str} - would exceed weekly max hours ({current_weekly_hours + hours:.1f}h > {max_weekly_hours}h for {emp_type})"
+                )
+                continue
+
             # Determine status based on day type
             status = "Scheduled"
             if day_name in ["Saturday", "Sunday"]:
@@ -855,18 +1044,88 @@ def _generate_roster_from_state(
                 emp_station, shift_time, day_name, store_config, traffic_data, iteration
             )
 
-            # Assign manager to shift (ensuring at least one manager per shift)
-            # Check if this shift needs a manager based on violations
-            shift_key = f"{day_name}_{shift_time}"
-            needs_manager = manager_coverage_needed.get((date_str, shift_time), False)
+            # Check if this station/store/day already has enough staff BEFORE assigning
+            station_key = (assigned_store, date_str, emp_station)
+            current_station_count = station_assignments.get(station_key, 0)
 
-            assigned_manager = _assign_manager_to_shift(
-                shift_time, day_name, managers, manager_assignments, needs_manager
-            )
+            # Get required count for this specific store and station
+            store_reqs = station_requirements.get(assigned_store, {})
+            required_count = store_reqs.get(emp_station, 0)
 
-            # If this shift needed a manager and we got one, mark it as covered
-            if needs_manager and assigned_manager:
-                manager_coverage_needed[(date_str, shift_time)] = False
+            # PRIORITIZE FILLING ALL AVAILABILITY SLOTS - be very flexible
+            # Only skip if station is extremely over-staffed (3x required) AND other stations are critically understaffed
+            if required_count > 0:
+                max_allowed = required_count * 3  # Allow up to 3x required to fill all slots
+            else:
+                max_allowed = 10  # For optional stations, allow up to 10
+
+            # Only skip if extremely over-staffed (3x required) AND other stations are critically understaffed (< 50% of required)
+            if current_station_count >= max_allowed:
+                # Check if other stations are critically understaffed (< 50% of required)
+                other_stations_critically_understaffed = False
+                for other_station, other_required in store_reqs.items():
+                    if other_station != emp_station and other_required > 0:
+                        other_station_key = (assigned_store, date_str, other_station)
+                        other_count = station_assignments.get(other_station_key, 0)
+                        # Only consider critically understaffed if less than 50% of required
+                        if other_count < (other_required * 0.5):
+                            other_stations_critically_understaffed = True
+                            break
+
+                # Only skip if this station is extremely over-staffed AND other stations are critically understaffed
+                if other_stations_critically_understaffed:
+                    print(
+                        f"    ⚠️  Skipping {emp_name} on {date_str} - {emp_station} at {assigned_store} has {current_station_count} staff (max {max_allowed}), prioritizing critically understaffed stations"
+                    )
+                    continue
+                # Otherwise, allow assignment to fill availability slots
+
+            # Assign manager - MAXIMUM 10 managers per store per day (display as 1/10, 2/10, etc.)
+            import random
+
+            # Track managers for this store/day
+            store_day_key = (assigned_store, date_str)
+            if store_day_key not in managers_per_store_per_day:
+                managers_per_store_per_day[store_day_key] = []
+
+            current_manager_count = len(managers_per_store_per_day[store_day_key])
+
+            # Assign managers up to maximum of 10 per store per day
+            if current_manager_count < MAX_MANAGERS_PER_STORE_PER_DAY:
+                # Calculate how many more managers we can assign
+                remaining_slots = MAX_MANAGERS_PER_STORE_PER_DAY - current_manager_count
+                # Assign 1 manager for this shift (can assign up to remaining slots)
+                num_to_assign = min(1, remaining_slots, len(managers))
+
+                if num_to_assign > 0:
+                    # Get managers not already assigned to this store/day
+                    available_managers = [
+                        m
+                        for m in managers
+                        if m not in managers_per_store_per_day[store_day_key]
+                    ]
+                    if not available_managers:
+                        available_managers = managers  # Reuse if all are assigned
+
+                    new_manager = random.choice(available_managers)
+                    managers_per_store_per_day[store_day_key].append(new_manager)
+                    assigned_manager = new_manager
+
+                    # Display count as X/10
+                    new_count = len(managers_per_store_per_day[store_day_key])
+                    print(
+                        f"    ✅ Assigned manager {new_manager} to {assigned_store} on {date_str} ({new_count}/{MAX_MANAGERS_PER_STORE_PER_DAY} managers)"
+                    )
+                else:
+                    assigned_manager = ""
+            else:
+                # Already have 10 managers - reuse one of them
+                assigned_manager = random.choice(
+                    managers_per_store_per_day[store_day_key]
+                )
+                print(
+                    f"    ✅ Reusing manager {assigned_manager} for {assigned_store} on {date_str} ({MAX_MANAGERS_PER_STORE_PER_DAY}/{MAX_MANAGERS_PER_STORE_PER_DAY} managers - at maximum)"
+                )
 
             # Create roster row
             roster_row = {
@@ -885,6 +1144,15 @@ def _generate_roster_from_state(
             }
 
             roster_rows.append(roster_row)
+
+            # Track station assignment
+            station_assignments[station_key] = current_station_count + 1
+
+            # Track hours for this employee
+            employee_daily_hours[emp_daily_key] = current_daily_hours + hours
+            employee_weekly_hours[emp_name_normalized][week_key] = (
+                current_weekly_hours + hours
+            )
 
             # Track this shift for rest period checking in future assignments
             if emp_name_normalized not in employee_previous_shifts:
@@ -1144,15 +1412,23 @@ def run_agent3(state: Optional[MultiAgentState] = None, use_llm: bool = True) ->
         agent = create_agent(
             model="openai:gpt-4o-mini",
             tools=[generate_roster_tool],
-            system_prompt="""You are an expert roster scheduler. Your task is to generate optimal work schedules that:
-1. Satisfy all Fair Work Act compliance requirements
-2. Match employee availability and preferences
-3. Meet store operational requirements
-4. Apply correct penalty rates for weekends and holidays
-5. Ensure proper break periods and rest between shifts
-6. Optimize coverage during peak hours
+            system_prompt="""You are an expert roster scheduler. Your PRIMARY GOAL is to MAXIMIZE COVERAGE and fill ALL available employee slots.
 
-Use the generate_roster tool to create the schedule. The tool has access to all employee data, constraints, and requirements from the state.""",
+CRITICAL PRIORITIES (in order):
+1. FILL ALL AVAILABILITY SLOTS - Assign shifts to EVERY employee who is available. Target 90%+ coverage.
+2. MEET MINIMUM STAFFING REQUIREMENTS - Ensure all stations have at least the required staff.
+3. Respect maximum hours per day/week (but prioritize filling slots over strict limits when possible)
+4. Apply correct penalty rates and ensure proper breaks
+5. Assign managers to all shifts (up to 10 per store per day)
+
+RULES:
+- If an employee is available for a shift, ASSIGN THEM. Don't skip unless absolutely necessary.
+- Prioritize filling understaffed stations first, then fill remaining availability.
+- Be flexible with station assignments - allow up to 3x required staff to fill all slots.
+- Use shift hours from management_store.json - vary hours based on shift codes.
+- Maximum hours: Full-time 38h/week, Part-time <38h/week, Casual variable.
+
+Use the generate_roster tool to create the schedule. MAXIMIZE COVERAGE - fill every available slot.""",
         )
 
         # Prepare comprehensive prompt with all context
@@ -1177,14 +1453,35 @@ CONSTRAINTS AND RULES:
 STORE REQUIREMENTS:
 {json.dumps(store_req, default=str, indent=2)[:1000]}
 
+CRITICAL: Your PRIMARY MISSION is to ACHIEVE 90%+ COVERAGE by filling ALL available employee slots.
+
 Please use the generate_roster tool to create a complete roster that:
-- Assigns shifts to employees based on their availability
-- Ensures minimum 3-hour shifts and maximum 12-hour shifts
-- Provides 10+ hours rest between shifts
+
+PRIORITY 1 - MAXIMIZE COVERAGE:
+- FILL EVERY AVAILABLE EMPLOYEE SLOT - if an employee is available, ASSIGN THEM
+- Target 90%+ coverage - do NOT leave availability slots unfilled
+- Assign shifts to employees based on their availability - use ALL available employees
+- If an employee says they're available for 3F on 2025-12-12, ASSIGN THEM that shift
+
+PRIORITY 2 - MEET STAFFING REQUIREMENTS:
+- Ensure all stations meet minimum requirements (Kitchen: 6/4, Counter: 4/3, McCafe: 3/2)
+- Fill understaffed stations FIRST, then fill remaining availability
+- Allow flexible station assignments to fill all slots
+
+PRIORITY 3 - COMPLIANCE (be flexible, but don't skip assignments unnecessarily):
+- Respect maximum hours per week: Full-time max 38h/week, Part-time <38h/week
+- Provides 10+ hours rest between shifts (but if needed to fill slots, be flexible)
+- Ensures minimum 3-hour shifts and maximum 12-hour shifts PER SHIFT
+- Do NOT assign everyone the same hours - vary hours based on shift codes (S=8.5h, 1F=9h, 2F=9h, 3F=12h)
+
+OTHER REQUIREMENTS:
+- ALWAYS assign managers to ALL shifts (up to 10 per store per day)
 - Applies correct penalty rates (Saturday 1.25x, Sunday 1.5x, Public Holidays 2.25x)
 - Includes proper meal breaks (30 min for 5+ hour shifts)
-- Meets store operational needs
-- Optimizes employee satisfaction and coverage
+
+REMEMBER: Your goal is 90%+ coverage. Fill every available slot. Don't skip assignments unless absolutely necessary.
+
+IMPORTANT: Check the shift codes in management_store.json - each shift code has specific hours (S=8.5h, 1F=9h, 2F=9h, 3F=12h, SC=9h, M=8h). Use these hours, don't assign the same hours to everyone.
 
 Generate the roster now."""
 
@@ -1215,9 +1512,75 @@ Generate the roster now."""
 
         result = agent.invoke(inputs)
 
-        # Extract roster from updated state
-        updated_state = result
+        # Extract roster from result
+        # When using LangChain agent, result is typically a dict with "messages" key
+        # The tool's Command.update should be applied, but we need to check messages
+        updated_state = result if isinstance(result, dict) else {}
         roster = updated_state.get("roster", {})
+
+        # Check if LLM actually called the tool by examining messages
+        tool_called = False
+        if isinstance(result, dict) and "messages" in result:
+            messages = result.get("messages", [])
+            for msg in messages:
+                # Check if there's a tool call or tool message
+                if hasattr(msg, "tool_calls") and msg.tool_calls:
+                    tool_called = True
+                    break
+                elif hasattr(msg, "name") and msg.name == "generate_roster_tool":
+                    tool_called = True
+                    break
+                elif isinstance(msg, dict) and msg.get("tool_calls"):
+                    tool_called = True
+                    break
+
+        # If tool was called but roster not in result, the tool's Command.update wasn't applied
+        # This happens when agent.invoke() is used directly (not through graph)
+        # The tool returns a Command with goto/update, but when invoked directly, only messages are returned
+        # We need to execute the tool directly to get the roster
+        if tool_called and not roster:
+            print(
+                "⚠️  LLM called tool but Command.update not applied (agent.invoke() used directly, not through graph)."
+            )
+            print("   Executing tool directly to get roster...")
+            try:
+                # Create a mock ToolRuntime to call the tool directly
+                from langchain.tools import ToolRuntime
+
+                class MockRuntime:
+                    def __init__(self, state):
+                        self.state = state
+
+                mock_runtime = MockRuntime(state)
+                tool_result = generate_roster_tool(
+                    runtime=mock_runtime, tool_call_id="direct_call"
+                )
+
+                # Extract roster from Command.update
+                if hasattr(tool_result, "update") and isinstance(
+                    tool_result.update, dict
+                ):
+                    roster = tool_result.update.get("roster", {})
+                elif isinstance(tool_result, dict):
+                    roster = tool_result.get("update", {}).get("roster", {})
+
+                if roster:
+                    print(
+                        "   ✅ Successfully extracted roster from tool's Command.update"
+                    )
+                    updated_state = (
+                        {**state, "roster": roster}
+                        if isinstance(state, dict)
+                        else state
+                    )
+                else:
+                    print(
+                        "   ⚠️  Could not extract roster from tool. Falling back to direct generation..."
+                    )
+            except Exception as e:
+                print(
+                    f"   ⚠️  Error executing tool directly: {e}. Falling back to direct generation..."
+                )
 
         if not roster:
             # Fallback: generate directly

@@ -73,9 +73,9 @@ export default function RosterPage() {
 
   const navItems = [
     { label: "Dashboard", href: "/dashboard" },
-    { label: "ROSTER", href: "/roster" },
+    { label: "Roster", href: "/roster" },
     user?.role === "admin"
-      ? { label: "Set Roster", href: "/set-roster" }
+      ? { label: "Generate Roster", href: "/set-roster" }
       : null,
     { label: "Subscription", href: "/subscription" },
   ].filter(Boolean);
@@ -94,17 +94,20 @@ export default function RosterPage() {
         style={{
           justifyContent: "center",
           minHeight: "100vh",
-          paddingTop: "2rem",
           paddingBottom: "2rem",
         }}
       >
         <div
           className="info-container"
-          style={{ maxWidth: "900px", width: "100%" }}
+          style={{ maxWidth: "800px", width: "100%", padding: "1.25rem" }}
         >
           <h1
             className="info-title"
-            style={{ textAlign: "center", marginBottom: "2rem" }}
+            style={{
+              textAlign: "center",
+              marginBottom: "1rem",
+              fontSize: "1.75rem",
+            }}
           >
             <GradientText colors={["#fff", "#aaa", "#fff"]}>
               Roster
@@ -125,10 +128,11 @@ export default function RosterPage() {
                   borderBottom: "none",
                 }}
               >
-                Yet to Set Roster
+                No Roster Generated Yet
               </h2>
               <p className="info-text" style={{ color: "#d1d5db" }}>
-                No roster has been generated yet. Please set a roster first.
+                No roster has been generated yet. Please generate a roster
+                first.
               </p>
               {user?.role === "admin" && (
                 <button
@@ -136,10 +140,10 @@ export default function RosterPage() {
                   className="form-button"
                   style={{
                     marginTop: "1.5rem",
-                    background: "linear-gradient(to right, #ec4899, #8b5cf6)",
+                    background: "linear-gradient(to right, #3b82f6, #10b981)",
                   }}
                 >
-                  Go to Set Roster
+                  Go to Generate Roster
                 </button>
               )}
             </div>
@@ -148,43 +152,44 @@ export default function RosterPage() {
               <h3
                 className="info-subtitle"
                 style={{
-                  marginBottom: "1rem",
-                  borderBottom: "2px solid #8b5cf6",
-                  paddingBottom: "0.5rem",
+                  marginBottom: "0.75rem",
+                  borderBottom: "2px solid #3b82f6",
+                  paddingBottom: "0.4rem",
+                  fontSize: "1.1rem",
                 }}
               >
                 Current Roster
               </h3>
 
-              <div style={{ marginBottom: "1.5rem" }}>
+              <div style={{ marginBottom: "1rem" }}>
                 <div
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-                    gap: "1rem",
-                    marginBottom: "1rem",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+                    gap: "0.75rem",
+                    marginBottom: "0.75rem",
                   }}
                 >
                   <div
                     style={{
-                      background: "rgba(139, 92, 246, 0.2)",
-                      padding: "1rem",
-                      borderRadius: "8px",
+                      background: "rgba(59, 130, 246, 0.2)",
+                      padding: "0.75rem",
+                      borderRadius: "6px",
                     }}
                   >
                     <p
                       style={{
                         margin: 0,
-                        fontSize: "0.9rem",
-                        color: "#a78bfa",
+                        fontSize: "0.8rem",
+                        color: "#60a5fa",
                       }}
                     >
                       Coverage
                     </p>
                     <p
                       style={{
-                        margin: "0.5rem 0 0 0",
-                        fontSize: "1.5rem",
+                        margin: "0.4rem 0 0 0",
+                        fontSize: "1.25rem",
                         fontWeight: "bold",
                       }}
                     >
@@ -194,14 +199,14 @@ export default function RosterPage() {
                   <div
                     style={{
                       background: "rgba(59, 130, 246, 0.2)",
-                      padding: "1rem",
-                      borderRadius: "8px",
+                      padding: "0.75rem",
+                      borderRadius: "6px",
                     }}
                   >
                     <p
                       style={{
                         margin: 0,
-                        fontSize: "0.9rem",
+                        fontSize: "0.8rem",
                         color: "#60a5fa",
                       }}
                     >
@@ -209,8 +214,8 @@ export default function RosterPage() {
                     </p>
                     <p
                       style={{
-                        margin: "0.5rem 0 0 0",
-                        fontSize: "1.5rem",
+                        margin: "0.4rem 0 0 0",
+                        fontSize: "1.25rem",
                         fontWeight: "bold",
                       }}
                     >
@@ -220,24 +225,24 @@ export default function RosterPage() {
                   </div>
                   <div
                     style={{
-                      background: "rgba(236, 72, 153, 0.2)",
-                      padding: "1rem",
-                      borderRadius: "8px",
+                      background: "rgba(16, 185, 129, 0.2)",
+                      padding: "0.75rem",
+                      borderRadius: "6px",
                     }}
                   >
                     <p
                       style={{
                         margin: 0,
-                        fontSize: "0.9rem",
-                        color: "#f472b6",
+                        fontSize: "0.8rem",
+                        color: "#34d399",
                       }}
                     >
                       Status
                     </p>
                     <p
                       style={{
-                        margin: "0.5rem 0 0 0",
-                        fontSize: "1.5rem",
+                        margin: "0.4rem 0 0 0",
+                        fontSize: "1.1rem",
                         fontWeight: "bold",
                         textTransform: "uppercase",
                         color:
@@ -252,11 +257,11 @@ export default function RosterPage() {
                 </div>
 
                 {rosterData.summary && (
-                  <div style={{ marginBottom: "1rem" }}>
+                  <div style={{ marginBottom: "0.75rem" }}>
                     <p
                       style={{
-                        margin: "0.5rem 0",
-                        fontSize: "0.9rem",
+                        margin: "0.4rem 0",
+                        fontSize: "0.85rem",
                         color: "#d1d5db",
                       }}
                     >
@@ -270,9 +275,9 @@ export default function RosterPage() {
               <div
                 style={{
                   display: "flex",
-                  gap: "1rem",
+                  gap: "0.75rem",
                   flexWrap: "wrap",
-                  marginBottom: "1.5rem",
+                  marginBottom: "1rem",
                 }}
               >
                 <button
@@ -281,7 +286,9 @@ export default function RosterPage() {
                   style={{
                     background: "linear-gradient(to right, #10b981, #059669)",
                     flex: "1",
-                    minWidth: "200px",
+                    minWidth: "150px",
+                    padding: "0.6rem",
+                    fontSize: "0.9rem",
                   }}
                 >
                   📥 Download Roster (Excel)
@@ -293,7 +300,9 @@ export default function RosterPage() {
                     style={{
                       background: "linear-gradient(to right, #3b82f6, #2563eb)",
                       flex: "1",
-                      minWidth: "200px",
+                      minWidth: "150px",
+                      padding: "0.6rem",
+                      fontSize: "0.9rem",
                     }}
                   >
                     📄 Download Report (Text)
@@ -304,9 +313,11 @@ export default function RosterPage() {
                     onClick={() => handleDownloadReport(true)}
                     className="form-button"
                     style={{
-                      background: "linear-gradient(to right, #8b5cf6, #7c3aed)",
+                      background: "linear-gradient(to right, #3b82f6, #10b981)",
                       flex: "1",
-                      minWidth: "200px",
+                      minWidth: "150px",
+                      padding: "0.6rem",
+                      fontSize: "0.9rem",
                     }}
                   >
                     📊 Download Report (JSON)
@@ -317,10 +328,10 @@ export default function RosterPage() {
               {/* Recommendations */}
               {rosterData?.recommendations &&
                 rosterData.recommendations.length > 0 && (
-                  <div style={{ marginTop: "1.5rem" }}>
+                  <div style={{ marginTop: "1rem" }}>
                     <h4
                       className="info-subtitle"
-                      style={{ marginBottom: "1rem", fontSize: "1.1rem" }}
+                      style={{ marginBottom: "0.75rem", fontSize: "1rem" }}
                     >
                       Recommendations
                     </h4>
@@ -329,11 +340,11 @@ export default function RosterPage() {
                         <li
                           key={idx}
                           style={{
-                            marginBottom: "0.5rem",
-                            padding: "0.75rem",
+                            marginBottom: "0.4rem",
+                            padding: "0.6rem",
                             background: "rgba(59, 130, 246, 0.2)",
                             borderRadius: "6px",
-                            fontSize: "0.9rem",
+                            fontSize: "0.85rem",
                           }}
                         >
                           💡 {rec}

@@ -484,7 +484,7 @@ def validate_roster_tool(
         if isinstance(state, dict)
         else getattr(state, "iteration_count", 0)
     )
-    max_iterations = 7
+    max_iterations = 4
 
     if violations and iteration_count < max_iterations:
         # Return Command to go back to Agent 3 for regeneration

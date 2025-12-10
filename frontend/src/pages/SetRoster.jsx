@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import GooeyNav from "../components/GooeyNav";
 import GradientText from "../components/GradientText";
@@ -8,7 +8,45 @@ import "./InfoPage.css"; // Reusing existing premium styles
 
 export default function SetRoster() {
   const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+  const [progressMessages, setProgressMessages] = useState([]);
+  const [currentStep, setCurrentStep] = useState("");
+  const [timer, setTimer] = useState(0);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    checkSession();
+  }, []);
+
+  // Timer effect - count seconds while loading
+  useEffect(() => {
+    let interval = null;
+    if (loading && currentStep.includes("Running multi-agent workflow")) {
+      setTimer(0); // Reset timer when starting
+      interval = setInterval(() => {
+        setTimer((prevTimer) => prevTimer + 1);
+      }, 1000);
+    } else {
+      setTimer(0); // Reset when not loading
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [loading, currentStep]);
+
+  const checkSession = async () => {
+    try {
+      const userData = await api.getMe();
+      setUser(userData);
+      // Only admins can access this page
+      if (userData.role !== "admin") {
+        navigate("/dashboard");
+      }
+    } catch (err) {
+      console.error("Session check failed", err);
+      navigate("/login");
+    }
+  };
   const [employeeFile, setEmployeeFile] = useState(null);
   const [storeFile, setStoreFile] = useState(null);
   const [uploadSuccess, setUploadSuccess] = useState(false);
@@ -19,7 +57,7 @@ export default function SetRoster() {
   const handleUpload = async (e) => {
     e.preventDefault();
     if (!employeeFile || !storeFile) {
-      alert("Please select both files.");
+      setCurrentStep("Please select both files to continue.");
       return;
     }
 
@@ -44,10 +82,11 @@ export default function SetRoster() {
       const data = await response.json();
       console.log("Upload success:", data);
       setUploadSuccess(true);
-      alert("Files uploaded successfully! You can now generate the roster.");
+      // Removed alert - user stays on page
     } catch (err) {
       console.error("Upload error:", err);
-      alert(`Error uploading files: ${err.message}`);
+      // Removed alert - error will be shown in UI
+      setCurrentStep(`Error: ${err.message}`);
     } finally {
       setLoading(false);
     }
@@ -55,6 +94,9 @@ export default function SetRoster() {
 
   const handleGenerate = async () => {
     setLoading(true);
+    setProgressMessages([]);
+    setCurrentStep("Running multi-agent workflow...");
+
     try {
       const response = await fetch("http://localhost:8000/generate-roster", {
         method: "POST",
@@ -71,6 +113,16 @@ export default function SetRoster() {
 
       const data = await response.json();
       console.log("Roster generated:", data);
+
+      // Update progress messages if available
+      if (data.progress && Array.isArray(data.progress)) {
+        setProgressMessages(data.progress);
+        // Update currentStep to show the latest progress message
+        if (data.progress.length > 0) {
+          setCurrentStep(data.progress[data.progress.length - 1]);
+        }
+      }
+
       setGeneratedRoster(data);
       setViolations(data.violations || []);
       setReportData({
@@ -85,13 +137,16 @@ export default function SetRoster() {
         iterations: data.iterations,
       });
 
+      setCurrentStep("✅ Roster generation completed!");
+
       // Navigate to roster page after successful generation
       setTimeout(() => {
         navigate("/roster");
-      }, 2000);
+      }, 1500);
     } catch (err) {
       console.error("Generation error:", err);
-      alert(`Error generating roster: ${err.message}`);
+      setCurrentStep(`❌ Error: ${err.message}`);
+      // Removed alert - error shown in currentStep
     } finally {
       setLoading(false);
     }
@@ -120,10 +175,12 @@ export default function SetRoster() {
 
   const navItems = [
     { label: "Dashboard", href: "/dashboard" },
-    { label: "ROSTER", href: "/roster" },
-    { label: "Set Roster", href: "#" },
+    { label: "Roster", href: "/roster" },
+    user?.role === "admin"
+      ? { label: "Generate Roster", href: "/set-roster" }
+      : null,
     { label: "Subscription", href: "/subscription" },
-  ];
+  ].filter(Boolean);
 
   return (
     <div className="info-page">
@@ -139,7 +196,6 @@ export default function SetRoster() {
         style={{
           justifyContent: "center",
           minHeight: "100vh",
-          paddingTop: "2rem",
           paddingBottom: "2rem",
         }}
       >
@@ -151,7 +207,7 @@ export default function SetRoster() {
             className="info-title"
             style={{ textAlign: "center", marginBottom: "2rem" }}
           >
-            Set Roster
+            Generate Roster
           </h1>
 
           {!uploadSuccess ? (
@@ -162,6 +218,21 @@ export default function SetRoster() {
               >
                 Upload the required files to generate the weekly roster.
               </p>
+              {currentStep && currentStep.includes("Please select") && (
+                <div
+                  style={{
+                    padding: "1rem",
+                    marginBottom: "1rem",
+                    background: "rgba(239, 68, 68, 0.2)",
+                    border: "1px solid rgba(239, 68, 68, 0.5)",
+                    borderRadius: "8px",
+                    color: "#fca5a5",
+                    textAlign: "center",
+                  }}
+                >
+                  {currentStep}
+                </div>
+              )}
 
               <form onSubmit={handleUpload} className="contact-form-card">
                 <div className="form-group">
@@ -225,12 +296,104 @@ export default function SetRoster() {
                 </div>
               </div>
 
+              {loading && (
+                <div
+                  className="contact-form-card"
+                  style={{ marginBottom: "1rem", textAlign: "center" }}
+                >
+                  <h3
+                    className="info-subtitle"
+                    style={{ marginBottom: "1rem", color: "#3b82f6" }}
+                  >
+                    {currentStep || "🔄 Starting roster generation..."}
+                    {loading &&
+                      currentStep.includes("Running multi-agent workflow") && (
+                        <span
+                          style={{
+                            marginLeft: "1rem",
+                            fontSize: "1.2rem",
+                            fontWeight: "bold",
+                            color: "#10b981",
+                            fontFamily: "monospace",
+                          }}
+                        >
+                          ({timer}s)
+                        </span>
+                      )}
+                  </h3>
+                  {progressMessages.length > 0 && (
+                    <div
+                      style={{
+                        textAlign: "left",
+                        maxHeight: "400px",
+                        overflowY: "auto",
+                      }}
+                    >
+                      {progressMessages.map((msg, idx) => {
+                        // Extract agent number from message for better display
+                        const isAgent1 = msg.toLowerCase().includes("agent 1");
+                        const isAgent2 = msg.toLowerCase().includes("agent 2");
+                        const isAgent3 = msg.toLowerCase().includes("agent 3");
+                        const isAgent4 = msg.toLowerCase().includes("agent 4");
+                        const isAgent5 = msg.toLowerCase().includes("agent 5");
+                        const isCompleted = msg
+                          .toLowerCase()
+                          .includes("completed");
+                        const isRunning = msg.toLowerCase().includes("running");
+
+                        let icon = "🔄";
+                        if (isCompleted) icon = "✅";
+                        if (isAgent1) icon = "🔄";
+                        if (isAgent2) icon = "🔄";
+                        if (isAgent3) icon = "🔄";
+                        if (isAgent4) icon = "🔄";
+                        if (isAgent5) icon = "🔄";
+
+                        return (
+                          <div
+                            key={idx}
+                            style={{
+                              padding: "0.75rem",
+                              marginBottom: "0.5rem",
+                              background: isCompleted
+                                ? "rgba(16, 185, 129, 0.2)"
+                                : "rgba(59, 130, 246, 0.2)",
+                              borderRadius: "6px",
+                              fontSize: "0.9rem",
+                              borderLeft: isCompleted
+                                ? "3px solid #10b981"
+                                : "3px solid #3b82f6",
+                              transition: "all 0.3s ease",
+                            }}
+                          >
+                            <strong>{icon}</strong> {msg}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                  <div style={{ marginTop: "1rem" }}>
+                    <div
+                      className="spinner"
+                      style={{
+                        border: "3px solid rgba(59, 130, 246, 0.3)",
+                        borderTop: "3px solid #3b82f6",
+                        borderRadius: "50%",
+                        width: "40px",
+                        height: "40px",
+                        animation: "spin 1s linear infinite",
+                        margin: "0 auto",
+                      }}
+                    ></div>
+                  </div>
+                </div>
+              )}
               <button
                 onClick={handleGenerate}
                 className="form-button"
                 disabled={loading}
                 style={{
-                  background: "linear-gradient(to right, #ec4899, #8b5cf6)",
+                  background: "linear-gradient(to right, #3b82f6, #10b981)",
                 }}
               >
                 {loading ? "Generating..." : "Generate Roster"}
@@ -246,7 +409,7 @@ export default function SetRoster() {
                       className="info-subtitle"
                       style={{
                         marginBottom: "1rem",
-                        borderBottom: "2px solid #8b5cf6",
+                        borderBottom: "2px solid #3b82f6",
                         paddingBottom: "0.5rem",
                       }}
                     >
@@ -266,7 +429,7 @@ export default function SetRoster() {
                         >
                           <div
                             style={{
-                              background: "rgba(139, 92, 246, 0.2)",
+                              background: "rgba(59, 130, 246, 0.2)",
                               padding: "1rem",
                               borderRadius: "8px",
                             }}
@@ -292,7 +455,7 @@ export default function SetRoster() {
                           </div>
                           <div
                             style={{
-                              background: "rgba(236, 72, 153, 0.2)",
+                              background: "rgba(16, 185, 129, 0.2)",
                               padding: "1rem",
                               borderRadius: "8px",
                             }}
@@ -301,7 +464,7 @@ export default function SetRoster() {
                               style={{
                                 margin: 0,
                                 fontSize: "0.9rem",
-                                color: "#f472b6",
+                                color: "#34d399",
                               }}
                             >
                               Violations
@@ -442,7 +605,7 @@ export default function SetRoster() {
                           className="form-button"
                           style={{
                             background:
-                              "linear-gradient(to right, #8b5cf6, #7c3aed)",
+                              "linear-gradient(to right, #3b82f6, #10b981)",
                             flex: "1",
                             minWidth: "200px",
                           }}

@@ -43,9 +43,9 @@ export default function Dashboard() {
 
   const navItems = [
     { label: "Dashboard", href: "/dashboard" },
-    { label: "ROSTER", href: "/roster" },
+    { label: "Roster", href: "/roster" },
     user?.role === "admin"
-      ? { label: "Set Roster", href: "/set-roster" }
+      ? { label: "Generate Roster", href: "/set-roster" }
       : null,
     { label: "Subscription", href: "/subscription" },
   ].filter(Boolean);

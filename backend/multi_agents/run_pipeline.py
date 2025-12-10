@@ -1,8 +1,21 @@
 """
 Main entry point to run the complete multi-agent roster generation pipeline.
-This script runs Agent 1, Agent 2, Agent 3 (generator), Agent 4 (validator), and Agent 5 (final check) in sequence.
-Agent 3 and Agent 4 loop until roster is valid or max 5 iterations reached.
-Agent 5 performs final comprehensive checks and generates report.
+
+IMPORTANT: This is a SEQUENTIAL PIPELINE, not a supervisor-based multi-agent system.
+Agents run in a hardcoded order with a hardcoded loop between Agent 3 and Agent 4.
+
+Execution Flow:
+1. Agent 1: Parse and structure employee/store data (hardcoded call)
+2. Agent 2: Analyze constraints and rules (hardcoded call)
+3. Agent 3-4 Loop: Generate and validate roster (hardcoded while loop, max 7 iterations)
+4. Agent 5: Final comprehensive check (hardcoded call)
+
+This is NOT using:
+- A supervisor agent that decides what to call
+- LangChain's Command with goto for looping
+- LLM-driven orchestration
+
+The orchestrator.py file exists but is NOT used. This sequential flow is what actually runs.
 """
 
 import os
