@@ -1,4 +1,4 @@
-# Multi-Agent Roster Generation System
+# Multi-Agent Roster Generation System (ROSTER AI)
 
 ![Landing Page](img/home.png)
 
