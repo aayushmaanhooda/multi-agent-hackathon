@@ -144,7 +144,7 @@ cat > .env << EOF
 # No DATABASE_URL needed - SQLite is used by default
 SECRET_KEY=your-secret-key-here
 OPENAI_API_KEY=your-openai-api-key
-PINECONE_API_KEY=your-pinecone-key  # Optional
+PINECONE_API_KEY=your-pinecone-key 
 EOF
 
 # Start backend server
@@ -204,7 +204,11 @@ result = run_full_pipeline(
     rules_file="path/to/rules.json",
     store_rules_file="path/to/store_rule.json",
 )
+
+cd backend/multi_agents
+python3 run_pipeline.py
 ```
+
 
 ### Running Full Integrated Stack
 
@@ -369,85 +373,6 @@ Return Results
    - Update orchestrator routing in `backend/multi_agents/orchestrator.py`
    - Test agent directly or via API
 
-## Testing
-
-### Backend Testing
-
-```bash
-cd backend
-python -m pytest  # If tests exist
-# Or manual testing via Postman/curl
-```
-
-### Frontend Testing
-
-```bash
-cd frontend
-npm test  # If tests exist
-# Or manual testing in browser
-```
-
-### Integration Testing
-
-1. Start backend and frontend
-2. Register admin user
-3. Upload test files
-4. Generate roster
-5. Verify coverage metrics (80-90%)
-6. Check violations
-7. Download roster and reports
-
-## Production Deployment
-
-### Backend
-
-1. Set production environment variables
-2. Use production database
-3. Configure CORS for frontend domain
-4. Use production ASGI server:
-   ```bash
-   gunicorn app.api:app -w 4 -k uvicorn.workers.UvicornWorker
-   ```
-
-### Frontend
-
-1. Build production bundle:
-   ```bash
-   cd frontend
-   npm run build
-   ```
-2. Serve `dist/` with nginx or similar
-3. Configure API URL for production backend
-
-### Multi-Agent System
-
-- Agents run within backend process
-- No separate deployment needed
-- Ensure OpenAI API key has sufficient quota
-
-## Troubleshooting
-
-### Backend Won't Start
-- SQLite runs automatically - no server needed
-- Verify `.env` file exists and has correct values
-- Check port 8000 is available
-
-### Frontend Can't Connect
-- Verify backend is running on `http://localhost:8000`
-- Check CORS configuration in backend
-- Verify API_URL in `frontend/src/services/api.js`
-
-### Agents Not Working
-- Verify OpenAI API key is set
-- Check file paths in `multi_agents/dataset/`
-- Review agent logs for errors
-- Ensure all dependencies installed
-
-### Coverage Not Meeting Targets
-- Check employee availability data quality
-- Verify constraints aren't too strict
-- Review Agent 3 system prompt
-- Check iteration limit (max 4)
 
 ## Documentation
 
@@ -468,7 +393,7 @@ npm test  # If tests exist
 - **ML Optimization**: Learn from historical rosters
 - **Multi-Store**: Optimize across multiple stores
 - **Advanced RAG**: More sophisticated retrieval strategies
-- **Agent Memory**: Long-term learning from patterns
+- **Agent Memory**: Long-term learning from patterns, memory layer like mem0
 - **Dashboard Analytics**: Visual coverage and compliance metrics
 - **Mobile App**: React Native mobile interface
 

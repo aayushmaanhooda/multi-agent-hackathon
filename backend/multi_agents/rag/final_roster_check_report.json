@@ -1,13 +1,13 @@
 {
   "roster_status": "needs_review",
   "total_availability_slots": 345,
-  "filled_slots": 266,
-  "unfilled_slots": 79,
-  "availability_coverage_percent": 77.1,
+  "filled_slots": 264,
+  "unfilled_slots": 81,
+  "availability_coverage_percent": 76.52,
   "staffing_checks": [
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
+      "date": "2025-12-24",
       "station": "Kitchen",
       "required": 6,
       "assigned": 5,
@@ -16,7 +16,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
+      "date": "2025-12-24",
       "station": "Counter",
       "required": 4,
       "assigned": 5,
@@ -25,43 +25,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-15",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 2, Assigned: 3"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-19",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 2 (Shortage: 4)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-19",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 7,
-      "status": "met",
-      "details": "Required: 4, Assigned: 7"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-19",
+      "date": "2025-12-24",
       "station": "Multi-Station McCafe",
       "required": 3,
       "assigned": 3,
@@ -70,115 +34,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-19",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 1 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-10",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 5,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-10",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 8,
-      "status": "met",
-      "details": "Required: 4, Assigned: 8"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-10",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 3, Assigned: 5"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-10",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 2,
-      "status": "met",
-      "details": "Required: 2, Assigned: 2"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 5,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 7,
-      "status": "met",
-      "details": "Required: 4, Assigned: 7"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-16",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 2,
-      "status": "met",
-      "details": "Required: 2, Assigned: 2"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-23",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 5,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-23",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 4, Assigned: 5"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-23",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 3, Assigned: 3"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "station": "Dessert Station",
       "required": 2,
       "assigned": 3,
@@ -187,7 +43,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "station": "Kitchen",
       "required": 6,
       "assigned": 2,
@@ -196,7 +52,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "station": "Counter",
       "required": 4,
       "assigned": 2,
@@ -205,7 +61,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "station": "Multi-Station McCafe",
       "required": 3,
       "assigned": 2,
@@ -214,7 +70,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "station": "Dessert Station",
       "required": 2,
       "assigned": 1,
@@ -223,7 +79,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "station": "Kitchen",
       "required": 6,
       "assigned": 1,
@@ -232,7 +88,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "station": "Counter",
       "required": 4,
       "assigned": 3,
@@ -241,7 +97,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "station": "Multi-Station McCafe",
       "required": 3,
       "assigned": 1,
@@ -250,7 +106,331 @@
     },
     {
       "store": "Store 1: CBD Core Area",
+      "date": "2025-12-13",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-15",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 6, Assigned: 6"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-15",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-15",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 3, Assigned: 5"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-15",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-19",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-19",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-19",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-19",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-16",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-16",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 4, Assigned: 6"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-16",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-16",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-17",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 5,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-17",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 7,
+      "status": "met",
+      "details": "Required: 4, Assigned: 7"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-17",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 3, Assigned: 4"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-17",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
       "date": "2025-12-12",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 2 (Shortage: 4)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-12",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-12",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 3, Assigned: 6"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-12",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 2, Assigned: 3"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-20",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 1 (Shortage: 5)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-20",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 4, Assigned: 5"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-20",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 3, Assigned: 3"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-20",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 1 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-23",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-23",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-23",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 1 (Shortage: 2)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-23",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-11",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 5,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-11",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 8,
+      "status": "met",
+      "details": "Required: 4, Assigned: 8"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-11",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 3, Assigned: 5"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-11",
+      "station": "Dessert Station",
+      "required": 2,
+      "assigned": 2,
+      "status": "met",
+      "details": "Required: 2, Assigned: 2"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-22",
+      "station": "Kitchen",
+      "required": 6,
+      "assigned": 5,
+      "status": "understaffed",
+      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-22",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 9,
+      "status": "met",
+      "details": "Required: 4, Assigned: 9"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-22",
+      "station": "Multi-Station McCafe",
+      "required": 3,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 3, Assigned: 4"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-22",
       "station": "Dessert Station",
       "required": 2,
       "assigned": 2,
@@ -262,58 +442,22 @@
       "date": "2025-12-18",
       "station": "Kitchen",
       "required": 6,
-      "assigned": 6,
-      "status": "met",
-      "details": "Required: 6, Assigned: 6"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-18",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-18",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-18",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 1 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-17",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 4,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 4 (Shortage: 2)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-17",
-      "station": "Counter",
-      "required": 4,
       "assigned": 3,
       "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+      "details": "Required: 6, Assigned: 3 (Shortage: 3)"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
+      "station": "Counter",
+      "required": 4,
+      "assigned": 7,
+      "status": "met",
+      "details": "Required: 4, Assigned: 7"
+    },
+    {
+      "store": "Store 1: CBD Core Area",
+      "date": "2025-12-18",
       "station": "Multi-Station McCafe",
       "required": 3,
       "assigned": 4,
@@ -322,7 +466,7 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "station": "Dessert Station",
       "required": 2,
       "assigned": 3,
@@ -332,42 +476,6 @@
     {
       "store": "Store 1: CBD Core Area",
       "date": "2025-12-21",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 5,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-21",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-21",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-21",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 1 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
       "station": "Kitchen",
       "required": 6,
       "assigned": 3,
@@ -376,161 +484,26 @@
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "station": "Counter",
       "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 1 (Shortage: 2)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-20",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 5,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 5 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-14",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 1 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
-      "station": "Kitchen",
-      "required": 6,
       "assigned": 2,
       "status": "understaffed",
-      "details": "Required: 6, Assigned: 2 (Shortage: 4)"
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
+      "date": "2025-12-21",
       "station": "Multi-Station McCafe",
       "required": 3,
-      "assigned": 6,
-      "status": "met",
-      "details": "Required: 3, Assigned: 6"
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 0 (Shortage: 3)"
     },
     {
       "store": "Store 1: CBD Core Area",
-      "date": "2025-12-11",
+      "date": "2025-12-21",
       "station": "Dessert Station",
-      "required": 2,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 2, Assigned: 3"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-22",
-      "station": "Kitchen",
-      "required": 6,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 6, Assigned: 2 (Shortage: 4)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-22",
-      "station": "Counter",
-      "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-22",
-      "station": "Multi-Station McCafe",
-      "required": 3,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 3, Assigned: 3"
-    },
-    {
-      "store": "Store 1: CBD Core Area",
-      "date": "2025-12-22",
-      "station": "Dessert Station",
-      "required": 2,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 2, Assigned: 3"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 3, Assigned: 3"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Multi-Station McCafe",
       "required": 2,
       "assigned": 0,
       "status": "understaffed",
@@ -538,124 +511,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-15",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-19",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-19",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-19",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-19",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 1,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 1 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-10",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-16",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-16",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 3, Assigned: 3"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-16",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-16",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "station": "Kitchen",
       "required": 4,
       "assigned": 3,
@@ -664,7 +520,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "station": "Counter",
       "required": 3,
       "assigned": 5,
@@ -673,7 +529,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "station": "Multi-Station McCafe",
       "required": 2,
       "assigned": 0,
@@ -682,7 +538,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "station": "Dessert Station",
       "required": 0,
       "assigned": 0,
@@ -691,7 +547,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "station": "Kitchen",
       "required": 4,
       "assigned": 3,
@@ -700,7 +556,7 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "station": "Counter",
       "required": 3,
       "assigned": 8,
@@ -709,6 +565,42 @@
     },
     {
       "store": "Store 2: Suburban Residential",
+      "date": "2025-12-14",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-14",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-13",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-13",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 6,
+      "status": "met",
+      "details": "Required: 3, Assigned: 6"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
       "date": "2025-12-13",
       "station": "Multi-Station McCafe",
       "required": 2,
@@ -727,7 +619,43 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-12",
+      "date": "2025-12-15",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-15",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 3, Assigned: 3"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-15",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-15",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-19",
       "station": "Kitchen",
       "required": 4,
       "assigned": 2,
@@ -736,12 +664,120 @@
     },
     {
       "store": "Store 2: Suburban Residential",
+      "date": "2025-12-19",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 0 (Shortage: 3)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-19",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-19",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-16",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-17",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-17",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 3,
+      "status": "met",
+      "details": "Required: 3, Assigned: 3"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-17",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-17",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-12",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
       "date": "2025-12-12",
       "station": "Counter",
       "required": 3,
-      "assigned": 6,
+      "assigned": 4,
       "status": "met",
-      "details": "Required: 3, Assigned: 6"
+      "details": "Required: 3, Assigned: 4"
     },
     {
       "store": "Store 2: Suburban Residential",
@@ -755,6 +791,150 @@
     {
       "store": "Store 2: Suburban Residential",
       "date": "2025-12-12",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-20",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 2 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-20",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 5,
+      "status": "met",
+      "details": "Required: 3, Assigned: 5"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-20",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-20",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-23",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-23",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 2,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-23",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-23",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-11",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 4, Assigned: 4"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-11",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 1,
+      "status": "understaffed",
+      "details": "Required: 3, Assigned: 1 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-11",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-11",
+      "station": "Dessert Station",
+      "required": 0,
+      "assigned": 0,
+      "status": "met",
+      "details": "Required: 0, Assigned: 0"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
+      "station": "Kitchen",
+      "required": 4,
+      "assigned": 3,
+      "status": "understaffed",
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
+      "station": "Counter",
+      "required": 3,
+      "assigned": 4,
+      "status": "met",
+      "details": "Required: 3, Assigned: 4"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
+      "station": "Multi-Station McCafe",
+      "required": 2,
+      "assigned": 0,
+      "status": "understaffed",
+      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
+    },
+    {
+      "store": "Store 2: Suburban Residential",
+      "date": "2025-12-22",
       "station": "Dessert Station",
       "required": 0,
       "assigned": 0,
@@ -766,9 +946,9 @@
       "date": "2025-12-18",
       "station": "Kitchen",
       "required": 4,
-      "assigned": 0,
+      "assigned": 3,
       "status": "understaffed",
-      "details": "Required: 4, Assigned: 0 (Shortage: 4)"
+      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
     },
     {
       "store": "Store 2: Suburban Residential",
@@ -799,48 +979,12 @@
     },
     {
       "store": "Store 2: Suburban Residential",
-      "date": "2025-12-17",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-17",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 5,
-      "status": "met",
-      "details": "Required: 3, Assigned: 5"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-17",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-17",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
       "date": "2025-12-21",
       "station": "Kitchen",
       "required": 4,
-      "assigned": 0,
+      "assigned": 1,
       "status": "understaffed",
-      "details": "Required: 4, Assigned: 0 (Shortage: 4)"
+      "details": "Required: 4, Assigned: 1 (Shortage: 3)"
     },
     {
       "store": "Store 2: Suburban Residential",
@@ -863,150 +1007,6 @@
     {
       "store": "Store 2: Suburban Residential",
       "date": "2025-12-21",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 3,
-      "status": "understaffed",
-      "details": "Required: 4, Assigned: 3 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-20",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 3,
-      "status": "met",
-      "details": "Required: 3, Assigned: 3"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-14",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 4, Assigned: 4"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 4,
-      "status": "met",
-      "details": "Required: 3, Assigned: 4"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-11",
-      "station": "Dessert Station",
-      "required": 0,
-      "assigned": 0,
-      "status": "met",
-      "details": "Required: 0, Assigned: 0"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
-      "station": "Kitchen",
-      "required": 4,
-      "assigned": 6,
-      "status": "met",
-      "details": "Required: 4, Assigned: 6"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
-      "station": "Counter",
-      "required": 3,
-      "assigned": 2,
-      "status": "understaffed",
-      "details": "Required: 3, Assigned: 2 (Shortage: 1)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
-      "station": "Multi-Station McCafe",
-      "required": 2,
-      "assigned": 0,
-      "status": "understaffed",
-      "details": "Required: 2, Assigned: 0 (Shortage: 2)"
-    },
-    {
-      "store": "Store 2: Suburban Residential",
-      "date": "2025-12-22",
       "station": "Dessert Station",
       "required": 0,
       "assigned": 0,
@@ -1018,7 +1018,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1028,7 +1028,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -1038,7 +1038,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -1048,7 +1048,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -1058,7 +1058,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1068,7 +1068,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -1078,7 +1078,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1088,7 +1088,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -1098,7 +1098,7 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": false,
@@ -1108,17 +1108,17 @@
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
     },
     {
       "employee_name": "James Smith",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": true,
@@ -1128,7 +1128,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1138,7 +1138,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": true,
@@ -1148,7 +1148,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -1158,7 +1158,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1168,7 +1168,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -1178,7 +1178,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -1188,7 +1188,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1198,7 +1198,7 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -1208,19 +1208,9 @@
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Emma Johnson",
-      "employee_id": "",
-      "date": "2025-12-21",
-      "day_key": "Day_12",
-      "available_shift": "2F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
@@ -1229,16 +1219,26 @@
       "employee_name": "Emma Johnson",
       "employee_id": "",
       "date": "2025-12-22",
-      "day_key": "Day_13",
-      "available_shift": "1F",
+      "day_key": "Day_12",
+      "available_shift": "2F",
       "assigned": true,
-      "assigned_shift": "1F",
+      "assigned_shift": "2F",
       "status": "filled"
     },
     {
       "employee_name": "Emma Johnson",
       "employee_id": "",
       "date": "2025-12-23",
+      "day_key": "Day_13",
+      "available_shift": "1F",
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
+    },
+    {
+      "employee_name": "Emma Johnson",
+      "employee_id": "",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -1248,7 +1248,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1258,7 +1258,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -1268,7 +1268,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -1278,7 +1278,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -1288,7 +1288,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1298,7 +1298,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -1308,7 +1308,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": true,
@@ -1318,7 +1318,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": true,
@@ -1328,7 +1328,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -1338,7 +1338,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": false,
@@ -1348,7 +1348,7 @@
     {
       "employee_name": "Oliver Williams",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -1358,7 +1358,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1368,7 +1368,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -1378,7 +1378,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -1388,7 +1388,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1398,7 +1398,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -1408,7 +1408,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1418,7 +1418,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -1428,7 +1428,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": false,
@@ -1438,7 +1438,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": true,
@@ -1448,7 +1448,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -1458,7 +1458,7 @@
     {
       "employee_name": "Sophia Brown",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": false,
@@ -1468,7 +1468,7 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1478,7 +1478,7 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -1488,7 +1488,7 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -1498,18 +1498,8 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "William Jones",
-      "employee_id": "",
-      "date": "2025-12-15",
-      "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": true,
       "assigned_shift": "1F",
@@ -1519,6 +1509,16 @@
       "employee_name": "William Jones",
       "employee_id": "",
       "date": "2025-12-16",
+      "day_key": "Day_6",
+      "available_shift": "1F",
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "William Jones",
+      "employee_id": "",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -1528,7 +1528,7 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1538,7 +1538,7 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -1548,7 +1548,7 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -1558,17 +1558,17 @@
     {
       "employee_name": "William Jones",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
     },
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1578,7 +1578,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -1588,7 +1588,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -1598,7 +1598,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -1608,7 +1608,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1618,7 +1618,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -1628,7 +1628,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1638,7 +1638,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -1648,7 +1648,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": false,
@@ -1658,7 +1658,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": true,
@@ -1668,7 +1668,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -1678,7 +1678,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": false,
@@ -1688,7 +1688,7 @@
     {
       "employee_name": "Ava Garcia",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -1698,7 +1698,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1708,7 +1708,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": true,
@@ -1718,7 +1718,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1728,7 +1728,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -1738,7 +1738,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1748,7 +1748,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": true,
@@ -1758,7 +1758,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -1768,7 +1768,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": false,
@@ -1778,7 +1778,7 @@
     {
       "employee_name": "Jack Miller",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -1788,7 +1788,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1798,7 +1798,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -1808,7 +1808,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -1818,7 +1818,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -1828,7 +1828,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1838,7 +1838,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -1848,7 +1848,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1858,7 +1858,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -1868,7 +1868,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": false,
@@ -1878,7 +1878,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": true,
@@ -1888,7 +1888,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -1898,7 +1898,7 @@
     {
       "employee_name": "Mia Davis",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -1908,7 +1908,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -1918,7 +1918,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -1928,7 +1928,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -1938,7 +1938,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -1948,7 +1948,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -1958,7 +1958,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -1968,7 +1968,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -1978,7 +1978,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -1988,7 +1988,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": false,
@@ -1998,7 +1998,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": true,
@@ -2008,7 +2008,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -2018,7 +2018,7 @@
     {
       "employee_name": "Lucas Wilson",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -2028,7 +2028,7 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -2038,7 +2038,7 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -2048,27 +2048,27 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
-    },
-    {
-      "employee_name": "Isabella Anderson",
-      "employee_id": "",
-      "date": "2025-12-15",
-      "day_key": "Day_6",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
     },
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
       "date": "2025-12-16",
+      "day_key": "Day_6",
+      "available_shift": "1F",
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Isabella Anderson",
+      "employee_id": "",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -2078,7 +2078,7 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -2088,7 +2088,7 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -2098,7 +2098,7 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -2108,9 +2108,19 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Isabella Anderson",
+      "employee_id": "",
+      "date": "2025-12-23",
+      "day_key": "Day_13",
+      "available_shift": "1F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
@@ -2118,17 +2128,7 @@
     {
       "employee_name": "Isabella Anderson",
       "employee_id": "",
-      "date": "2025-12-22",
-      "day_key": "Day_13",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Isabella Anderson",
-      "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -2138,7 +2138,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -2148,7 +2148,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -2158,7 +2158,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "3F",
       "assigned": false,
@@ -2168,7 +2168,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -2178,7 +2178,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -2188,7 +2188,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -2198,7 +2198,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -2208,7 +2208,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -2218,17 +2218,17 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
     },
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": false,
@@ -2238,7 +2238,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -2248,7 +2248,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -2258,7 +2258,7 @@
     {
       "employee_name": "Henry Thomas",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": false,
@@ -2268,7 +2268,7 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -2278,7 +2278,7 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -2288,7 +2288,7 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -2298,7 +2298,7 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": true,
@@ -2308,7 +2308,7 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -2318,7 +2318,7 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -2328,17 +2328,17 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
     },
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "3F",
       "assigned": false,
@@ -2348,48 +2348,38 @@
     {
       "employee_name": "Charlotte Taylor",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Charlotte Taylor",
+      "employee_id": "",
+      "date": "2025-12-23",
+      "day_key": "Day_13",
+      "available_shift": "1F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
     },
     {
-      "employee_name": "Charlotte Taylor",
+      "employee_name": "Ethan Moore",
       "employee_id": "",
-      "date": "2025-12-22",
-      "day_key": "Day_13",
-      "available_shift": "1F",
+      "date": "2025-12-11",
+      "day_key": "Day_1",
+      "available_shift": "2F",
       "assigned": true,
-      "assigned_shift": "1F",
+      "assigned_shift": "2F",
       "status": "filled"
     },
     {
       "employee_name": "Ethan Moore",
       "employee_id": "",
-      "date": "2025-12-10",
-      "day_key": "Day_1",
-      "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Ethan Moore",
-      "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Ethan Moore",
-      "employee_id": "",
-      "date": "2025-12-14",
-      "day_key": "Day_5",
       "available_shift": "1F",
       "assigned": true,
       "assigned_shift": "1F",
@@ -2399,7 +2389,7 @@
       "employee_name": "Ethan Moore",
       "employee_id": "",
       "date": "2025-12-15",
-      "day_key": "Day_6",
+      "day_key": "Day_5",
       "available_shift": "1F",
       "assigned": true,
       "assigned_shift": "1F",
@@ -2409,6 +2399,16 @@
       "employee_name": "Ethan Moore",
       "employee_id": "",
       "date": "2025-12-16",
+      "day_key": "Day_6",
+      "available_shift": "1F",
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Ethan Moore",
+      "employee_id": "",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -2418,18 +2418,8 @@
     {
       "employee_name": "Ethan Moore",
       "employee_id": "",
-      "date": "2025-12-17",
-      "day_key": "Day_8",
-      "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Ethan Moore",
-      "employee_id": "",
       "date": "2025-12-18",
-      "day_key": "Day_9",
+      "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": false,
       "assigned_shift": "",
@@ -2439,6 +2429,16 @@
       "employee_name": "Ethan Moore",
       "employee_id": "",
       "date": "2025-12-19",
+      "day_key": "Day_9",
+      "available_shift": "2F",
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
+    },
+    {
+      "employee_name": "Ethan Moore",
+      "employee_id": "",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": false,
@@ -2448,7 +2448,7 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -2458,7 +2458,7 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "2F",
       "assigned": true,
@@ -2468,7 +2468,7 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "1F",
       "assigned": true,
@@ -2478,7 +2478,7 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": true,
@@ -2488,7 +2488,7 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -2498,18 +2498,8 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-18",
-      "day_key": "Day_9",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Amelia Jackson",
-      "employee_id": "",
       "date": "2025-12-19",
-      "day_key": "Day_10",
+      "day_key": "Day_9",
       "available_shift": "1F",
       "assigned": false,
       "assigned_shift": "",
@@ -2519,6 +2509,16 @@
       "employee_name": "Amelia Jackson",
       "employee_id": "",
       "date": "2025-12-20",
+      "day_key": "Day_10",
+      "available_shift": "1F",
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
+    },
+    {
+      "employee_name": "Amelia Jackson",
+      "employee_id": "",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -2528,7 +2528,7 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": true,
@@ -2538,7 +2538,7 @@
     {
       "employee_name": "Amelia Jackson",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -2548,7 +2548,7 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -2558,7 +2558,7 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "1F",
       "assigned": false,
@@ -2568,7 +2568,7 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": true,
@@ -2578,7 +2578,7 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": true,
@@ -2588,7 +2588,7 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -2598,7 +2598,7 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -2608,7 +2608,7 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -2618,38 +2618,28 @@
     {
       "employee_name": "Mason Martin",
       "employee_id": "",
-      "date": "2025-12-21",
-      "day_key": "Day_12",
-      "available_shift": "2F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
-    },
-    {
-      "employee_name": "Mason Martin",
-      "employee_id": "",
       "date": "2025-12-22",
-      "day_key": "Day_13",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Harper Lee",
-      "employee_id": "",
-      "date": "2025-12-10",
-      "day_key": "Day_1",
+      "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
       "assigned_shift": "2F",
       "status": "filled"
     },
     {
+      "employee_name": "Mason Martin",
+      "employee_id": "",
+      "date": "2025-12-23",
+      "day_key": "Day_13",
+      "available_shift": "1F",
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
+    },
+    {
       "employee_name": "Harper Lee",
       "employee_id": "",
-      "date": "2025-12-12",
-      "day_key": "Day_3",
+      "date": "2025-12-11",
+      "day_key": "Day_1",
       "available_shift": "2F",
       "assigned": true,
       "assigned_shift": "2F",
@@ -2659,6 +2649,16 @@
       "employee_name": "Harper Lee",
       "employee_id": "",
       "date": "2025-12-13",
+      "day_key": "Day_3",
+      "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Harper Lee",
+      "employee_id": "",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -2668,7 +2668,7 @@
     {
       "employee_name": "Harper Lee",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": true,
@@ -2678,7 +2678,7 @@
     {
       "employee_name": "Harper Lee",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -2688,7 +2688,7 @@
     {
       "employee_name": "Harper Lee",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": false,
@@ -2698,7 +2698,7 @@
     {
       "employee_name": "Harper Lee",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "1F",
       "assigned": true,
@@ -2708,17 +2708,17 @@
     {
       "employee_name": "Harper Lee",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
     },
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "2F",
       "assigned": true,
@@ -2728,7 +2728,7 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "1F",
       "assigned": false,
@@ -2738,7 +2738,7 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "2F",
       "assigned": true,
@@ -2748,7 +2748,7 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -2758,7 +2758,7 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": false,
@@ -2768,7 +2768,7 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -2778,7 +2778,7 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": true,
@@ -2788,7 +2788,7 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "1F",
       "assigned": false,
@@ -2798,18 +2798,8 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-19",
-      "day_key": "Day_10",
-      "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Logan Thompson",
-      "employee_id": "",
       "date": "2025-12-20",
-      "day_key": "Day_11",
+      "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": false,
       "assigned_shift": "",
@@ -2819,8 +2809,8 @@
       "employee_name": "Logan Thompson",
       "employee_id": "",
       "date": "2025-12-21",
-      "day_key": "Day_12",
-      "available_shift": "1F",
+      "day_key": "Day_11",
+      "available_shift": "2F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
@@ -2828,7 +2818,17 @@
     {
       "employee_name": "Logan Thompson",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-22",
+      "day_key": "Day_12",
+      "available_shift": "1F",
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Logan Thompson",
+      "employee_id": "",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -2838,7 +2838,7 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "1F",
       "assigned": true,
@@ -2848,7 +2848,7 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -2858,7 +2858,7 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "1F",
       "assigned": false,
@@ -2868,7 +2868,7 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": true,
@@ -2878,7 +2878,7 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": true,
@@ -2888,7 +2888,7 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -2898,7 +2898,7 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "2F",
       "assigned": false,
@@ -2908,17 +2908,17 @@
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
     },
     {
       "employee_name": "Evelyn White",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": true,
@@ -2928,7 +2928,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "2F",
       "assigned": true,
@@ -2938,7 +2938,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "1F",
       "assigned": false,
@@ -2948,7 +2948,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "1F",
       "assigned": true,
@@ -2958,7 +2958,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -2968,7 +2968,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "1F",
       "assigned": true,
@@ -2978,7 +2978,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -2988,7 +2988,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "1F",
       "assigned": true,
@@ -2998,7 +2998,7 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -3008,17 +3008,17 @@
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
     },
     {
       "employee_name": "Alex Harris",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": true,
@@ -3028,7 +3028,7 @@
     {
       "employee_name": "Abigail Clark",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -3038,7 +3038,7 @@
     {
       "employee_name": "Abigail Clark",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "1F",
       "assigned": true,
@@ -3048,27 +3048,27 @@
     {
       "employee_name": "Abigail Clark",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
       "assigned_shift": "2F",
       "status": "filled"
-    },
-    {
-      "employee_name": "Abigail Clark",
-      "employee_id": "",
-      "date": "2025-12-15",
-      "day_key": "Day_6",
-      "available_shift": "1F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
     },
     {
       "employee_name": "Abigail Clark",
       "employee_id": "",
       "date": "2025-12-16",
+      "day_key": "Day_6",
+      "available_shift": "1F",
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
+    },
+    {
+      "employee_name": "Abigail Clark",
+      "employee_id": "",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3078,7 +3078,7 @@
     {
       "employee_name": "Abigail Clark",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": true,
@@ -3088,18 +3088,8 @@
     {
       "employee_name": "Abigail Clark",
       "employee_id": "",
-      "date": "2025-12-18",
-      "day_key": "Day_9",
-      "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Abigail Clark",
-      "employee_id": "",
       "date": "2025-12-19",
-      "day_key": "Day_10",
+      "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": false,
       "assigned_shift": "",
@@ -3109,6 +3099,16 @@
       "employee_name": "Abigail Clark",
       "employee_id": "",
       "date": "2025-12-20",
+      "day_key": "Day_10",
+      "available_shift": "2F",
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
+    },
+    {
+      "employee_name": "Abigail Clark",
+      "employee_id": "",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -3118,27 +3118,27 @@
     {
       "employee_name": "Abigail Clark",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Abigail Clark",
+      "employee_id": "",
+      "date": "2025-12-23",
+      "day_key": "Day_13",
+      "available_shift": "1F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
     },
     {
-      "employee_name": "Abigail Clark",
-      "employee_id": "",
-      "date": "2025-12-22",
-      "day_key": "Day_13",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -3148,7 +3148,7 @@
     {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "1F",
       "assigned": true,
@@ -3158,7 +3158,7 @@
     {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "1F",
       "assigned": true,
@@ -3168,7 +3168,7 @@
     {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": false,
@@ -3178,18 +3178,8 @@
     {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
-      "available_shift": "1F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
-    },
-    {
-      "employee_name": "Michael Lewis",
-      "employee_id": "",
-      "date": "2025-12-18",
-      "day_key": "Day_9",
       "available_shift": "1F",
       "assigned": true,
       "assigned_shift": "1F",
@@ -3199,6 +3189,16 @@
       "employee_name": "Michael Lewis",
       "employee_id": "",
       "date": "2025-12-19",
+      "day_key": "Day_9",
+      "available_shift": "1F",
+      "assigned": true,
+      "assigned_shift": "1F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Michael Lewis",
+      "employee_id": "",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -3208,17 +3208,17 @@
     {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
+      "assigned": false,
+      "assigned_shift": "",
+      "status": "unfilled"
     },
     {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": true,
@@ -3228,7 +3228,7 @@
     {
       "employee_name": "Michael Lewis",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -3238,7 +3238,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -3248,7 +3248,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "1F",
       "assigned": true,
@@ -3258,7 +3258,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "1F",
       "assigned": true,
@@ -3268,7 +3268,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": false,
@@ -3278,9 +3278,19 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Emily Walker",
+      "employee_id": "",
+      "date": "2025-12-16",
+      "day_key": "Day_6",
+      "available_shift": "1F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
@@ -3288,17 +3298,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-15",
-      "day_key": "Day_6",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Emily Walker",
-      "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3308,7 +3308,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": true,
@@ -3318,7 +3318,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": false,
@@ -3328,7 +3328,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "1F",
       "assigned": false,
@@ -3338,7 +3338,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "1F",
       "assigned": true,
@@ -3348,7 +3348,7 @@
     {
       "employee_name": "Emily Walker",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -3358,7 +3358,7 @@
     {
       "employee_name": "Daniel Hall",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "1F",
       "assigned": true,
@@ -3368,7 +3368,7 @@
     {
       "employee_name": "Daniel Hall",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -3378,7 +3378,7 @@
     {
       "employee_name": "Daniel Hall",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": true,
@@ -3388,7 +3388,7 @@
     {
       "employee_name": "Daniel Hall",
       "employee_id": "",
-      "date": "2025-12-18",
+      "date": "2025-12-19",
       "day_key": "Day_9",
       "available_shift": "2F",
       "assigned": true,
@@ -3398,7 +3398,7 @@
     {
       "employee_name": "Daniel Hall",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
       "assigned": true,
@@ -3408,7 +3408,7 @@
     {
       "employee_name": "Daniel Hall",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "2F",
       "assigned": true,
@@ -3418,7 +3418,7 @@
     {
       "employee_name": "Daniel Hall",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -3428,7 +3428,7 @@
     {
       "employee_name": "Elizabeth Allen",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "2F",
       "assigned": true,
@@ -3438,7 +3438,7 @@
     {
       "employee_name": "Elizabeth Allen",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "2F",
       "assigned": true,
@@ -3448,7 +3448,7 @@
     {
       "employee_name": "Elizabeth Allen",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": false,
@@ -3458,7 +3458,7 @@
     {
       "employee_name": "Elizabeth Allen",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "2F",
       "assigned": true,
@@ -3468,7 +3468,7 @@
     {
       "employee_name": "Elizabeth Allen",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "2F",
       "assigned": true,
@@ -3478,7 +3478,7 @@
     {
       "employee_name": "Elizabeth Allen",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -3488,7 +3488,7 @@
     {
       "employee_name": "Matthew Young",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -3498,7 +3498,7 @@
     {
       "employee_name": "Matthew Young",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "3F",
       "assigned": false,
@@ -3508,7 +3508,7 @@
     {
       "employee_name": "Matthew Young",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3518,7 +3518,7 @@
     {
       "employee_name": "Matthew Young",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
       "assigned": true,
@@ -3528,7 +3528,7 @@
     {
       "employee_name": "Matthew Young",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "3F",
       "assigned": true,
@@ -3538,7 +3538,7 @@
     {
       "employee_name": "Matthew Young",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -3548,7 +3548,7 @@
     {
       "employee_name": "Sofia King",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "2F",
       "assigned": true,
@@ -3558,7 +3558,7 @@
     {
       "employee_name": "Sofia King",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3568,7 +3568,7 @@
     {
       "employee_name": "Sofia King",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
       "assigned": true,
@@ -3578,7 +3578,7 @@
     {
       "employee_name": "Sofia King",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "2F",
       "assigned": true,
@@ -3588,7 +3588,7 @@
     {
       "employee_name": "Sofia King",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": false,
@@ -3598,7 +3598,7 @@
     {
       "employee_name": "Samuel Wright",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -3608,7 +3608,7 @@
     {
       "employee_name": "Samuel Wright",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "3F",
       "assigned": false,
@@ -3618,7 +3618,7 @@
     {
       "employee_name": "Samuel Wright",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -3628,7 +3628,7 @@
     {
       "employee_name": "Samuel Wright",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "2F",
       "assigned": true,
@@ -3638,7 +3638,7 @@
     {
       "employee_name": "Samuel Wright",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -3648,7 +3648,7 @@
     {
       "employee_name": "Avery Scott",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -3658,7 +3658,7 @@
     {
       "employee_name": "Avery Scott",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "2F",
       "assigned": true,
@@ -3668,7 +3668,7 @@
     {
       "employee_name": "Avery Scott",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3678,7 +3678,7 @@
     {
       "employee_name": "Avery Scott",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -3688,7 +3688,7 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -3698,7 +3698,7 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "2F",
       "assigned": true,
@@ -3708,7 +3708,7 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -3718,7 +3718,7 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "3F",
       "assigned": true,
@@ -3728,7 +3728,7 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -3738,7 +3738,7 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": true,
@@ -3748,7 +3748,7 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -3758,17 +3758,17 @@
     {
       "employee_name": "David Green",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
-      "assigned": false,
-      "assigned_shift": "",
-      "status": "unfilled"
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
     },
     {
       "employee_name": "Ella Baker",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "1F",
       "assigned": true,
@@ -3778,18 +3778,8 @@
     {
       "employee_name": "Ella Baker",
       "employee_id": "",
-      "date": "2025-12-15",
-      "day_key": "Day_6",
-      "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Ella Baker",
-      "employee_id": "",
       "date": "2025-12-16",
-      "day_key": "Day_7",
+      "day_key": "Day_6",
       "available_shift": "2F",
       "assigned": true,
       "assigned_shift": "2F",
@@ -3799,6 +3789,16 @@
       "employee_name": "Ella Baker",
       "employee_id": "",
       "date": "2025-12-17",
+      "day_key": "Day_7",
+      "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Ella Baker",
+      "employee_id": "",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": false,
@@ -3808,7 +3808,7 @@
     {
       "employee_name": "Ella Baker",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -3818,7 +3818,7 @@
     {
       "employee_name": "Ella Baker",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "3F",
       "assigned": true,
@@ -3828,7 +3828,7 @@
     {
       "employee_name": "Ella Baker",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -3838,7 +3838,7 @@
     {
       "employee_name": "Joseph Adams",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "2F",
       "assigned": true,
@@ -3848,7 +3848,7 @@
     {
       "employee_name": "Joseph Adams",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3858,7 +3858,7 @@
     {
       "employee_name": "Joseph Adams",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "1F",
       "assigned": true,
@@ -3868,7 +3868,7 @@
     {
       "employee_name": "Joseph Adams",
       "employee_id": "",
-      "date": "2025-12-20",
+      "date": "2025-12-21",
       "day_key": "Day_11",
       "available_shift": "2F",
       "assigned": true,
@@ -3878,27 +3878,27 @@
     {
       "employee_name": "Joseph Adams",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Joseph Adams",
+      "employee_id": "",
+      "date": "2025-12-23",
+      "day_key": "Day_13",
+      "available_shift": "3F",
       "assigned": false,
       "assigned_shift": "",
       "status": "unfilled"
     },
     {
-      "employee_name": "Joseph Adams",
-      "employee_id": "",
-      "date": "2025-12-22",
-      "day_key": "Day_13",
-      "available_shift": "3F",
-      "assigned": true,
-      "assigned_shift": "3F",
-      "status": "filled"
-    },
-    {
       "employee_name": "Scarlett Nelson",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -3908,7 +3908,7 @@
     {
       "employee_name": "Scarlett Nelson",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "2F",
       "assigned": true,
@@ -3918,7 +3918,7 @@
     {
       "employee_name": "Scarlett Nelson",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3928,7 +3928,7 @@
     {
       "employee_name": "Scarlett Nelson",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "1F",
       "assigned": true,
@@ -3938,7 +3938,7 @@
     {
       "employee_name": "Scarlett Nelson",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
       "assigned": true,
@@ -3948,7 +3948,7 @@
     {
       "employee_name": "Scarlett Nelson",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "2F",
       "assigned": true,
@@ -3958,7 +3958,7 @@
     {
       "employee_name": "Ben Hill",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -3968,7 +3968,7 @@
     {
       "employee_name": "Ben Hill",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -3978,7 +3978,7 @@
     {
       "employee_name": "Ben Hill",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "1F",
       "assigned": false,
@@ -3988,18 +3988,8 @@
     {
       "employee_name": "Ben Hill",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
-      "available_shift": "2F",
-      "assigned": true,
-      "assigned_shift": "2F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Grace Campbell",
-      "employee_id": "",
-      "date": "2025-12-12",
-      "day_key": "Day_3",
       "available_shift": "2F",
       "assigned": true,
       "assigned_shift": "2F",
@@ -4009,6 +3999,16 @@
       "employee_name": "Grace Campbell",
       "employee_id": "",
       "date": "2025-12-13",
+      "day_key": "Day_3",
+      "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Grace Campbell",
+      "employee_id": "",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -4018,7 +4018,7 @@
     {
       "employee_name": "Grace Campbell",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -4028,7 +4028,7 @@
     {
       "employee_name": "Grace Campbell",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -4038,7 +4038,7 @@
     {
       "employee_name": "Grace Campbell",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -4048,7 +4048,7 @@
     {
       "employee_name": "Ryan Mitchell",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -4058,7 +4058,7 @@
     {
       "employee_name": "Ryan Mitchell",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "2F",
       "assigned": true,
@@ -4068,7 +4068,7 @@
     {
       "employee_name": "Ryan Mitchell",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -4078,7 +4078,7 @@
     {
       "employee_name": "Ryan Mitchell",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -4088,7 +4088,7 @@
     {
       "employee_name": "Ryan Mitchell",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "3F",
       "assigned": true,
@@ -4098,7 +4098,7 @@
     {
       "employee_name": "Ryan Mitchell",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "1F",
       "assigned": true,
@@ -4108,7 +4108,7 @@
     {
       "employee_name": "Ryan Mitchell",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -4118,7 +4118,7 @@
     {
       "employee_name": "Chloe Roberts",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -4128,7 +4128,7 @@
     {
       "employee_name": "Chloe Roberts",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -4138,7 +4138,7 @@
     {
       "employee_name": "Chloe Roberts",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "2F",
       "assigned": true,
@@ -4148,38 +4148,28 @@
     {
       "employee_name": "Chloe Roberts",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
       "assigned_shift": "2F",
-      "status": "filled"
-    },
-    {
-      "employee_name": "Chloe Roberts",
-      "employee_id": "",
-      "date": "2025-12-19",
-      "day_key": "Day_10",
-      "available_shift": "1F",
-      "assigned": true,
-      "assigned_shift": "1F",
       "status": "filled"
     },
     {
       "employee_name": "Chloe Roberts",
       "employee_id": "",
       "date": "2025-12-20",
-      "day_key": "Day_11",
-      "available_shift": "2F",
+      "day_key": "Day_10",
+      "available_shift": "1F",
       "assigned": true,
-      "assigned_shift": "2F",
+      "assigned_shift": "1F",
       "status": "filled"
     },
     {
       "employee_name": "Chloe Roberts",
       "employee_id": "",
       "date": "2025-12-21",
-      "day_key": "Day_12",
+      "day_key": "Day_11",
       "available_shift": "2F",
       "assigned": false,
       "assigned_shift": "",
@@ -4188,7 +4178,17 @@
     {
       "employee_name": "Chloe Roberts",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-22",
+      "day_key": "Day_12",
+      "available_shift": "2F",
+      "assigned": true,
+      "assigned_shift": "2F",
+      "status": "filled"
+    },
+    {
+      "employee_name": "Chloe Roberts",
+      "employee_id": "",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "3F",
       "assigned": true,
@@ -4198,7 +4198,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "day_key": "Day_1",
       "available_shift": "1F",
       "assigned": true,
@@ -4208,7 +4208,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -4218,7 +4218,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "1F",
       "assigned": false,
@@ -4228,7 +4228,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "1F",
       "assigned": true,
@@ -4238,7 +4238,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "3F",
       "assigned": true,
@@ -4248,7 +4248,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": true,
@@ -4258,7 +4258,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -4268,7 +4268,7 @@
     {
       "employee_name": "Andrew Carter",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -4278,7 +4278,7 @@
     {
       "employee_name": "Victoria Phillips",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "2F",
       "assigned": true,
@@ -4288,7 +4288,7 @@
     {
       "employee_name": "Victoria Phillips",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "2F",
       "assigned": true,
@@ -4298,7 +4298,7 @@
     {
       "employee_name": "Victoria Phillips",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -4308,7 +4308,7 @@
     {
       "employee_name": "Victoria Phillips",
       "employee_id": "",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "day_key": "Day_7",
       "available_shift": "2F",
       "assigned": true,
@@ -4318,7 +4318,7 @@
     {
       "employee_name": "Victoria Phillips",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -4328,7 +4328,7 @@
     {
       "employee_name": "Victoria Phillips",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -4338,7 +4338,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-11",
+      "date": "2025-12-12",
       "day_key": "Day_2",
       "available_shift": "1F",
       "assigned": true,
@@ -4348,7 +4348,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-12",
+      "date": "2025-12-13",
       "day_key": "Day_3",
       "available_shift": "2F",
       "assigned": true,
@@ -4358,7 +4358,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-13",
+      "date": "2025-12-14",
       "day_key": "Day_4",
       "available_shift": "1F",
       "assigned": false,
@@ -4368,7 +4368,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "2F",
       "assigned": true,
@@ -4378,7 +4378,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-19",
+      "date": "2025-12-20",
       "day_key": "Day_10",
       "available_shift": "2F",
       "assigned": true,
@@ -4388,7 +4388,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-21",
+      "date": "2025-12-22",
       "day_key": "Day_12",
       "available_shift": "2F",
       "assigned": true,
@@ -4398,7 +4398,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "3F",
       "assigned": false,
@@ -4408,7 +4408,7 @@
     {
       "employee_name": "Nathan Evans",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -4418,7 +4418,7 @@
     {
       "employee_name": "Madison Turner",
       "employee_id": "",
-      "date": "2025-12-14",
+      "date": "2025-12-15",
       "day_key": "Day_5",
       "available_shift": "2F",
       "assigned": true,
@@ -4428,7 +4428,7 @@
     {
       "employee_name": "Madison Turner",
       "employee_id": "",
-      "date": "2025-12-15",
+      "date": "2025-12-16",
       "day_key": "Day_6",
       "available_shift": "3F",
       "assigned": false,
@@ -4438,7 +4438,7 @@
     {
       "employee_name": "Madison Turner",
       "employee_id": "",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "day_key": "Day_8",
       "available_shift": "2F",
       "assigned": true,
@@ -4448,7 +4448,7 @@
     {
       "employee_name": "Madison Turner",
       "employee_id": "",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "day_key": "Day_13",
       "available_shift": "2F",
       "assigned": true,
@@ -4458,7 +4458,7 @@
     {
       "employee_name": "Madison Turner",
       "employee_id": "",
-      "date": "2025-12-23",
+      "date": "2025-12-24",
       "day_key": "Day_14",
       "available_shift": "2F",
       "assigned": true,
@@ -4468,7 +4468,7 @@
   ],
   "summary": "\u274c Roster has significant gaps that need attention.",
   "recommendations": [
-    "Fill 79 unfilled availability slots to maximize employee utilization.",
-    "Address 59 understaffed stations to meet operational requirements."
+    "Fill 81 unfilled availability slots to maximize employee utilization.",
+    "Address 60 understaffed stations to meet operational requirements."
   ]
 }

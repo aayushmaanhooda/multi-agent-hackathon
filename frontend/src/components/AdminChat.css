@@ -1,44 +1,152 @@
 /* Chat Container - Clean, no box styling */
 .admin-chat-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   background: transparent;
   flex: 1;
   min-height: 0;
-    overflow: hidden;
+  overflow: hidden;
   margin-top: 1rem;
   position: relative;
 }
 
 /* Chat Header - Minimal */
 .chat-header {
-    padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   flex-shrink: 0;
   max-width: 100%;
   width: 100%;
   margin: 0;
 }
 
+/* Roster Upload Section */
+.roster-upload-section {
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.upload-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.upload-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.upload-form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.file-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.file-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.file-input-label {
+  display: block;
+  padding: 0.625rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #888;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.file-input-label:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #e0e0e0;
+}
+
+.file-input:disabled+.file-input-label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.upload-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}
+
+.upload-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.upload-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.upload-success-message {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  border-radius: 6px;
+  color: #86efac;
+  font-size: 0.875rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
 .chat-header h3 {
-    margin: 0;
-    font-size: 1.1rem;
+  margin: 0;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #e0e0e0;
 }
 
 /* Messages Container - Clean scrollable area */
 .chat-messages {
-    flex: 1;
-    overflow-y: auto;
+  flex: 1;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   max-width: 100%;
   width: 100%;
@@ -72,7 +180,7 @@
   display: flex;
   gap: 1rem;
   width: 100%;
-    animation: fadeIn 0.3s ease-out;
+  animation: fadeIn 0.3s ease-out;
 }
 
 /* AI messages on LEFT */
@@ -91,15 +199,15 @@
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Avatar */
@@ -141,16 +249,16 @@
 /* AI messages - Left side, darker background */
 .chat-bubble.assistant {
   background: rgba(255, 255, 255, 0.05);
-    color: #e0e0e0;
-    border-bottom-left-radius: 4px;
+  color: #e0e0e0;
+  border-bottom-left-radius: 4px;
 }
 
 /* Human messages - Right side, blue gradient */
 .chat-bubble.user {
-    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
-    color: #000;
-    font-weight: 500;
-    border-bottom-right-radius: 4px;
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  color: #000;
+  font-weight: 500;
+  border-bottom-right-radius: 4px;
 }
 
 /* Input Area - Clean, no background, always visible at bottom */
@@ -158,8 +266,8 @@
   padding: 1.5rem;
   background: transparent;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
   align-items: center;
   flex-shrink: 0;
   max-width: 100%;
@@ -185,12 +293,12 @@
 }
 
 .chat-input {
-    flex: 1;
+  flex: 1;
   background: transparent;
   border: none;
   color: #e0e0e0;
-    font-size: 1rem;
-    outline: none;
+  font-size: 1rem;
+  outline: none;
   resize: none;
   max-height: 200px;
   line-height: 1.5;
@@ -208,14 +316,14 @@
 
 .chat-send-btn {
   background: transparent;
-    border: none;
+  border: none;
   border-radius: 6px;
   width: 32px;
   height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   transition: all 0.2s ease;
   color: #888;
   flex-shrink: 0;
@@ -227,7 +335,7 @@
 }
 
 .chat-send-btn:active:not(:disabled) {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .chat-send-btn:disabled {

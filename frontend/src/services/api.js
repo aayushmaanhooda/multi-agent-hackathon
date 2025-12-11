@@ -64,5 +64,22 @@ export const api = {
             throw new Error(error.detail || "Chat request failed");
         }
         return await response.json();
+    },
+
+    uploadRosterFile: async (file) => {
+        const formData = new FormData();
+        formData.append("roster_file", file);
+
+        const response = await fetch(`${API_URL}/upload-rag-roster`, {
+            method: "POST",
+            body: formData,
+            credentials: "include"
+        });
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.detail || "File upload failed");
+        }
+        return await response.json();
     }
 };

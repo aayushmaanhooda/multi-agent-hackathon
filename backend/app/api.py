@@ -53,6 +53,14 @@ _vector_store = None
 conversation_history: Dict[str, List[Dict[str, str]]] = {}
 
 
+def reset_rag_agent():
+    """Reset the RAG agent to force reinitialization with new data."""
+    global _rag_agent, _vector_store
+    _rag_agent = None
+    _vector_store = None
+    print("RAG agent reset - will be reinitialized on next use")
+
+
 def get_or_create_rag_agent():
     """Initialize RAG agent if not already initialized."""
     global _rag_agent, _vector_store
@@ -64,17 +72,19 @@ def get_or_create_rag_agent():
 
     if _rag_agent is None:
         try:
-            # Get the path to the Excel file
+            # Get the path to the Excel file - use rag.xlsx instead of roster.xlsx
             current_dir = os.path.dirname(os.path.abspath(__file__))
             backend_root = os.path.dirname(current_dir)
-            excel_path = os.path.join(backend_root, "multi_agents", "rag", "new.xlsx")
+            excel_path = os.path.join(backend_root, "multi_agents", "rag", "rag.xlsx")
             output_path = os.path.join(
                 backend_root, "multi_agents", "rag", "roster_doc.txt"
             )
 
             # Check if files exist
             if not os.path.exists(excel_path):
-                raise FileNotFoundError(f"Excel file not found: {excel_path}")
+                raise FileNotFoundError(
+                    f"Excel file not found: {excel_path}. Please upload a Final Roster file first."
+                )
 
             # Setup RAG system
             _vector_store, _rag_agent = setup_rag_system(
@@ -634,6 +644,78 @@ def get_roster(current_user: User = Depends(get_current_user)):
 
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Failed to get roster: {str(e)}")
+
+
+@app.post("/upload-rag-roster")
+def upload_rag_roster(
+    roster_file: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+):
+    """
+    Upload Final Roster Excel file for RAG system.
+    Only Excel files (.xlsx, .xls) are allowed.
+    The file will be saved as rag.xlsx in the rag directory and used for RAG chunking.
+    """
+    # Security check: Ensure user is admin
+    if current_user.role != "admin":
+        raise HTTPException(status_code=403, detail="Admin privileges required")
+
+    # Validate file extension - only Excel files allowed
+    allowed_extensions = {".xlsx", ".xls"}
+    file_ext = os.path.splitext(roster_file.filename)[1].lower()
+
+    if file_ext not in allowed_extensions:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid file type. Only Excel files (.xlsx, .xls) are allowed. Received: {file_ext}",
+        )
+
+    # Define target path - save as rag.xlsx in rag directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    backend_root = os.path.dirname(current_dir)
+    rag_dir = os.path.join(backend_root, "multi_agents", "rag")
+    os.makedirs(rag_dir, exist_ok=True)
+
+    # Save file as rag.xlsx
+    target_path = os.path.join(rag_dir, "rag.xlsx")
+
+    try:
+        # Reset file pointer to beginning
+        roster_file.file.seek(0)
+
+        # Save the uploaded file
+        with open(target_path, "wb") as buffer:
+            shutil.copyfileobj(roster_file.file, buffer)
+
+        print(f"✅ Successfully saved Final Roster to: {target_path}")
+
+        # Verify file was saved
+        if not os.path.exists(target_path):
+            raise HTTPException(
+                status_code=500, detail="File was not saved successfully"
+            )
+
+        file_size = os.path.getsize(target_path)
+        print(f"✅ Verified file exists: {file_size} bytes")
+
+        # Reset RAG agent to force reinitialization with new file
+        reset_rag_agent()
+        print("✅ RAG agent reset - will be reinitialized on next chat request")
+
+        return {
+            "message": "Final Roster uploaded successfully and RAG system will be updated",
+            "filename": "rag.xlsx",
+            "file_size": file_size,
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        print(f"Error saving Final Roster: {e}")
+        import traceback
+
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to save file: {str(e)}")
 
 
 @app.post("/chat", response_model=ChatResponse)

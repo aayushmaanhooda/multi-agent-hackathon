@@ -1,28 +1,32 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Send, Bot, User } from "lucide-react";
+import { Send, Bot, User, Upload, File } from "lucide-react";
 import { api } from "../services/api";
 import "./AdminChat.css";
 
 export default function AdminChat() {
-    const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState([
     {
       role: "assistant",
       content:
         "Hello Admin! I am the Roster AI Assistant. How can I help you manage the roster today?",
     },
-    ]);
+  ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [conversationId, setConversationId] = useState(null);
-    const messagesEndRef = useRef(null);
+  const [uploadingRoster, setUploadingRoster] = useState(false);
+  const [rosterFile, setRosterFile] = useState(null);
+  const [uploadSuccess, setUploadSuccess] = useState(false);
+  const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
+  const fileInputRef = useRef(null);
 
-    const scrollToBottom = () => {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-    };
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
-    useEffect(() => {
-        scrollToBottom();
+  useEffect(() => {
+    scrollToBottom();
   }, [messages, isLoading]);
 
   // Ensure input is visible on initial load
@@ -42,7 +46,7 @@ export default function AdminChat() {
   }, []);
 
   const handleSend = async (e) => {
-        e.preventDefault();
+    e.preventDefault();
     if (!input.trim() || isLoading) return;
 
     const userMessage = { role: "user", content: input };
@@ -77,6 +81,61 @@ export default function AdminChat() {
     }
   };
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // Check if file is Excel
+      const validExtensions = [".xlsx", ".xls"];
+      const fileExtension = file.name
+        .substring(file.name.lastIndexOf("."))
+        .toLowerCase();
+
+      if (!validExtensions.includes(fileExtension)) {
+        alert("Please upload only Excel files (.xlsx or .xls)");
+        e.target.value = "";
+        return;
+      }
+
+      setRosterFile(file);
+      setUploadSuccess(false);
+    }
+  };
+
+  const handleRosterUpload = async (e) => {
+    e.preventDefault();
+    if (!rosterFile) {
+      alert("Please select a file to upload");
+      return;
+    }
+
+    setUploadingRoster(true);
+    try {
+      await api.uploadRosterFile(rosterFile);
+      setUploadSuccess(true);
+      setRosterFile(null);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = "";
+      }
+
+      // Add success message to chat
+      const successMessage = {
+        role: "assistant",
+        content:
+          "Final Roster uploaded successfully! The RAG system has been updated with the new roster data.",
+      };
+      setMessages((prev) => [...prev, successMessage]);
+    } catch (error) {
+      console.error("Upload error:", error);
+      const errorMessage = {
+        role: "assistant",
+        content: `Error uploading file: ${error.message}. Please try again.`,
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setUploadingRoster(false);
+    }
+  };
+
   const formatMessage = (content) => {
     // Simple formatting for line breaks
     return content.split("\n").map((line, i) => (
@@ -85,17 +144,63 @@ export default function AdminChat() {
         {i < content.split("\n").length - 1 && <br />}
       </React.Fragment>
     ));
-    };
+  };
 
-    return (
-        <div className="admin-chat-container">
-            <div className="chat-header">
+  return (
+    <div className="admin-chat-container">
+      <div className="chat-header">
         <Bot size={20} color="#e0e0e0" />
         <h3>Roster AI Assistant</h3>
-            </div>
+      </div>
 
-            <div className="chat-messages">
-                {messages.map((msg, index) => (
+      {/* File Upload Section */}
+      <div className="roster-upload-section">
+        <div className="upload-header">
+          <File size={18} color="#e0e0e0" />
+          <label className="upload-label">Final Roster</label>
+        </div>
+        <form onSubmit={handleRosterUpload} className="upload-form">
+          <div className="file-input-wrapper">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".xlsx,.xls"
+              onChange={handleFileChange}
+              className="file-input"
+              id="roster-file-input"
+              disabled={uploadingRoster}
+            />
+            <label htmlFor="roster-file-input" className="file-input-label">
+              {rosterFile ? rosterFile.name : "Choose Excel file (.xlsx)"}
+            </label>
+          </div>
+          <button
+            type="submit"
+            className="upload-button"
+            disabled={!rosterFile || uploadingRoster}
+          >
+            {uploadingRoster ? (
+              <>
+                <Upload size={16} />
+                Uploading...
+              </>
+            ) : (
+              <>
+                <Upload size={16} />
+                Upload
+              </>
+            )}
+          </button>
+        </form>
+        {uploadSuccess && (
+          <div className="upload-success-message">
+            ✓ Roster uploaded successfully!
+          </div>
+        )}
+      </div>
+
+      <div className="chat-messages">
+        {messages.map((msg, index) => (
           <div key={index} className={`chat-message-wrapper ${msg.role}`}>
             {msg.role === "assistant" ? (
               <>
@@ -116,8 +221,8 @@ export default function AdminChat() {
                 </div>
               </>
             )}
-                    </div>
-                ))}
+          </div>
+        ))}
         {isLoading && (
           <div className="chat-message-wrapper assistant">
             <div className="chat-avatar assistant">
@@ -130,18 +235,18 @@ export default function AdminChat() {
             </div>
           </div>
         )}
-                <div ref={messagesEndRef} />
-            </div>
+        <div ref={messagesEndRef} />
+      </div>
 
-            <form className="chat-input-area" onSubmit={handleSend}>
+      <form className="chat-input-area" onSubmit={handleSend}>
         <div className="chat-input-wrapper">
-                <input 
+          <input
             ref={inputRef}
-                    type="text" 
-                    className="chat-input"
+            type="text"
+            className="chat-input"
             placeholder="Message Roster AI..."
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
             disabled={isLoading}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
@@ -149,7 +254,7 @@ export default function AdminChat() {
                 handleSend(e);
               }
             }}
-                />
+          />
           <button
             type="submit"
             className="chat-send-btn"
@@ -157,9 +262,9 @@ export default function AdminChat() {
             aria-label="Send message"
           >
             <Send size={18} />
-                </button>
+          </button>
         </div>
-            </form>
-        </div>
-    );
+      </form>
+    </div>
+  );
 }

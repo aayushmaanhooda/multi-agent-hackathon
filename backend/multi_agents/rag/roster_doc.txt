@@ -1,0 +1,858 @@
+On 2025-12-09 (Tuesday), Emily Walker (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Sophia Brown (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Sophia Brown | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Andrew Carter (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Andrew Carter | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Emma Johnson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Charlotte Taylor (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Ava Garcia (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ava Garcia | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Alex Harris (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Alex Harris | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Sofia King (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sofia King | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Elizabeth Allen (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Elizabeth Allen | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Oliver Williams (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), James Smith (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: James Smith | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Harper Lee (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Counter | Employee: Harper Lee | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), William Jones (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: William Jones | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Logan Thompson | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Mia Davis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Mia Davis | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Scarlett Nelson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Counter | Employee: Scarlett Nelson | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Jack Miller (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Jack Miller | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Isabella Anderson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Henry Thomas (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Ethan Moore (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Ben Hill (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ben Hill | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Abigail Clark (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-09
+
+On 2025-12-09 (Tuesday), Michael Lewis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-09
+
+On 2025-12-10 (Wednesday), Emily Walker (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Sophia Brown (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sophia Brown | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Andrew Carter (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Andrew Carter | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Charlotte Taylor (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Mason Martin (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Mason Martin | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Ava Garcia (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ava Garcia | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Daniel Hall (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Daniel Hall | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Nathan Evans (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Nathan Evans | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Oliver Williams (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), James Smith (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: James Smith | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), David Green (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Counter | Employee: David Green | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), William Jones (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: William Jones | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Victoria Phillips (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Victoria Phillips | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Mia Davis (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Counter | Employee: Mia Davis | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Isabella Anderson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Henry Thomas (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Abigail Clark (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Ryan Mitchell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ryan Mitchell | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-10
+
+On 2025-12-10 (Wednesday), Michael Lewis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-10
+
+On 2025-12-11 (Thursday), Ella Baker (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ella Baker | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Emily Walker (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Grace Campbell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 2: Suburban Residential | Station: Counter | Employee: Grace Campbell | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Emma Johnson (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Alex Harris (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Counter | Employee: Alex Harris | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Nathan Evans (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Nathan Evans | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), David Green (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Counter | Employee: David Green | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Harper Lee (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: Harper Lee | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Evelyn White (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Evelyn White | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Counter | Employee: Logan Thompson | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Jack Miller (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Counter | Employee: Jack Miller | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Ethan Moore (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Ryan Mitchell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ryan Mitchell | Date: 2025-12-11
+
+On 2025-12-11 (Thursday), Michael Lewis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-11
+
+On 2025-12-12 (Friday), Emily Walker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Grace Campbell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Counter | Employee: Grace Campbell | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Emma Johnson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Charlotte Taylor (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Mason Martin (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Mason Martin | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Ava Garcia (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ava Garcia | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Alex Harris (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Alex Harris | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Oliver Williams (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-12
+
+On 2025-12-12 (Friday), James Smith (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: James Smith | Date: 2025-12-12
+
+On 2025-12-12 (Friday), David Green (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 2: Suburban Residential | Station: Counter | Employee: David Green | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Harper Lee (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Counter | Employee: Harper Lee | Date: 2025-12-12
+
+On 2025-12-12 (Friday), William Jones (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: William Jones | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Evelyn White (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Evelyn White | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Victoria Phillips (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Victoria Phillips | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Mia Davis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Counter | Employee: Mia Davis | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Henry Thomas (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Ryan Mitchell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ryan Mitchell | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Michael Lewis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-12
+
+On 2025-12-12 (Friday), Chloe Roberts (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-12
+
+On 2025-12-13 (Saturday), Emily Walker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Sophia Brown (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sophia Brown | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Andrew Carter (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Andrew Carter | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Emma Johnson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Ava Garcia (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ava Garcia | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Madison Turner (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Madison Turner | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Oliver Williams (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), James Smith (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: James Smith | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Samuel Wright (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Samuel Wright | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Counter | Employee: Logan Thompson | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Matthew Young (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Matthew Young | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Victoria Phillips (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Victoria Phillips | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Mia Davis (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Counter | Employee: Mia Davis | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Jack Miller (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Counter | Employee: Jack Miller | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Henry Thomas (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Avery Scott (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Avery Scott | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Ethan Moore (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Abigail Clark (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Ryan Mitchell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ryan Mitchell | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Michael Lewis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-13
+
+On 2025-12-13 (Saturday), Chloe Roberts (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-13
+
+On 2025-12-14 (Sunday), Ella Baker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ella Baker | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Andrew Carter (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Andrew Carter | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Charlotte Taylor (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Mason Martin (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Mason Martin | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Joseph Adams (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Counter | Employee: Joseph Adams | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Alex Harris (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Counter | Employee: Alex Harris | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Elizabeth Allen (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Elizabeth Allen | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Nathan Evans (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Nathan Evans | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), David Green (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: David Green | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Harper Lee (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Harper Lee | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), William Jones (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: William Jones | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Evelyn White (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Counter | Employee: Evelyn White | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Scarlett Nelson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Counter | Employee: Scarlett Nelson | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Isabella Anderson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Avery Scott (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Avery Scott | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Ethan Moore (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-14
+
+On 2025-12-14 (Sunday), Chloe Roberts (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-14
+
+On 2025-12-15 (Monday), Ella Baker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ella Baker | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Emily Walker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Grace Campbell (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Grace Campbell | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Emma Johnson (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Charlotte Taylor (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Joseph Adams (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Joseph Adams | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Sofia King (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sofia King | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Daniel Hall (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Daniel Hall | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-15
+
+On 2025-12-15 (Monday), James Smith (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: James Smith | Date: 2025-12-15
+
+On 2025-12-15 (Monday), David Green (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Counter | Employee: David Green | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Harper Lee (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Counter | Employee: Harper Lee | Date: 2025-12-15
+
+On 2025-12-15 (Monday), William Jones (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: William Jones | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Counter | Employee: Logan Thompson | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Matthew Young (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Matthew Young | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Victoria Phillips (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Victoria Phillips | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Scarlett Nelson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Counter | Employee: Scarlett Nelson | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Isabella Anderson (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Henry Thomas (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Avery Scott (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Avery Scott | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Ethan Moore (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Ben Hill (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ben Hill | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Abigail Clark (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Ryan Mitchell (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ryan Mitchell | Date: 2025-12-15
+
+On 2025-12-15 (Monday), Chloe Roberts (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-15
+
+On 2025-12-16 (Tuesday), Emily Walker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Sophia Brown (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sophia Brown | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Andrew Carter (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Andrew Carter | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Emma Johnson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Charlotte Taylor (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Mason Martin (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Mason Martin | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Ava Garcia (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ava Garcia | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Alex Harris (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Alex Harris | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Madison Turner (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Madison Turner | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Daniel Hall (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Daniel Hall | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), James Smith (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: James Smith | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), David Green (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Counter | Employee: David Green | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), William Jones (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: William Jones | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Evelyn White (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 2: Suburban Residential | Station: Counter | Employee: Evelyn White | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Counter | Employee: Logan Thompson | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Mia Davis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: Mia Davis | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Jack Miller (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Counter | Employee: Jack Miller | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Isabella Anderson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Henry Thomas (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Ethan Moore (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Abigail Clark (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-16
+
+On 2025-12-16 (Tuesday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-16
+
+On 2025-12-17 (Wednesday), Sophia Brown (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sophia Brown | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Emma Johnson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Charlotte Taylor (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Ava Garcia (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ava Garcia | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Daniel Hall (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Daniel Hall | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), James Smith (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: James Smith | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), William Jones (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: William Jones | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Mia Davis (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Mia Davis | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Isabella Anderson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Henry Thomas (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Ethan Moore (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Abigail Clark (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-17
+
+On 2025-12-17 (Wednesday), Michael Lewis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-17
+
+On 2025-12-18 (Thursday), Ella Baker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ella Baker | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Emily Walker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Grace Campbell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Counter | Employee: Grace Campbell | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Andrew Carter (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Andrew Carter | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Mason Martin (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Mason Martin | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Joseph Adams (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: Joseph Adams | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Alex Harris (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Alex Harris | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Nathan Evans (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Nathan Evans | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Oliver Williams (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), David Green (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: David Green | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Harper Lee (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Counter | Employee: Harper Lee | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Samuel Wright (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Samuel Wright | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Evelyn White (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Counter | Employee: Evelyn White | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Counter | Employee: Logan Thompson | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Victoria Phillips (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Victoria Phillips | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Scarlett Nelson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Counter | Employee: Scarlett Nelson | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Jack Miller (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: Jack Miller | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Ethan Moore (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Ethan Moore | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Abigail Clark (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Michael Lewis (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-18
+
+On 2025-12-18 (Thursday), Chloe Roberts (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-18
+
+On 2025-12-19 (Friday), Sophia Brown (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Sophia Brown | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Emma Johnson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Ava Garcia (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ava Garcia | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Joseph Adams (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Counter | Employee: Joseph Adams | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Alex Harris (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Counter | Employee: Alex Harris | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Elizabeth Allen (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Elizabeth Allen | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Oliver Williams (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-19
+
+On 2025-12-19 (Friday), James Smith (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: James Smith | Date: 2025-12-19
+
+On 2025-12-19 (Friday), William Jones (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: William Jones | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Samuel Wright (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Samuel Wright | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Evelyn White (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Counter | Employee: Evelyn White | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 2: Suburban Residential | Station: Counter | Employee: Logan Thompson | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Mia Davis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Counter | Employee: Mia Davis | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Isabella Anderson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Henry Thomas (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Michael Lewis (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-19
+
+On 2025-12-19 (Friday), Chloe Roberts (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 2: Suburban Residential | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-19
+
+On 2025-12-20 (Saturday), Sophia Brown (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sophia Brown | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Andrew Carter (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Andrew Carter | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Emma Johnson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Charlotte Taylor (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Charlotte Taylor | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Mason Martin (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Mason Martin | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Ava Garcia (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ava Garcia | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Joseph Adams (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Counter | Employee: Joseph Adams | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Alex Harris (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 1: CBD Core Area | Station: Counter | Employee: Alex Harris | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Sofia King (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sofia King | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Daniel Hall (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Daniel Hall | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Nathan Evans (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Nathan Evans | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Oliver Williams (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), David Green (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 2: Suburban Residential | Station: Counter | Employee: David Green | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Harper Lee (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Counter | Employee: Harper Lee | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), William Jones (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: William Jones | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Matthew Young (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Matthew Young | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Mia Davis (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Counter | Employee: Mia Davis | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Scarlett Nelson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Counter | Employee: Scarlett Nelson | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Jack Miller (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Counter | Employee: Jack Miller | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Isabella Anderson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Henry Thomas (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Henry Thomas | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Abigail Clark (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Abigail Clark | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Ryan Mitchell (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ryan Mitchell | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Lucas Wilson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Full-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-20
+
+On 2025-12-20 (Saturday), Chloe Roberts (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-20
+
+On 2025-12-21 (Sunday), Ella Baker (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ella Baker | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Emily Walker (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Alex Harris (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Alex Harris | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Sofia King (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Sofia King | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Madison Turner (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Madison Turner | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Daniel Hall (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Daniel Hall | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Elizabeth Allen (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Elizabeth Allen | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), James Smith (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Full-Time. Status: Weekend. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: James Smith | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Evelyn White (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Counter | Employee: Evelyn White | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Matthew Young (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Weekend. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Matthew Young | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Scarlett Nelson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Weekend. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 2: Suburban Residential | Station: Counter | Employee: Scarlett Nelson | Date: 2025-12-21
+
+On 2025-12-21 (Sunday), Michael Lewis (ID: nan) is scheduled for a 9-hour 1F shift from 06:30 - 15:30. Employment type: Part-Time. Status: Weekend. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Ava Garcia. 
+Manager: Ava Garcia | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-21
+
+On 2025-12-22 (Monday), Ella Baker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Ella Baker | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Emily Walker (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Henry Thomas. 
+Manager: Henry Thomas | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Emily Walker | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Grace Campbell (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Counter | Employee: Grace Campbell | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Emma Johnson (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Emma Johnson | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Ava Garcia (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Isabella Anderson. 
+Manager: Isabella Anderson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ava Garcia | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Madison Turner (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Madison Turner | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Daniel Hall (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Daniel Hall | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Elizabeth Allen (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Oliver Williams. 
+Manager: Oliver Williams | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Elizabeth Allen | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Nathan Evans (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Dessert Station, working in Store 'Store 1: CBD Core Area'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 1: CBD Core Area | Station: Dessert Station | Employee: Nathan Evans | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Amelia Jackson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Amelia Jackson | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Oliver Williams (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Oliver Williams | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Samuel Wright (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 2: Suburban Residential'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 2: Suburban Residential | Station: Kitchen | Employee: Samuel Wright | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Logan Thompson (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : James Smith. 
+Manager: James Smith | Store: Store 2: Suburban Residential | Station: Counter | Employee: Logan Thompson | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Matthew Young (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Matthew Young | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Victoria Phillips (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Lucas Wilson. 
+Manager: Lucas Wilson | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Victoria Phillips | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Mia Davis (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Counter | Employee: Mia Davis | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Jack Miller (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Emma Johnson. 
+Manager: Emma Johnson | Store: Store 2: Suburban Residential | Station: Counter | Employee: Jack Miller | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Isabella Anderson (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : Sophia Brown. 
+Manager: Sophia Brown | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Isabella Anderson | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Avery Scott (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Kitchen, working in Store 'Store 1: CBD Core Area'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 1: CBD Core Area | Station: Kitchen | Employee: Avery Scott | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Ben Hill (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ben Hill | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Ryan Mitchell (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Charlotte Taylor. 
+Manager: Charlotte Taylor | Store: Store 2: Suburban Residential | Station: Counter | Employee: Ryan Mitchell | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Lucas Wilson (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Full-Time. Status: Scheduled. Located at Station Counter, working in Store 'Store 1: CBD Core Area'. and the Manager is : Jack Miller. 
+Manager: Jack Miller | Store: Store 1: CBD Core Area | Station: Counter | Employee: Lucas Wilson | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Michael Lewis (ID: nan) is scheduled for a 9-hour 2F shift from 14:00 - 23:00. Employment type: Part-Time. Status: Scheduled. Located at Station Multi-Station McCafe, working in Store 'Store 1: CBD Core Area'. and the Manager is : William Jones. 
+Manager: William Jones | Store: Store 1: CBD Core Area | Station: Multi-Station McCafe | Employee: Michael Lewis | Date: 2025-12-22
+
+On 2025-12-22 (Monday), Chloe Roberts (ID: nan) is scheduled for a 12-hour 3F shift from 08:00 - 20:00. Employment type: Casual. Status: Scheduled. Located at Station Counter, working in Store 'Store 2: Suburban Residential'. and the Manager is : Mia Davis. 
+Manager: Mia Davis | Store: Store 2: Suburban Residential | Station: Counter | Employee: Chloe Roberts | Date: 2025-12-22
+
